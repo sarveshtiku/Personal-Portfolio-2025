@@ -29,43 +29,14 @@ export default function Blog() {
       readTime: "10 min read",
       category: "AI Ethics",
       slug: "ai-ethics-practice"
-    },
-    {
-      title: "The Research-Development Bridge: Translating Papers into Products",
-      excerpt: "How to effectively bridge the gap between academic research and practical implementation. Strategies for staying current with research while building production systems.",
-      date: "2023-12-10",
-      readTime: "7 min read",
-      category: "Research",
-      slug: "research-development-bridge"
-    },
-    {
-      title: "Modern JavaScript: Beyond the Hype",
-      excerpt: "A pragmatic look at modern JavaScript features and frameworks. Which innovations actually improve developer experience and code quality, and which are just noise.",
-      date: "2023-11-28",
-      readTime: "9 min read",
-      category: "JavaScript",
-      slug: "modern-javascript-beyond-hype"
-    },
-    {
-      title: "Building Inclusive Tech: Accessibility as a First-Class Citizen",
-      excerpt: "Why accessibility shouldn't be an afterthought and how to build inclusive experiences from the ground up. Practical tips and tools for developers.",
-      date: "2023-11-15",
-      readTime: "6 min read",
-      category: "Accessibility",
-      slug: "building-inclusive-tech"
     }
   ];
-
-  const categories = ["All", "Engineering", "Architecture", "AI Ethics", "Research", "JavaScript", "Accessibility"];
 
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
       "Engineering": "bg-primary-blue-light text-primary-blue",
       "Architecture": "bg-warm-orange-light text-warm-orange",
-      "AI Ethics": "bg-success/10 text-success",
-      "Research": "bg-warning/10 text-warning",
-      "JavaScript": "bg-muted text-muted-foreground",
-      "Accessibility": "bg-purple-100 text-purple-700"
+      "AI Ethics": "bg-success/10 text-success"
     };
     return colors[category] || "bg-muted text-muted-foreground";
   };
@@ -81,20 +52,6 @@ export default function Blog() {
           Thoughts on software development, research, technology ethics, and the 
           intersection of academia and industry.
         </p>
-      </section>
-
-      {/* Category Filter */}
-      <section className="flex flex-wrap justify-center gap-2">
-        {categories.map((category) => (
-          <Button
-            key={category}
-            variant={category === "All" ? "default" : "outline"}
-            size="sm"
-            className={category === "All" ? "bg-warm-orange hover:bg-warm-orange/90" : ""}
-          >
-            {category}
-          </Button>
-        ))}
       </section>
 
       {/* Featured Post */}
@@ -182,26 +139,6 @@ export default function Blog() {
               </CardContent>
             </Card>
           ))}
-        </div>
-      </section>
-
-      {/* Newsletter Signup */}
-      <section className="text-center py-12 bg-warm-orange-light/30 rounded-lg">
-        <h3 className="font-academic text-2xl font-semibold mb-4 text-primary">
-          Stay Updated
-        </h3>
-        <p className="text-academic-gray mb-6 max-w-lg mx-auto">
-          Get notified when I publish new articles about development, research, and technology.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="flex-1 px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-warm-orange"
-          />
-          <Button className="bg-warm-orange hover:bg-warm-orange/90">
-            Subscribe
-          </Button>
         </div>
       </section>
     </div>

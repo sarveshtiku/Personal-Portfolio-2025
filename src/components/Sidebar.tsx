@@ -1,105 +1,50 @@
-import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import { 
-  Home, 
-  User, 
-  FolderOpen, 
-  PenTool, 
-  FlaskConical, 
-  Briefcase, 
-  Mail, 
-  Menu, 
-  X 
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { NavLink } from "react-router-dom";
+import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail } from "lucide-react";
 
 const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: User },
   { name: "Projects", href: "/projects", icon: FolderOpen },
-  { name: "Blog", href: "/blog", icon: PenTool },
-  { name: "Research", href: "/research", icon: FlaskConical },
+  { name: "Research", href: "/research", icon: FileText },
+  { name: "Blog", href: "/blog", icon: BookOpen },
   { name: "Experience", href: "/experience", icon: Briefcase },
   { name: "Contact", href: "/contact", icon: Mail },
 ];
 
 export function Sidebar() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const location = useLocation();
-
   return (
-    <>
-      {/* Mobile overlay */}
-      {!isCollapsed && (
-        <div className="fixed inset-0 z-40 bg-black/20 lg:hidden" onClick={() => setIsCollapsed(true)} />
-      )}
-      
-      {/* Sidebar */}
-      <div className={cn(
-        "fixed left-0 top-0 h-full bg-background border-r border-border z-50 transition-all duration-300",
-        isCollapsed ? "w-16" : "w-64",
-        "lg:relative lg:block"
-      )}>
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-border">
-          {!isCollapsed && (
-            <h1 className="font-academic text-xl font-bold text-primary">
-              Portfolio
-            </h1>
-          )}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            className="lg:hidden"
-          >
-            {isCollapsed ? <Menu className="h-4 w-4" /> : <X className="h-4 w-4" />}
-          </Button>
+    <div className="fixed inset-y-0 left-0 z-50 w-64 bg-sidebar-background border-r border-sidebar-border lg:static lg:inset-0">
+      <div className="flex h-full flex-col">
+        {/* Logo/Brand */}
+        <div className="flex h-16 shrink-0 items-center px-6">
+          <h1 className="text-xl font-academic font-bold text-sidebar-primary">
+            Portfolio
+          </h1>
         </div>
-
+        
         {/* Navigation */}
-        <nav className="p-4 space-y-2">
-          {navigation.map((item) => {
-            const isActive = location.pathname === item.href;
-            return (
-              <NavLink
-                key={item.name}
-                to={item.href}
-                className={cn(
-                  "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                  isActive 
-                    ? "bg-warm-orange-light text-warm-orange border border-warm-orange/20" 
-                    : "text-academic-gray hover:text-primary hover:bg-muted",
-                  isCollapsed && "justify-center"
-                )}
-              >
-                <item.icon className={cn("h-5 w-5", !isCollapsed && "mr-3")} />
-                {!isCollapsed && item.name}
-              </NavLink>
-            );
-          })}
+        <nav className="flex flex-1 flex-col px-6 py-4">
+          <ul role="list" className="flex flex-1 flex-col gap-y-2">
+            {navigation.map((item) => (
+              <li key={item.name}>
+                <NavLink
+                  to={item.href}
+                  className={({ isActive }) =>
+                    `group flex gap-x-3 rounded-md p-3 text-sm leading-6 font-medium transition-colors ${
+                      isActive
+                        ? "bg-sidebar-accent text-sidebar-primary"
+                        : "text-sidebar-foreground hover:text-sidebar-primary hover:bg-sidebar-accent"
+                    }`
+                  }
+                >
+                  <item.icon className="h-5 w-5 shrink-0" />
+                  {item.name}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </nav>
-
-        {/* Footer */}
-        {!isCollapsed && (
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="text-xs text-academic-gray text-center">
-              Built with passion for clean code
-            </div>
-          </div>
-        )}
       </div>
-
-      {/* Toggle button for desktop */}
-      <Button
-        variant="outline"
-        size="sm"
-        onClick={() => setIsCollapsed(!isCollapsed)}
-        className="fixed top-4 left-4 z-40 lg:hidden"
-      >
-        <Menu className="h-4 w-4" />
-      </Button>
-    </>
+    </div>
   );
 }

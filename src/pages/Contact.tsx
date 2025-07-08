@@ -139,80 +139,8 @@ export default function Contact() {
               </a>
             </CardContent>
           </Card>
-
-          {/* Response Time */}
-          <Card className="academic-shadow">
-            <CardContent className="p-6 text-center">
-              <h4 className="font-academic text-lg font-semibold mb-2 text-primary">
-                Response Time
-              </h4>
-              <p className="text-academic-gray text-sm">
-                I typically respond to messages within 24-48 hours. For urgent matters, 
-                feel free to reach out via LinkedIn for faster response.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
-
-      {/* FAQ Section */}
-      <section>
-        <h2 className="font-academic text-2xl font-semibold mb-8 text-primary text-center">
-          Frequently Asked Questions
-        </h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="academic-shadow">
-            <CardContent className="p-6">
-              <h4 className="font-academic text-lg font-semibold mb-3 text-primary">
-                Are you available for freelance work?
-              </h4>
-              <p className="text-academic-gray text-sm">
-                I occasionally take on interesting freelance projects, especially those 
-                involving research or complex technical challenges. Feel free to reach out 
-                with your project details.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="academic-shadow">
-            <CardContent className="p-6">
-              <h4 className="font-academic text-lg font-semibold mb-3 text-primary">
-                Do you mentor developers?
-              </h4>
-              <p className="text-academic-gray text-sm">
-                Yes! I enjoy mentoring junior developers and career changers. I offer 
-                both informal advice and structured mentoring relationships depending 
-                on needs and availability.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="academic-shadow">
-            <CardContent className="p-6">
-              <h4 className="font-academic text-lg font-semibold mb-3 text-primary">
-                Are you open to speaking opportunities?
-              </h4>
-              <p className="text-academic-gray text-sm">
-                Absolutely! I love speaking at conferences, meetups, and podcasts about 
-                software development, research, and the intersection of technology and ethics.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="academic-shadow">
-            <CardContent className="p-6">
-              <h4 className="font-academic text-lg font-semibold mb-3 text-primary">
-                Can we collaborate on research?
-              </h4>
-              <p className="text-academic-gray text-sm">
-                Yes! I'm always interested in research collaborations, especially projects 
-                that bridge academic research with practical applications. Let's discuss 
-                your ideas.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
     </div>
   );
 }
