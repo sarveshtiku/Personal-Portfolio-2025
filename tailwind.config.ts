@@ -61,7 +61,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				warm: {
+					orange: 'hsl(var(--warm-orange))',
+					'orange-light': 'hsl(var(--warm-orange-light))',
+					gold: 'hsl(var(--geometric-gold))'
+				},
+				academic: {
+					gray: 'hsl(var(--academic-gray))',
+					'subtle-gray': 'hsl(var(--subtle-gray))'
+				},
+				'primary-blue': {
+					DEFAULT: 'hsl(var(--primary-blue))',
+					light: 'hsl(var(--primary-blue-light))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
 				}
+			},
+			fontFamily: {
+				academic: ['Crimson Text', 'Times New Roman', 'serif'],
+				clean: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
