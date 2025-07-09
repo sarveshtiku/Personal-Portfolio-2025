@@ -181,6 +181,50 @@ export default function Blog() {
         </div>
       </section>
 
+      {/* Past Newsletter Content */}
+      <section>
+        <h2 className="font-academic text-2xl font-semibold mb-6 text-primary">
+          From My Summer Newsletter
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Card className="academic-shadow">
+            <CardContent className="p-4">
+              <div className="space-y-2">
+                <h3 className="font-semibold text-primary">Issue #1 - June</h3>
+                <p className="text-sm text-academic-gray">
+                  Summer internship reflections, new projects I'm excited about, and books I'm reading during the break.
+                </p>
+                <Badge variant="outline" className="text-xs">June 2024</Badge>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="academic-shadow">
+            <CardContent className="p-4">
+              <div className="space-y-2">
+                <h3 className="font-semibold text-primary">Issue #2 - July</h3>
+                <p className="text-sm text-academic-gray">
+                  Deep dive into distributed systems, conference highlights, and summer coding challenges I've been working on.
+                </p>
+                <Badge variant="outline" className="text-xs">July 2024</Badge>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="academic-shadow">
+            <CardContent className="p-4">
+              <div className="space-y-2">
+                <h3 className="font-semibold text-primary">Issue #3 - August</h3>
+                <p className="text-sm text-academic-gray">
+                  Research updates, side project launches, and thoughts on the future of AI ethics in development.
+                </p>
+                <Badge variant="outline" className="text-xs">August 2024</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Newsletter Section */}
       <section>
         <Card className="academic-shadow bg-gradient-to-br from-primary/5 to-warm-orange/5 border-primary/20">
@@ -191,7 +235,7 @@ export default function Blog() {
                   <Mail className="h-12 w-12 text-warm-orange" />
                 </div>
                 <h2 className="font-academic text-3xl font-semibold text-primary">
-                  Summer Newsletter
+                  My Newsletter
                 </h2>
                 <p className="text-lg text-academic-gray">
                   Join my monthly newsletter for insights on software development, research discoveries, 
