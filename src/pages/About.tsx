@@ -88,14 +88,25 @@ export default function About() {
             <CardHeader>
               <CardTitle className="font-academic text-xl text-primary">Education</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 text-academic-gray text-sm">
-              <div>
-                <h4 className="font-medium text-primary">M.S. Computer Science</h4>
-                <p>University Name, 2019</p>
+            <CardContent className="space-y-4 text-academic-gray text-sm">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-primary-blue-light flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary-blue font-bold text-xs">GT</span>
+                </div>
+                <div>
+                  <h4 className="font-medium text-primary">B.S. Computer Science</h4>
+                  <p>Georgia Tech</p>
+                  <p className="text-xs text-academic-gray">Graduating May 2027</p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-medium text-primary">B.S. Software Engineering</h4>
-                <p>University Name, 2017</p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-warm-orange-light flex items-center justify-center flex-shrink-0">
+                  <span className="text-warm-orange font-bold text-xs">FH</span>
+                </div>
+                <div>
+                  <h4 className="font-medium text-primary">High School Diploma</h4>
+                  <p>Fairview High School</p>
+                </div>
               </div>
             </CardContent>
           </Card>
