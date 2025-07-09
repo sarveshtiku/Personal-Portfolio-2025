@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-geometric.jpg";
+import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 export default function Home() {
   return (
@@ -20,8 +21,19 @@ export default function Home() {
         
         <div className="space-y-4">
           <h1 className="font-academic text-5xl lg:text-6xl font-bold text-primary">
-            Developer &amp; Researcher
+            Hi, I'm Sarvesh
           </h1>
+          <div className="text-xl text-warm-orange font-medium min-h-[2rem]">
+            <TypewriterEffect 
+              phrases={[
+                "AI Safety Researcher",
+                "Software Developer", 
+                "Tech Entrepreneur",
+                "Building the Future"
+              ]}
+              className="font-academic text-2xl lg:text-3xl"
+            />
+          </div>
           <p className="text-xl text-academic-gray max-w-2xl mx-auto leading-relaxed">
             Exploring the intersection of technology, research, and human-centered design. 
             Building solutions that matter through code, curiosity, and collaboration.
