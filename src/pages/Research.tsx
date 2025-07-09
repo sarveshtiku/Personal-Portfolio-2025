@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FileText, ExternalLink, Calendar } from "lucide-react";
+import { FileText, ExternalLink, Calendar, GraduationCap } from "lucide-react";
 
 export default function Research() {
   const papers = [
@@ -36,6 +36,14 @@ export default function Research() {
           Exploring the intersection of human behavior, technology, and ethics through 
           rigorous research and empirical studies.
         </p>
+        <div className="flex justify-center pt-4">
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <GraduationCap className="mr-2 h-5 w-5" />
+              🎓 Google Scholar Profile
+            </a>
+          </Button>
+        </div>
       </section>
 
       {/* Publications */}
