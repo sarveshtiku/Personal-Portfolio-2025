@@ -137,6 +137,50 @@ export default function Blog() {
         </Card>
       </section>
 
+      {/* All Posts */}
+      <section>
+        <h2 className="font-academic text-2xl font-semibold mb-8 text-primary">
+          Recent Posts
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {posts.slice(1).map((post, index) => (
+            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
+                  <Badge className={getCategoryColor(post.category)}>
+                    {post.category}
+                  </Badge>
+                  <div className="flex items-center gap-1">
+                    <CalendarDays className="h-3 w-3" />
+                    {new Date(post.date).toLocaleDateString('en-US', { 
+                      month: 'short', 
+                      day: 'numeric' 
+                    })}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock className="h-3 w-3" />
+                    {post.readTime}
+                  </div>
+                </div>
+                <CardTitle className="font-academic text-xl text-primary leading-tight">
+                  {post.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-academic-gray leading-relaxed">
+                  {post.excerpt}
+                </p>
+                <Button variant="outline" asChild>
+                  <Link to={`/blog/${post.slug}`}>
+                    Read More <ArrowRight className="ml-2 h-3 w-3" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       {/* Newsletter Section */}
       <section>
         <Card className="academic-shadow bg-gradient-to-br from-primary/5 to-warm-orange/5 border-primary/20">
@@ -185,50 +229,6 @@ export default function Blog() {
             </div>
           </CardContent>
         </Card>
-      </section>
-
-      {/* All Posts */}
-      <section>
-        <h2 className="font-academic text-2xl font-semibold mb-8 text-primary">
-          Recent Posts
-        </h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          {posts.slice(1).map((post, index) => (
-            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
-                  <Badge className={getCategoryColor(post.category)}>
-                    {post.category}
-                  </Badge>
-                  <div className="flex items-center gap-1">
-                    <CalendarDays className="h-3 w-3" />
-                    {new Date(post.date).toLocaleDateString('en-US', { 
-                      month: 'short', 
-                      day: 'numeric' 
-                    })}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="h-3 w-3" />
-                    {post.readTime}
-                  </div>
-                </div>
-                <CardTitle className="font-academic text-xl text-primary leading-tight">
-                  {post.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-academic-gray leading-relaxed">
-                  {post.excerpt}
-                </p>
-                <Button variant="outline" asChild>
-                  <Link to={`/blog/${post.slug}`}>
-                    Read More <ArrowRight className="ml-2 h-3 w-3" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
       </section>
     </div>
   );
