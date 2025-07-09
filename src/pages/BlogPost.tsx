@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays, Clock, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { BlogComments } from "@/components/BlogComments";
 
 const blogPosts = {
   "art-of-code-review": {
@@ -244,6 +245,11 @@ export default function BlogPost() {
                 </div>
               </section>
             ))}
+          </div>
+
+          {/* Comments Section */}
+          <div className="mt-12">
+            <BlogComments />
           </div>
         </article>
 
