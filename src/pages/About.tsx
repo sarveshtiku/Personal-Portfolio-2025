@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export default function About() {
   const skills = [
@@ -10,14 +11,28 @@ export default function About() {
   return (
     <div className="space-y-12">
       {/* Header */}
-      <section className="text-center space-y-4">
-        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
-          About Me
-        </h1>
-        <p className="text-xl text-academic-gray max-w-2xl mx-auto">
-          A passionate developer and researcher driven by the desire to solve complex problems 
-          through elegant code and rigorous inquiry.
-        </p>
+      <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex-shrink-0">
+          <Avatar className="w-32 h-32 lg:w-40 lg:h-40 academic-shadow">
+            <AvatarImage 
+              src="/lovable-uploads/4d0c1629-1cf7-4875-b974-453de2bbd793.png" 
+              alt="Sarvesh" 
+              className="object-cover"
+            />
+            <AvatarFallback className="text-2xl font-academic bg-primary-blue-light text-primary-blue">
+              S
+            </AvatarFallback>
+          </Avatar>
+        </div>
+        <div className="flex-1 text-center lg:text-left space-y-4">
+          <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
+            About Me
+          </h1>
+          <p className="text-xl text-academic-gray max-w-2xl lg:max-w-none">
+            A passionate developer and researcher driven by the desire to solve complex problems 
+            through elegant code and rigorous inquiry.
+          </p>
+        </div>
       </section>
 
       {/* Main Content */}
