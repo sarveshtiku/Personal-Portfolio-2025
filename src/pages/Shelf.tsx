@@ -52,6 +52,54 @@ export default function Shelf() {
       authors: "Kay & Fillmore",
       venue: "Cognitive Science",
       field: "Linguistics"
+    },
+    {
+      title: "BERT: Pre-training of Deep Bidirectional Transformers",
+      authors: "Devlin et al.",
+      venue: "NAACL 2019",
+      field: "NLP"
+    },
+    {
+      title: "ResNet: Deep Residual Learning for Image Recognition",
+      authors: "He et al.",
+      venue: "CVPR 2016",
+      field: "Computer Vision"
+    },
+    {
+      title: "Generative Adversarial Networks",
+      authors: "Goodfellow et al.",
+      venue: "NIPS 2014",
+      field: "AI/ML"
+    },
+    {
+      title: "The Mythical Man-Month",
+      authors: "Brooks Jr.",
+      venue: "Essays on Software Engineering",
+      field: "Software Engineering"
+    },
+    {
+      title: "MapReduce: Simplified Data Processing",
+      authors: "Dean & Ghemawat",
+      venue: "OSDI 2004",
+      field: "Distributed Systems"
+    },
+    {
+      title: "Bitcoin: A Peer-to-Peer Electronic Cash System",
+      authors: "Nakamoto",
+      venue: "Bitcoin Whitepaper",
+      field: "Blockchain"
+    },
+    {
+      title: "The PageRank Citation Ranking",
+      authors: "Page et al.",
+      venue: "Stanford InfoLab",
+      field: "Web Search"
+    },
+    {
+      title: "Dynamo: Amazon's Highly Available Key-value Store",
+      authors: "DeCandia et al.",
+      venue: "SOSP 2007",
+      field: "Distributed Systems"
     }
   ];
 
@@ -73,6 +121,60 @@ export default function Shelf() {
       artist: "The Weeknd",
       album: "After Hours",
       mood: "Energetic"
+    },
+    {
+      title: "Levitating",
+      artist: "Dua Lipa",
+      album: "Future Nostalgia",
+      mood: "Upbeat"
+    },
+    {
+      title: "Good 4 U",
+      artist: "Olivia Rodrigo",
+      album: "SOUR",
+      mood: "Angry"
+    },
+    {
+      title: "Watermelon Sugar",
+      artist: "Harry Styles",
+      album: "Fine Line",
+      mood: "Happy"
+    },
+    {
+      title: "drivers license",
+      artist: "Olivia Rodrigo",
+      album: "SOUR",
+      mood: "Melancholic"
+    },
+    {
+      title: "Stay",
+      artist: "The Kid LAROI & Justin Bieber",
+      album: "F*CK LOVE 3",
+      mood: "Romantic"
+    },
+    {
+      title: "Anti-Hero",
+      artist: "Taylor Swift",
+      album: "Midnights",
+      mood: "Introspective"
+    },
+    {
+      title: "Flowers",
+      artist: "Miley Cyrus",
+      album: "Endless Summer Vacation",
+      mood: "Empowering"
+    },
+    {
+      title: "Unholy",
+      artist: "Sam Smith ft. Kim Petras",
+      album: "Gloria",
+      mood: "Dark"
+    },
+    {
+      title: "Bad Habit",
+      artist: "Steve Lacy",
+      album: "Gemini Rights",
+      mood: "Groovy"
     }
   ];
 
@@ -187,21 +289,23 @@ export default function Shelf() {
             <FileText className="h-6 w-6 text-primary" />
             <h2 className="font-academic text-2xl font-semibold text-primary">Research Papers</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {currentPapers.map((paper, index) => (
-              <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-                <CardContent className="p-4">
-                  <div className="space-y-3">
-                    <div>
-                      <h3 className="font-semibold text-primary text-sm">{paper.title}</h3>
-                      <p className="text-sm text-academic-gray">{paper.authors}</p>
-                      <p className="text-xs text-warm-orange">{paper.venue}</p>
+          <div className="overflow-hidden">
+            <div className="flex gap-4 animate-scroll-left">
+              {[...currentPapers, ...currentPapers].map((paper, index) => (
+                <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 flex-shrink-0 w-80">
+                  <CardContent className="p-4">
+                    <div className="space-y-3">
+                      <div>
+                        <h3 className="font-semibold text-primary text-sm">{paper.title}</h3>
+                        <p className="text-sm text-academic-gray">{paper.authors}</p>
+                        <p className="text-xs text-warm-orange">{paper.venue}</p>
+                      </div>
+                      <Badge variant="outline" className="text-xs">{paper.field}</Badge>
                     </div>
-                    <Badge variant="outline" className="text-xs">{paper.field}</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -211,21 +315,23 @@ export default function Shelf() {
             <Music className="h-6 w-6 text-primary" />
             <h2 className="font-academic text-2xl font-semibold text-primary">On Repeat</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-4">
-            {currentSongs.map((song, index) => (
-              <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-                <CardContent className="p-4">
-                  <div className="space-y-3">
-                    <div>
-                      <h3 className="font-semibold text-primary">{song.title}</h3>
-                      <p className="text-sm text-academic-gray">{song.artist}</p>
-                      <p className="text-xs text-warm-orange">{song.album}</p>
+          <div className="overflow-hidden">
+            <div className="flex gap-4 animate-scroll-right">
+              {[...currentSongs, ...currentSongs].map((song, index) => (
+                <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 flex-shrink-0 w-72">
+                  <CardContent className="p-4">
+                    <div className="space-y-3">
+                      <div>
+                        <h3 className="font-semibold text-primary">{song.title}</h3>
+                        <p className="text-sm text-academic-gray">{song.artist}</p>
+                        <p className="text-xs text-warm-orange">{song.album}</p>
+                      </div>
+                      <Badge variant="outline" className="text-xs">{song.mood}</Badge>
                     </div>
-                    <Badge variant="outline" className="text-xs">{song.mood}</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 
