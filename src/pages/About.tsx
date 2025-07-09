@@ -86,22 +86,6 @@ export default function About() {
 
           <Card className="academic-shadow">
             <CardHeader>
-              <CardTitle className="font-academic text-xl text-primary">Interests</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3 text-academic-gray">
-              <div>
-                <h4 className="font-medium text-primary">Research Areas</h4>
-                <p className="text-sm">Human-Computer Interaction, AI Ethics, Distributed Systems</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-primary">Personal</h4>
-                <p className="text-sm">Reading, Photography, Chess, Hiking</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="academic-shadow">
-            <CardHeader>
               <CardTitle className="font-academic text-xl text-primary">Education</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-academic-gray text-sm">
@@ -112,6 +96,22 @@ export default function About() {
               <div>
                 <h4 className="font-medium text-primary">B.S. Software Engineering</h4>
                 <p>University Name, 2017</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="academic-shadow">
+            <CardHeader>
+              <CardTitle className="font-academic text-xl text-primary">Interests</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 text-academic-gray">
+              <div>
+                <h4 className="font-medium text-primary">Research Areas</h4>
+                <p className="text-sm">Human-Computer Interaction, AI Ethics, Distributed Systems</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-primary">Personal</h4>
+                <p className="text-sm">Reading, Photography, Chess, Hiking</p>
               </div>
             </CardContent>
           </Card>
