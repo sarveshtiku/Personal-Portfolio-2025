@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter, FileText } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter, FileText, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-geometric.jpg";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
@@ -64,6 +64,9 @@ export default function Home() {
           </a>
           <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Linkedin className="h-6 w-6" />
+          </a>
+          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+            <GraduationCap className="h-6 w-6" />
           </a>
           <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Mail className="h-6 w-6" />
