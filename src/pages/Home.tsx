@@ -50,6 +50,12 @@ export default function Home() {
           <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Mail className="h-6 w-6" />
           </a>
+          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors text-2xl">
+            📷
+          </a>
+          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors text-2xl">
+            🐦
+          </a>
         </div>
       </section>
 
