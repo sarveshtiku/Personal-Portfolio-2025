@@ -305,12 +305,16 @@ The future I'm working toward is one where ethical considerations are built into
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
+  const location = window.location.pathname;
   
-  if (!slug || !blogPosts[slug as keyof typeof blogPosts]) {
+  // Construct the full slug for newsletter articles
+  const fullSlug = location.includes('/newsletter/') ? `newsletter/${slug}` : slug;
+  
+  if (!fullSlug || !blogPosts[fullSlug as keyof typeof blogPosts]) {
     return <Navigate to="/blog" replace />;
   }
   
-  const post = blogPosts[slug as keyof typeof blogPosts];
+  const post = blogPosts[fullSlug as keyof typeof blogPosts];
   
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
