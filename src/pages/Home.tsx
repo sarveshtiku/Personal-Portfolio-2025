@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-geometric.jpg";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
@@ -48,6 +48,12 @@ export default function Home() {
           </Button>
           <Button asChild variant="outline" size="lg">
             <Link to="/about">Learn About Me</Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FileText className="mr-2 h-4 w-4" />
+              View Resume
+            </a>
           </Button>
         </div>
 
