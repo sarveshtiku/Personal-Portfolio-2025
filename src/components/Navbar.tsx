@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X } from "lucide-react";
+import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X, Camera } from "lucide-react";
 
 const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: User },
   { name: "Projects", href: "/projects", icon: FolderOpen },
+  { name: "Gallery", href: "/gallery", icon: Camera },
   { name: "Research", href: "/research", icon: FileText },
   { name: "Blog", href: "/blog", icon: BookOpen },
   { name: "Experience", href: "/experience", icon: Briefcase },
