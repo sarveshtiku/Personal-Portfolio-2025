@@ -52,16 +52,31 @@ export default function About() {
           <Card className="academic-shadow">
             <CardContent className="p-8">
               <h2 className="font-academic text-2xl font-semibold mb-4 text-primary">Philosophy</h2>
-              <div className="text-academic-gray leading-relaxed">
+              <div className="text-academic-gray leading-relaxed space-y-4">
                 <p>
                   I believe in building software that is not just functional, but thoughtful. 
                   Every line of code should serve a purpose, every feature should solve a real problem, 
                   and every project should contribute positively to the world.
                 </p>
+                <p>
+                  My development philosophy centers around three core principles: <strong className="text-primary">simplicity</strong>, 
+                  <strong className="text-primary"> accessibility</strong>, and <strong className="text-primary">sustainability</strong>. 
+                  I strive to write clean, maintainable code that can be understood and improved by future developers, 
+                  while ensuring that the solutions I create are inclusive and environmentally conscious.
+                </p>
+                <p>
+                  In research, I approach problems with intellectual curiosity and methodological rigor. 
+                  I believe that the best solutions emerge from deep understanding of both the technical constraints 
+                  and the human context in which technology operates.
+                </p>
                 <blockquote className="border-l-4 border-warm-orange pl-4 italic mt-4 text-primary-blue">
                   "Technology is best when it brings people together and amplifies human intelligence, 
                   not when it replaces human connection and judgment."
                 </blockquote>
+                <p>
+                  This philosophy drives my commitment to ethical AI development, user-centered design, 
+                  and building systems that enhance rather than diminish human capability and agency.
+                </p>
               </div>
             </CardContent>
           </Card>
