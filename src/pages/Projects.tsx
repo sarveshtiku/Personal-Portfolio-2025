@@ -1,9 +1,12 @@
+import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Filter } from "lucide-react";
 
 export default function Projects() {
+  const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
+
   const projects = [
     {
       title: "Research Data Platform",
@@ -37,6 +40,45 @@ export default function Projects() {
     }
   ];
 
+  // Get all unique technologies for filter options
+  const allSkills = useMemo(() => {
+    const skillsSet = new Set<string>();
+    projects.forEach(project => {
+      project.technologies.forEach(tech => skillsSet.add(tech));
+    });
+    return Array.from(skillsSet).sort();
+  }, []);
+
+  // Filter and sort projects based on selected skills
+  const filteredProjects = useMemo(() => {
+    if (selectedSkills.length === 0) {
+      return projects;
+    }
+    
+    return projects
+      .filter(project => 
+        selectedSkills.some(skill => project.technologies.includes(skill))
+      )
+      .sort((a, b) => {
+        // Sort by number of matching skills (descending)
+        const aMatches = a.technologies.filter(tech => selectedSkills.includes(tech)).length;
+        const bMatches = b.technologies.filter(tech => selectedSkills.includes(tech)).length;
+        return bMatches - aMatches;
+      });
+  }, [selectedSkills]);
+
+  const toggleSkill = (skill: string) => {
+    setSelectedSkills(prev => 
+      prev.includes(skill)
+        ? prev.filter(s => s !== skill)
+        : [...prev, skill]
+    );
+  };
+
+  const clearFilters = () => {
+    setSelectedSkills([]);
+  };
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case "Production":
@@ -63,9 +105,48 @@ export default function Projects() {
         </p>
       </section>
 
+      {/* Skills Filter */}
+      <section className="space-y-6">
+        <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Filter className="h-5 w-5 text-primary" />
+            <h2 className="font-academic text-xl font-semibold text-primary">
+              Filter by Skills
+            </h2>
+            {selectedSkills.length > 0 && (
+              <span className="text-sm text-academic-gray">
+                ({filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''} found)
+              </span>
+            )}
+          </div>
+          {selectedSkills.length > 0 && (
+            <Button variant="outline" onClick={clearFilters} size="sm">
+              Clear Filters
+            </Button>
+          )}
+        </div>
+        
+        <div className="flex flex-wrap gap-2">
+          {allSkills.map((skill) => (
+            <Badge
+              key={skill}
+              variant={selectedSkills.includes(skill) ? "default" : "outline"}
+              className={`cursor-pointer transition-all duration-200 hover:scale-105 ${
+                selectedSkills.includes(skill)
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "hover:bg-accent"
+              }`}
+              onClick={() => toggleSkill(skill)}
+            >
+              {skill}
+            </Badge>
+          ))}
+        </div>
+      </section>
+
       {/* Projects Grid */}
       <section className="grid lg:grid-cols-2 gap-6">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
             <CardHeader>
               <div className="flex justify-between items-start">
