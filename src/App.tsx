@@ -14,7 +14,7 @@ import BlogPost from "./pages/BlogPost";
 import Research from "./pages/Research";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
-import Shelf from "./pages/Shelf";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,7 +37,7 @@ const App = () => (
             <Route path="/blog/newsletter/:slug" element={<BlogPost />} />
             <Route path="/research" element={<Research />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/shelf" element={<Shelf />} />
+            
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
