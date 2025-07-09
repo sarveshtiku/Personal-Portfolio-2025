@@ -18,9 +18,9 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo/Brand */}
           <div className="flex items-center">
-            <h1 className="text-xl font-academic font-bold text-primary">
+            <NavLink to="/" className="text-xl font-academic font-bold text-primary hover:text-primary/80 transition-colors">
               Portfolio
-            </h1>
+            </NavLink>
           </div>
           
           {/* Navigation */}
