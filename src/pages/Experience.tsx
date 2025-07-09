@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, ExternalLink } from "lucide-react";
+import { Calendar, MapPin, ExternalLink, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Experience() {
@@ -32,6 +32,37 @@ export default function Experience() {
         "Led migration from monolith to microservices architecture"
       ],
       technologies: ["React", "Node.js", "AWS", "MongoDB", "Kubernetes"]
+    }
+  ];
+
+  const certifications = [
+    {
+      name: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      date: "2023",
+      id: "AWS-SAA-2023-001",
+      link: "#"
+    },
+    {
+      name: "Google Cloud Professional Cloud Architect",
+      issuer: "Google Cloud",
+      date: "2022", 
+      id: "GCP-PCA-2022-045",
+      link: "#"
+    },
+    {
+      name: "TensorFlow Developer Certificate",
+      issuer: "Google",
+      date: "2022",
+      id: "TF-DEV-2022-789",
+      link: "#"
+    },
+    {
+      name: "Certified Kubernetes Administrator",
+      issuer: "Cloud Native Computing Foundation",
+      date: "2021",
+      id: "CKA-2021-567",
+      link: "#"
     }
   ];
 
@@ -109,6 +140,64 @@ export default function Experience() {
             </CardContent>
           </Card>
         ))}
+      </section>
+
+      {/* Certifications Section */}
+      <section className="space-y-8">
+        <div className="text-center space-y-4">
+          <h2 className="font-academic text-3xl lg:text-4xl font-bold text-primary">
+            Certifications
+          </h2>
+          <p className="text-lg text-academic-gray max-w-xl mx-auto">
+            Professional certifications and achievements in technology and development.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          {certifications.map((cert, index) => (
+            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 p-2 bg-primary/10 rounded-lg">
+                    <Award className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="flex-1 space-y-3">
+                    <div>
+                      <h3 className="font-semibold text-primary text-lg">
+                        {cert.name}
+                      </h3>
+                      <p className="text-warm-orange font-medium">
+                        {cert.issuer}
+                      </p>
+                    </div>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="text-sm text-academic-gray">
+                        <div className="flex items-center gap-1">
+                          <Calendar className="h-4 w-4" />
+                          Obtained: {cert.date}
+                        </div>
+                        <div className="mt-1">
+                          ID: {cert.id}
+                        </div>
+                      </div>
+                      
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        className="gap-1"
+                        onClick={() => window.open(cert.link, '_blank')}
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        Verify
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </section>
     </div>
   );
