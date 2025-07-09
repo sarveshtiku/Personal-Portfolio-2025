@@ -58,25 +58,10 @@ export default function About() {
                   Every line of code should serve a purpose, every feature should solve a real problem, 
                   and every project should contribute positively to the world.
                 </p>
-                <p>
-                  My development philosophy centers around three core principles: <strong className="text-primary">simplicity</strong>, 
-                  <strong className="text-primary"> accessibility</strong>, and <strong className="text-primary">sustainability</strong>. 
-                  I strive to write clean, maintainable code that can be understood and improved by future developers, 
-                  while ensuring that the solutions I create are inclusive and environmentally conscious.
-                </p>
-                <p>
-                  In research, I approach problems with intellectual curiosity and methodological rigor. 
-                  I believe that the best solutions emerge from deep understanding of both the technical constraints 
-                  and the human context in which technology operates.
-                </p>
                 <blockquote className="border-l-4 border-warm-orange pl-4 italic mt-4 text-primary-blue">
                   "Technology is best when it brings people together and amplifies human intelligence, 
                   not when it replaces human connection and judgment."
                 </blockquote>
-                <p>
-                  This philosophy drives my commitment to ethical AI development, user-centered design, 
-                  and building systems that enhance rather than diminish human capability and agency.
-                </p>
               </div>
             </CardContent>
           </Card>
@@ -142,25 +127,6 @@ export default function About() {
             </CardContent>
           </Card>
 
-          <Card className="academic-shadow">
-            <CardHeader>
-              <CardTitle className="font-academic text-xl text-primary">Club Involvement</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3 text-academic-gray text-sm">
-              <div>
-                <h4 className="font-medium text-primary">BDBI</h4>
-                <p>Workshop Lead Analysis</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-primary">DS@GT</h4>
-                <p>Co-Director of External Affairs and Head of Market Insights</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-primary">Trading @ GT</h4>
-                <p>Member</p>
-              </div>
-            </CardContent>
-          </Card>
 
         </div>
       </section>
