@@ -24,8 +24,8 @@ const mockComments: Comment[] = [
   {
     id: "1",
     author: {
-      name: "Alex Chen",
-      initials: "AC"
+      name: "Sample User",
+      initials: "SU"
     },
     content: "This is such a thoughtful take on code reviews! I especially appreciate the emphasis on psychological safety. In my experience, the most productive reviews happen when everyone feels comfortable asking questions.",
     timestamp: "2 hours ago",
@@ -35,8 +35,8 @@ const mockComments: Comment[] = [
       {
         id: "1-1",
         author: {
-          name: "Sarah Kim",
-          initials: "SK"
+          name: "Sample User",
+          initials: "SU"
         },
         content: "Absolutely agree! Creating that safe space is crucial for junior developers especially.",
         timestamp: "1 hour ago",
@@ -48,8 +48,8 @@ const mockComments: Comment[] = [
   {
     id: "2", 
     author: {
-      name: "Marcus Johnson",
-      initials: "MJ"
+      name: "Sample User",
+      initials: "SU"
     },
     content: "The section on asking questions rather than making demands really resonates with me. I've been trying to shift my language in reviews to be more collaborative. Instead of 'This is wrong' I try 'What do you think about trying X approach here?'",
     timestamp: "4 hours ago",
@@ -59,8 +59,8 @@ const mockComments: Comment[] = [
   {
     id: "3",
     author: {
-      name: "Elena Rodriguez", 
-      initials: "ER"
+      name: "Sample User", 
+      initials: "SU"
     },
     content: "Great article! Would love to see a follow-up on handling disagreements in code reviews. Sometimes even with the best intentions, technical discussions can get heated.",
     timestamp: "6 hours ago",
