@@ -13,6 +13,7 @@ const blogPosts = {
     readTime: "8 min read",
     category: "Engineering",
     author: "Your Name",
+    type: "blog",
     content: {
       intro: "Exploring how thoughtful code reviews can transform not just code quality, but team dynamics and knowledge sharing. A deep dive into practical strategies for meaningful peer review.",
       sections: [
@@ -65,6 +66,7 @@ Effective use of these tools includes:
     readTime: "12 min read",
     category: "Architecture",
     author: "Your Name",
+    type: "blog",
     content: {
       intro: "Real-world insights from designing and implementing distributed systems that handle millions of requests. Common pitfalls, architectural decisions, and monitoring strategies.",
       sections: [
@@ -117,6 +119,7 @@ Essential resilience patterns:
     readTime: "10 min read", 
     category: "AI Ethics",
     author: "Your Name",
+    type: "blog",
     content: {
       intro: "Moving beyond theoretical discussions of AI ethics to practical implementation. How to build ethical considerations into your development workflow and decision-making process.",
       sections: [
@@ -162,6 +165,141 @@ Effective engagement includes:
         }
       ]
     }
+  },
+  // Newsletter content
+  "newsletter/summer-reflections-june": {
+    title: "Summer Reflections & New Beginnings",
+    date: "2024-06-15",
+    readTime: "5 min read",
+    category: "Issue #1",
+    author: "Your Name",
+    type: "newsletter",
+    content: {
+      intro: "Summer internship reflections, new projects I'm excited about, and books I'm reading during the break. Plus insights into balancing research with industry work.",
+      sections: [
+        {
+          id: "1.1",
+          title: "Summer Internship Deep Dive",
+          content: `This summer's internship has been a fascinating blend of cutting-edge research and practical application. Working on distributed systems at scale has given me a new appreciation for the complexity that emerges when theoretical concepts meet real-world constraints.
+
+The most valuable lesson so far? The importance of observability. When your system spans multiple services and data centers, understanding what's happening becomes exponentially more difficult—and exponentially more critical.`
+        },
+        {
+          id: "1.2",
+          title: "Reading List & Learning",
+          content: `I've been diving deep into some incredible books this summer:
+
+• "Designing Data-Intensive Applications" by Martin Kleppmann - A masterclass in understanding the fundamentals that power modern systems
+• "Atomic Habits" by James Clear - Surprisingly relevant to engineering practices and code quality
+• "The Design of Everyday Things" by Don Norman - Changing how I think about user interfaces and developer tools
+
+Each book is teaching me something different about building systems that people actually want to use.`
+        },
+        {
+          id: "1.3",
+          title: "New Projects on the Horizon",
+          content: `I'm excited about several projects taking shape:
+
+A personal dashboard for tracking reading progress and research notes - combining my love of books with some fun frontend work. Planning to use React with a clean, academic-inspired design.
+
+Research into improving code review processes through better tooling. There's so much potential to make reviews more effective and less painful for everyone involved.
+
+Contributing to open source projects in the distributed systems space. Nothing beats learning by doing, especially when you can give back to the community.`
+        }
+      ]
+    }
+  },
+  "newsletter/distributed-systems-july": {
+    title: "Deep Dive: Distributed Systems & Conference Highlights",
+    date: "2024-07-15",
+    readTime: "7 min read",
+    category: "Issue #2", 
+    author: "Your Name",
+    type: "newsletter",
+    content: {
+      intro: "A technical deep dive into distributed systems, conference highlights from recent events, and summer coding challenges I've been tackling.",
+      sections: [
+        {
+          id: "1.1",
+          title: "The Reality of Consensus Protocols",
+          content: `After months of working with distributed systems in production, I've gained a new appreciation for consensus protocols like Raft and PBFT. The gap between theory and practice is fascinating.
+
+In theory, these protocols are elegant solutions to fundamental problems. In practice, network partitions happen at the worst possible times, clocks drift more than you expect, and debugging distributed consensus issues requires a whole new level of patience.
+
+The key insight: design for observability from day one. If you can't understand what your consensus protocol is doing when things go wrong, you're in for a very long debugging session.`
+        },
+        {
+          id: "1.2",
+          title: "Conference Learnings: Strange Loop 2024",
+          content: `Strange Loop was incredible this year. Some standout talks that changed how I think about systems:
+
+"The Database Inside Your Database" - A deep dive into how modern databases handle concurrency and consistency. Made me realize how much magic happens under the hood of seemingly simple operations.
+
+"Chaos Engineering: Breaking Things on Purpose" - Practical strategies for building resilient systems by intentionally introducing failures. The key is starting small and building confidence gradually.
+
+"Performance Engineering as a Mindset" - Not just about optimization, but about designing systems that can be optimized. Architecture decisions early on determine what's possible later.`
+        },
+        {
+          id: "1.3",
+          title: "Summer Coding Challenges",
+          content: `I've been working through some fascinating technical challenges:
+
+Building a toy distributed cache to understand cache coherence protocols. Nothing teaches you about distributed systems like implementing one yourself, even if it's just for learning.
+
+Implementing Raft consensus from scratch. The paper makes it look straightforward, but the edge cases are where the real learning happens.
+
+Performance testing and optimization of a high-throughput message queue. Learning that sometimes the biggest performance gains come from understanding your hardware, not just your algorithms.
+
+Each challenge is teaching me something new about the trade-offs that define distributed systems design.`
+        }
+      ]
+    }
+  },
+  "newsletter/ai-ethics-august": {
+    title: "Research Updates & AI Ethics in Practice",
+    date: "2024-08-15",
+    readTime: "6 min read",
+    category: "Issue #3",
+    author: "Your Name", 
+    type: "newsletter",
+    content: {
+      intro: "Latest research updates, side project launches, and my evolving thoughts on the future of AI ethics in software development.",
+      sections: [
+        {
+          id: "1.1",
+          title: "Research Progress: Bias Detection in ML Pipelines",
+          content: `My summer research project is focusing on automated bias detection in machine learning pipelines. The goal is to build tools that can catch potential fairness issues before models reach production.
+
+The most interesting finding so far: bias often emerges not from the model itself, but from the data preprocessing steps. Feature selection, normalization, and even seemingly innocent operations like handling missing values can introduce or amplify bias in unexpected ways.
+
+We're building a framework that tracks potential bias-introducing operations throughout the ML pipeline and suggests alternative approaches. Early results are promising, but there's still so much work to do.`
+        },
+        {
+          id: "1.2",
+          title: "Side Project: Ethical AI Toolkit",
+          content: `I've been working on an open-source toolkit for developers who want to integrate ethical considerations into their AI development process. Think of it as a linter, but for ethics.
+
+The toolkit includes:
+• Bias detection tests that integrate with existing testing frameworks
+• Documentation templates for model cards and data sheets
+• Guidelines for ethical review processes
+• Automated checks for common fairness metrics
+
+The goal isn't to solve AI ethics (that's impossible), but to make ethical development practices as easy as possible for working developers. If it's hard to do the right thing, people won't do it.`
+        },
+        {
+          id: "1.3",
+          title: "Looking Forward: The Future of Responsible AI",
+          content: `As AI becomes more integrated into everyday software, I'm convinced that ethical considerations need to become as routine as security and performance testing.
+
+This means building tools, processes, and education that make ethical AI development the default path, not an extra burden. It means engaging with affected communities throughout the development process, not just at the end.
+
+Most importantly, it means recognizing that ethical AI isn't just a technical problem—it's a social one that requires diverse perspectives and ongoing dialogue.
+
+The future I'm working toward is one where ethical considerations are built into the development process so seamlessly that they feel natural rather than imposed.`
+        }
+      ]
+    }
   }
 };
 
@@ -178,9 +316,12 @@ export default function BlogPost() {
     const colors: { [key: string]: string } = {
       "Engineering": "bg-primary-blue-light text-primary-blue",
       "Architecture": "bg-warm-orange-light text-warm-orange", 
-      "AI Ethics": "bg-success/10 text-success"
+      "AI Ethics": "bg-success/10 text-success",
+      "Issue #1": "bg-warm-orange-light text-warm-orange",
+      "Issue #2": "bg-warm-orange-light text-warm-orange", 
+      "Issue #3": "bg-warm-orange-light text-warm-orange"
     };
-    return colors[category] || "bg-muted text-muted-foreground";
+    return colors[category] || "bg-warm-orange-light text-warm-orange";
   };
 
   return (
