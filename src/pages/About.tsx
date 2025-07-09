@@ -141,6 +141,27 @@ export default function About() {
               </div>
             </CardContent>
           </Card>
+
+          <Card className="academic-shadow">
+            <CardHeader>
+              <CardTitle className="font-academic text-xl text-primary">Club Involvement</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 text-academic-gray text-sm">
+              <div>
+                <h4 className="font-medium text-primary">BDBI</h4>
+                <p>Workshop Lead Analysis</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-primary">DS@GT</h4>
+                <p>Co-Director of External Affairs and Head of Market Insights</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-primary">Trading @ GT</h4>
+                <p>Member</p>
+              </div>
+            </CardContent>
+          </Card>
+
         </div>
       </section>
     </div>
