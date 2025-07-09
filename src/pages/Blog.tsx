@@ -2,7 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CalendarDays, Clock, ArrowRight, Mail, Send } from "lucide-react";
+import { CalendarDays, Clock, ArrowRight, Mail, Send, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -62,6 +67,30 @@ export default function Blog() {
       readTime: "6 min read",
       issue: "Issue #3",
       slug: "newsletter/ai-ethics-august"
+    },
+    {
+      title: "Building in Public: Lessons from Open Source",
+      excerpt: "Reflections on contributing to open source projects, building developer tools, and the importance of community in software development.",
+      date: "2024-09-15",
+      readTime: "8 min read",
+      issue: "Issue #4",
+      slug: "newsletter/open-source-september"
+    },
+    {
+      title: "The Future of Work in Tech: Remote, Hybrid, and Beyond",
+      excerpt: "Exploring the evolving landscape of remote work, collaboration tools, and what the future holds for distributed teams in technology.",
+      date: "2024-10-15",
+      readTime: "6 min read",
+      issue: "Issue #5",
+      slug: "newsletter/future-work-october"
+    },
+    {
+      title: "Year-End Reflections: Growth, Challenges, and What's Next",
+      excerpt: "Looking back on a year of learning, the challenges that shaped my thinking, and exciting plans for the year ahead.",
+      date: "2024-11-15",
+      readTime: "7 min read",
+      issue: "Issue #6",
+      slug: "newsletter/year-end-november"
     }
   ];
 
@@ -210,45 +239,73 @@ export default function Blog() {
 
       {/* Past Newsletter Content */}
       <section>
-        <h2 className="font-academic text-2xl font-semibold mb-6 text-primary">
-          From My Summer Newsletter
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {newsletters.map((newsletter, index) => (
-            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
-                  <Badge className="bg-warm-orange-light text-warm-orange">
-                    {newsletter.issue}
-                  </Badge>
-                  <div className="flex items-center gap-1">
-                    <CalendarDays className="h-3 w-3" />
-                    {new Date(newsletter.date).toLocaleDateString('en-US', { 
-                      month: 'short', 
-                      day: 'numeric' 
-                    })}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="h-3 w-3" />
-                    {newsletter.readTime}
-                  </div>
-                </div>
-                <CardTitle className="font-academic text-xl text-primary leading-tight">
-                  {newsletter.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-academic-gray leading-relaxed">
-                  {newsletter.excerpt}
-                </p>
-                <Button variant="outline" asChild>
-                  <Link to={`/blog/${newsletter.slug}`}>
-                    Read Newsletter <ArrowRight className="ml-2 h-3 w-3" />
+        <div className="flex items-center gap-3 mb-6">
+          <Mail className="h-6 w-6 text-primary" />
+          <h2 className="font-academic text-2xl font-semibold text-primary">My Newsletter Archives</h2>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="sm" className="ml-auto">
+                View All <ChevronDown className="h-4 w-4 ml-1" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-96 max-h-96 overflow-y-auto bg-background border border-border z-50">
+              <div className="p-2 space-y-2">
+                {newsletters.map((newsletter, index) => (
+                  <Link key={index} to={`/blog/${newsletter.slug}`} className="block">
+                    <div className="p-3 hover:bg-accent rounded-md cursor-pointer">
+                      <div className="space-y-1">
+                        <h4 className="font-medium text-primary text-sm">{newsletter.title}</h4>
+                        <p className="text-xs text-academic-gray">{newsletter.excerpt.substring(0, 80)}...</p>
+                        <div className="flex justify-between items-center">
+                          <p className="text-xs text-warm-orange">{new Date(newsletter.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</p>
+                          <Badge className="bg-warm-orange-light text-warm-orange text-xs">{newsletter.issue}</Badge>
+                        </div>
+                      </div>
+                    </div>
                   </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                ))}
+              </div>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+        <div className="overflow-hidden">
+          <div className="flex gap-4 animate-scroll-right">
+            {[...newsletters, ...newsletters].map((newsletter, index) => (
+              <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 flex-shrink-0 w-80">
+                <CardHeader>
+                  <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
+                    <Badge className="bg-warm-orange-light text-warm-orange">
+                      {newsletter.issue}
+                    </Badge>
+                    <div className="flex items-center gap-1">
+                      <CalendarDays className="h-3 w-3" />
+                      {new Date(newsletter.date).toLocaleDateString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric' 
+                      })}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      {newsletter.readTime}
+                    </div>
+                  </div>
+                  <CardTitle className="font-academic text-lg text-primary leading-tight">
+                    {newsletter.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-academic-gray leading-relaxed text-sm">
+                    {newsletter.excerpt.substring(0, 120)}...
+                  </p>
+                  <Button variant="outline" asChild size="sm">
+                    <Link to={`/blog/${newsletter.slug}`}>
+                      Read Newsletter <ArrowRight className="ml-2 h-3 w-3" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
