@@ -293,7 +293,7 @@ export default function Shelf() {
             <Heart className="h-6 w-6 text-primary" />
             <h2 className="font-academic text-2xl font-semibold text-primary">Life I Miss</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
             {nostalgicMoments.map((moment, index) => {
               const backgroundImages = [
                 'https://images.unsplash.com/photo-1721322800607-8c38375eef04', // cozy room
@@ -302,24 +302,28 @@ export default function Shelf() {
               ];
               
               return (
-                <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 relative overflow-hidden">
-                  <div 
-                    className="absolute inset-0 bg-cover bg-center opacity-10"
-                    style={{ backgroundImage: `url(${backgroundImages[index]})` }}
-                  />
-                  <CardContent className="p-6 relative z-10">
-                    <div className="space-y-4">
-                      <h3 className="font-semibold text-primary">{moment.memory}</h3>
-                      <div className="space-y-2">
-                        <p className="text-sm text-academic-gray">
-                          <span className="font-medium text-warm-orange">Feeling:</span> {moment.feeling}
-                        </p>
-                        <p className="text-sm text-academic-gray">
-                          <span className="font-medium text-warm-orange">Vibe:</span> {moment.vibe}
-                        </p>
-                      </div>
+                <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 overflow-hidden">
+                  <div className="flex flex-col h-full">
+                    <div 
+                      className="h-32 bg-cover bg-center relative"
+                      style={{ backgroundImage: `url(${backgroundImages[index]})` }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/20" />
                     </div>
-                  </CardContent>
+                    <CardContent className="p-6 flex-1">
+                      <div className="space-y-4">
+                        <h3 className="font-semibold text-primary">{moment.memory}</h3>
+                        <div className="space-y-2">
+                          <p className="text-sm text-academic-gray">
+                            <span className="font-medium text-warm-orange">Feeling:</span> {moment.feeling}
+                          </p>
+                          <p className="text-sm text-academic-gray">
+                            <span className="font-medium text-warm-orange">Vibe:</span> {moment.vibe}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </div>
                 </Card>
               );
             })}
