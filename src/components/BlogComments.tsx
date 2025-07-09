@@ -200,10 +200,6 @@ export function BlogComments() {
                 Reply
               </Button>
             )}
-            
-            <Button variant="ghost" size="sm" className="h-7 px-2 text-academic-gray">
-              <MoreHorizontal className="h-3 w-3" />
-            </Button>
           </div>
           
           {replyingTo === comment.id && (
