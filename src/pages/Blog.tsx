@@ -38,6 +38,33 @@ export default function Blog() {
     }
   ];
 
+  const newsletters = [
+    {
+      title: "Summer Reflections & New Beginnings",
+      excerpt: "Summer internship reflections, new projects I'm excited about, and books I'm reading during the break. Plus insights into balancing research with industry work.",
+      date: "2024-06-15",
+      readTime: "5 min read",
+      issue: "Issue #1",
+      slug: "newsletter/summer-reflections-june"
+    },
+    {
+      title: "Deep Dive: Distributed Systems & Conference Highlights", 
+      excerpt: "A technical deep dive into distributed systems, conference highlights from recent events, and summer coding challenges I've been tackling.",
+      date: "2024-07-15",
+      readTime: "7 min read",
+      issue: "Issue #2", 
+      slug: "newsletter/distributed-systems-july"
+    },
+    {
+      title: "Research Updates & AI Ethics in Practice",
+      excerpt: "Latest research updates, side project launches, and my evolving thoughts on the future of AI ethics in software development.",
+      date: "2024-08-15",
+      readTime: "6 min read",
+      issue: "Issue #3",
+      slug: "newsletter/ai-ethics-august"
+    }
+  ];
+
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
       "Engineering": "bg-primary-blue-light text-primary-blue",
@@ -186,42 +213,42 @@ export default function Blog() {
         <h2 className="font-academic text-2xl font-semibold mb-6 text-primary">
           From My Summer Newsletter
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Card className="academic-shadow">
-            <CardContent className="p-4">
-              <div className="space-y-2">
-                <h3 className="font-semibold text-primary">Issue #1 - June</h3>
-                <p className="text-sm text-academic-gray">
-                  Summer internship reflections, new projects I'm excited about, and books I'm reading during the break.
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {newsletters.map((newsletter, index) => (
+            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
+                  <Badge className="bg-warm-orange-light text-warm-orange">
+                    {newsletter.issue}
+                  </Badge>
+                  <div className="flex items-center gap-1">
+                    <CalendarDays className="h-3 w-3" />
+                    {new Date(newsletter.date).toLocaleDateString('en-US', { 
+                      month: 'short', 
+                      day: 'numeric' 
+                    })}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock className="h-3 w-3" />
+                    {newsletter.readTime}
+                  </div>
+                </div>
+                <CardTitle className="font-academic text-xl text-primary leading-tight">
+                  {newsletter.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-academic-gray leading-relaxed">
+                  {newsletter.excerpt}
                 </p>
-                <Badge variant="outline" className="text-xs">June 2024</Badge>
-              </div>
-            </CardContent>
-          </Card>
-          
-          <Card className="academic-shadow">
-            <CardContent className="p-4">
-              <div className="space-y-2">
-                <h3 className="font-semibold text-primary">Issue #2 - July</h3>
-                <p className="text-sm text-academic-gray">
-                  Deep dive into distributed systems, conference highlights, and summer coding challenges I've been working on.
-                </p>
-                <Badge variant="outline" className="text-xs">July 2024</Badge>
-              </div>
-            </CardContent>
-          </Card>
-          
-          <Card className="academic-shadow">
-            <CardContent className="p-4">
-              <div className="space-y-2">
-                <h3 className="font-semibold text-primary">Issue #3 - August</h3>
-                <p className="text-sm text-academic-gray">
-                  Research updates, side project launches, and thoughts on the future of AI ethics in development.
-                </p>
-                <Badge variant="outline" className="text-xs">August 2024</Badge>
-              </div>
-            </CardContent>
-          </Card>
+                <Button variant="outline" asChild>
+                  <Link to={`/blog/${newsletter.slug}`}>
+                    Read Newsletter <ArrowRight className="ml-2 h-3 w-3" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </section>
 
