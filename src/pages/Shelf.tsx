@@ -301,8 +301,17 @@ export default function Shelf() {
                 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21'  // ocean wave
               ];
               
+              const handleCardClick = () => {
+                // TODO: Implement song playing functionality
+                console.log(`Playing song for: ${moment.memory}`);
+              };
+              
               return (
-                <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 overflow-hidden">
+                <Card 
+                  key={index} 
+                  className="academic-shadow hover:warm-shadow transition-all duration-300 overflow-hidden cursor-pointer hover:scale-105"
+                  onClick={handleCardClick}
+                >
                   <div className="flex flex-col h-full">
                     <div 
                       className="h-32 bg-cover bg-center relative"
@@ -313,14 +322,7 @@ export default function Shelf() {
                     <CardContent className="p-6 flex-1">
                       <div className="space-y-4">
                         <h3 className="font-semibold text-primary">{moment.memory}</h3>
-                        <div className="space-y-2">
-                          <p className="text-sm text-academic-gray">
-                            <span className="font-medium text-warm-orange">Feeling:</span> {moment.feeling}
-                          </p>
-                          <p className="text-sm text-academic-gray">
-                            <span className="font-medium text-warm-orange">Vibe:</span> {moment.vibe}
-                          </p>
-                        </div>
+                        <p className="text-sm text-academic-gray">Click to play the memory's song</p>
                       </div>
                     </CardContent>
                   </div>
