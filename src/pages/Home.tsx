@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-geometric.jpg";
 
@@ -50,11 +50,11 @@ export default function Home() {
           <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Mail className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors text-2xl">
-            📷
+          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+            <Instagram className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors text-2xl">
-            🐦
+          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+            <Twitter className="h-6 w-6" />
           </a>
         </div>
       </section>
