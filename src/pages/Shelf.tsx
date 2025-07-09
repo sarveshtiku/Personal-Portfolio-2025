@@ -1,7 +1,13 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Book, FileText, Music, MapPin, Heart, ExternalLink } from "lucide-react";
+import { Book, FileText, MapPin, Heart, ExternalLink, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Shelf() {
   const currentReads = [
@@ -103,80 +109,6 @@ export default function Shelf() {
     }
   ];
 
-  const currentSongs = [
-    {
-      title: "As It Was",
-      artist: "Harry Styles",
-      album: "Harry's House",
-      mood: "Nostalgic"
-    },
-    {
-      title: "Heat Waves",
-      artist: "Glass Animals",
-      album: "Dreamland",
-      mood: "Chill"
-    },
-    {
-      title: "Blinding Lights",
-      artist: "The Weeknd",
-      album: "After Hours",
-      mood: "Energetic"
-    },
-    {
-      title: "Levitating",
-      artist: "Dua Lipa",
-      album: "Future Nostalgia",
-      mood: "Upbeat"
-    },
-    {
-      title: "Good 4 U",
-      artist: "Olivia Rodrigo",
-      album: "SOUR",
-      mood: "Angry"
-    },
-    {
-      title: "Watermelon Sugar",
-      artist: "Harry Styles",
-      album: "Fine Line",
-      mood: "Happy"
-    },
-    {
-      title: "drivers license",
-      artist: "Olivia Rodrigo",
-      album: "SOUR",
-      mood: "Melancholic"
-    },
-    {
-      title: "Stay",
-      artist: "The Kid LAROI & Justin Bieber",
-      album: "F*CK LOVE 3",
-      mood: "Romantic"
-    },
-    {
-      title: "Anti-Hero",
-      artist: "Taylor Swift",
-      album: "Midnights",
-      mood: "Introspective"
-    },
-    {
-      title: "Flowers",
-      artist: "Miley Cyrus",
-      album: "Endless Summer Vacation",
-      mood: "Empowering"
-    },
-    {
-      title: "Unholy",
-      artist: "Sam Smith ft. Kim Petras",
-      album: "Gloria",
-      mood: "Dark"
-    },
-    {
-      title: "Bad Habit",
-      artist: "Steve Lacy",
-      album: "Gemini Rights",
-      mood: "Groovy"
-    }
-  ];
 
   const travelWishlist = [
     {
@@ -288,6 +220,29 @@ export default function Shelf() {
           <div className="flex items-center gap-3 mb-6">
             <FileText className="h-6 w-6 text-primary" />
             <h2 className="font-academic text-2xl font-semibold text-primary">Research Papers</h2>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline" size="sm" className="ml-auto">
+                  View All <ChevronDown className="h-4 w-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-96 max-h-96 overflow-y-auto bg-background border border-border">
+                <div className="p-2 space-y-2">
+                  {currentPapers.map((paper, index) => (
+                    <div key={index} className="p-3 hover:bg-accent rounded-md cursor-pointer">
+                      <div className="space-y-1">
+                        <h4 className="font-medium text-primary text-sm">{paper.title}</h4>
+                        <p className="text-xs text-academic-gray">{paper.authors}</p>
+                        <div className="flex justify-between items-center">
+                          <p className="text-xs text-warm-orange">{paper.venue}</p>
+                          <Badge variant="outline" className="text-xs">{paper.field}</Badge>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
           <div className="overflow-hidden">
             <div className="flex gap-4 animate-scroll-left">
@@ -301,32 +256,6 @@ export default function Shelf() {
                         <p className="text-xs text-warm-orange">{paper.venue}</p>
                       </div>
                       <Badge variant="outline" className="text-xs">{paper.field}</Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Current Music */}
-        <section>
-          <div className="flex items-center gap-3 mb-6">
-            <Music className="h-6 w-6 text-primary" />
-            <h2 className="font-academic text-2xl font-semibold text-primary">On Repeat</h2>
-          </div>
-          <div className="overflow-hidden">
-            <div className="flex gap-4 animate-scroll-right">
-              {[...currentSongs, ...currentSongs].map((song, index) => (
-                <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 flex-shrink-0 w-72">
-                  <CardContent className="p-4">
-                    <div className="space-y-3">
-                      <div>
-                        <h3 className="font-semibold text-primary">{song.title}</h3>
-                        <p className="text-sm text-academic-gray">{song.artist}</p>
-                        <p className="text-xs text-warm-orange">{song.album}</p>
-                      </div>
-                      <Badge variant="outline" className="text-xs">{song.mood}</Badge>
                     </div>
                   </CardContent>
                 </Card>
