@@ -59,22 +59,22 @@ export default function Home() {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-6 pt-8">
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+          <a href="https://github.com/sarveshtiku" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Github className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+          <a href="https://www.linkedin.com/in/sarveshtiku/" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+          <a href="https://scholar.google.com/citations?user=KB6pL-sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
             <GraduationCap className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+          <a href="/contact" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Mail className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+          <a href="https://www.instagram.com/sarvesh_tiku/" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Instagram className="h-6 w-6" />
           </a>
-          <a href="#" className="text-academic-gray hover:text-warm-orange transition-colors">
+          <a href="https://x.com/sarveshtiku" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Twitter className="h-6 w-6" />
           </a>
         </div>

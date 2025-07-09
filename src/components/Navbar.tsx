@@ -23,7 +23,7 @@ export function Navbar() {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <NavLink to="/" className="text-xl font-academic font-bold text-primary hover:text-primary/80 transition-colors">
-              Portfolio
+              sarveshtiku.com
             </NavLink>
           </div>
           
