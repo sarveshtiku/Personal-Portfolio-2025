@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 220 13% 96%;
     --muted-foreground: 220 9% 46%;
 
-    --accent: 25 95% 53%;
+    --accent: 210 100% 85%;
     --accent-foreground: 0 0% 98%;
 
     --success: 142 76% 36%;
@@ -45,8 +45,8 @@ All colors MUST be HSL.
     /* Custom design tokens */
     --primary-blue: 210 100% 26%;
     --primary-blue-light: 210 100% 95%;
-    --warm-orange: 25 95% 53%;
-    --warm-orange-light: 25 100% 95%;
+    --warm-orange: 210 100% 85%;
+    --warm-orange-light: 210 100% 95%;
     --geometric-gold: 45 93% 58%;
     --academic-gray: 220 9% 46%;
     --subtle-gray: 220 13% 96%;
