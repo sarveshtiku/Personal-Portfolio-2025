@@ -40,7 +40,7 @@ export default function Research() {
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <GraduationCap className="mr-2 h-5 w-5" />
-              🎓 Google Scholar Profile
+              Google Scholar Profile
             </a>
           </Button>
         </div>
