@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Book, FileText, MapPin, Heart, ExternalLink, ChevronDown } from "lucide-react";
+import { Book, FileText, MapPin, Heart, ExternalLink, ChevronDown, Play, Pause } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export default function Shelf() {
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
+  const [progress, setProgress] = useState<{ [key: number]: number }>({});
   const currentReads = [
     {
       title: "Atomic Habits",
@@ -301,28 +303,84 @@ export default function Shelf() {
                 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21'  // ocean wave
               ];
               
-              const handleCardClick = () => {
-                // TODO: Implement song playing functionality
-                console.log(`Playing song for: ${moment.memory}`);
+              const isPlaying = playingIndex === index;
+              const currentProgress = progress[index] || 0;
+              
+              const handlePlayClick = () => {
+                if (isPlaying) {
+                  // Stop playing
+                  setPlayingIndex(null);
+                  setProgress(prev => ({ ...prev, [index]: 0 }));
+                } else {
+                  // Start playing
+                  setPlayingIndex(index);
+                  setProgress(prev => ({ ...prev, [index]: 0 }));
+                  
+                  // Animate progress over 15 seconds
+                  const startTime = Date.now();
+                  const duration = 15000; // 15 seconds
+                  
+                  const updateProgress = () => {
+                    const elapsed = Date.now() - startTime;
+                    const progressPercent = Math.min((elapsed / duration) * 100, 100);
+                    
+                    setProgress(prev => ({ ...prev, [index]: progressPercent }));
+                    
+                    if (progressPercent < 100 && playingIndex === index) {
+                      requestAnimationFrame(updateProgress);
+                    } else {
+                      // Song finished
+                      setPlayingIndex(null);
+                      setProgress(prev => ({ ...prev, [index]: 0 }));
+                    }
+                  };
+                  
+                  requestAnimationFrame(updateProgress);
+                }
+                
+                // TODO: Implement actual song playing functionality
+                console.log(`${isPlaying ? 'Stopping' : 'Playing'} song for: ${moment.memory}`);
               };
               
               return (
                 <Card 
                   key={index} 
-                  className="academic-shadow hover:warm-shadow transition-all duration-300 overflow-hidden cursor-pointer hover:scale-105"
-                  onClick={handleCardClick}
+                  className="academic-shadow hover:warm-shadow transition-all duration-300 overflow-hidden"
                 >
                   <div className="flex flex-col h-full">
                     <div 
                       className="h-32 bg-cover bg-center relative"
                       style={{ backgroundImage: `url(${backgroundImages[index]})` }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/20" />
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/40" />
+                      
+                      {/* Play Button */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Button
+                          size="sm"
+                          className="bg-background/90 hover:bg-background text-primary rounded-full w-12 h-12 p-0"
+                          onClick={handlePlayClick}
+                        >
+                          {isPlaying ? (
+                            <Pause className="h-5 w-5" />
+                          ) : (
+                            <Play className="h-5 w-5 ml-1" />
+                          )}
+                        </Button>
+                      </div>
+                      
+                      {/* Progress Bar */}
+                      <div className="absolute bottom-0 left-0 right-0 h-1 bg-background/30">
+                        <div 
+                          className="h-full bg-warm-orange transition-all duration-100"
+                          style={{ width: `${currentProgress}%` }}
+                        />
+                      </div>
                     </div>
+                    
                     <CardContent className="p-6 flex-1">
                       <div className="space-y-4">
                         <h3 className="font-semibold text-primary">{moment.memory}</h3>
-                        <p className="text-sm text-academic-gray">Click to play the memory's song</p>
                       </div>
                     </CardContent>
                   </div>
