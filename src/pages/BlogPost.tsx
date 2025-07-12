@@ -88,9 +88,7 @@ Stripe Sessions 2025 opened with a striking statistic: over 2 million U.S. busin
 
 Stripe mirrors this in its architecture: Connect and Radar push intelligence out to the edge—blocking fraud and routing payments locally—yet they all report back to a central control plane. That core layer enforces policies, gathers metrics, and ensures every service stays in sync.
 
-To me this all connected back to how AI agents work: they pull in the right context, cache hot data for speed, and run tasks in parallel, all under a governance shell that logs every move and enforces rules. Yank out that central shell, and your edge nodes—whether payment services or bots—drift apart, creating blind spots and compliance risks.
-
-"You can't hire trust. You have to build it." – Mark Zuckerberg`
+To me this all connected back to how AI agents work: they pull in the right context, cache hot data for speed, and run tasks in parallel, all under a governance shell that logs every move and enforces rules. Yank out that central shell, and your edge nodes—whether payment services or bots—drift apart, creating blind spots and compliance risks.`
         },
         {
           id: "1.3", 
