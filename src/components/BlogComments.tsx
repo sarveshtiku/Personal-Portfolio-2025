@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Heart, MessageCircle, Reply, MoreHorizontal, Edit2, Trash2 } from "lucide-react";
@@ -74,6 +75,7 @@ const mockComments: Comment[] = [
 export function BlogComments() {
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
+  const [userName, setUserName] = useState("");
   const [replyingTo, setReplyingTo] = useState<string | null>(null);
   const [replyText, setReplyText] = useState("");
   const [editingComment, setEditingComment] = useState<string | null>(null);
@@ -81,6 +83,14 @@ export function BlogComments() {
   const [totalLikes, setTotalLikes] = useState(0);
   const [isPostLiked, setIsPostLiked] = useState(false);
   const { toast } = useToast();
+
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase())
+      .slice(0, 2)
+      .join('');
+  };
 
   const handleLike = (commentId: string) => {
     setComments(prev => 
@@ -118,13 +128,13 @@ export function BlogComments() {
   };
 
   const handleAddComment = () => {
-    if (!newComment.trim()) return;
+    if (!newComment.trim() || !userName.trim()) return;
     
     const comment: Comment = {
       id: Date.now().toString(),
       author: {
-        name: "You",
-        initials: "YU"
+        name: userName,
+        initials: getInitials(userName)
       },
       content: newComment,
       timestamp: "Just now",
@@ -137,13 +147,13 @@ export function BlogComments() {
   };
 
   const handleAddReply = (parentId: string) => {
-    if (!replyText.trim()) return;
+    if (!replyText.trim() || !userName.trim()) return;
     
     const reply: Comment = {
       id: `${parentId}-${Date.now()}`,
       author: {
-        name: "You", 
-        initials: "YU"
+        name: userName, 
+        initials: getInitials(userName)
       },
       content: replyText,
       timestamp: "Just now",
@@ -244,7 +254,7 @@ export function BlogComments() {
               <span className="text-academic-gray">{comment.timestamp}</span>
             </div>
             
-            {comment.author.name === "You" && (
+            {comment.author.name === userName && (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="sm" className="h-7 w-7 p-0">
@@ -386,21 +396,36 @@ export function BlogComments() {
           <CardTitle className="text-lg font-academic">Join the Discussion</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="flex items-start gap-3">
-            <Avatar className="h-8 w-8">
-              <AvatarFallback className="text-xs">YU</AvatarFallback>
-            </Avatar>
-            <div className="flex-1 space-y-3">
-              <Textarea
-                placeholder="Share your thoughts on this article..."
-                value={newComment}
-                onChange={(e) => setNewComment(e.target.value)}
-                className="min-h-[100px] resize-none"
-              />
-              <div className="flex justify-end">
-                <Button onClick={handleAddComment} disabled={!newComment.trim()}>
-                  Post Comment
-                </Button>
+          <div className="space-y-3">
+            <Input
+              placeholder="Enter your name"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              className="max-w-sm"
+            />
+            
+            <div className="flex items-start gap-3">
+              <Avatar className="h-8 w-8">
+                <AvatarFallback className="text-xs">
+                  {userName ? getInitials(userName) : "?"}
+                </AvatarFallback>
+              </Avatar>
+              <div className="flex-1 space-y-3">
+                <Textarea
+                  placeholder={userName ? "Share your thoughts on this article..." : "Please enter your name first"}
+                  value={newComment}
+                  onChange={(e) => setNewComment(e.target.value)}
+                  className="min-h-[100px] resize-none"
+                  disabled={!userName.trim()}
+                />
+                <div className="flex justify-end">
+                  <Button 
+                    onClick={handleAddComment} 
+                    disabled={!newComment.trim() || !userName.trim()}
+                  >
+                    Post Comment
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
