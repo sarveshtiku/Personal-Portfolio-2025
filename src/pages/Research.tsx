@@ -38,6 +38,16 @@ export default function Research() {
           Exploring the intersection of human behavior, technology, and ethics through 
           rigorous research and empirical studies.
         </p>
+        
+        {/* ICMI Conference Banner */}
+        <div className="flex justify-center pt-4 pb-2">
+          <img 
+            src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
+            alt="ICMI 2024 Conference Logo"
+            className="w-96 h-auto"
+          />
+        </div>
+        
         <div className="flex justify-center pt-4">
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
             <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4xxpk46Nnyc6_R33u0nGUbSJXUY7rgCHhjK5seT4-urV0y3qz48kkfj8FfSsDLaEC3_x4U51pkPORGnbw&user=KB6pL-sAAAAJ" target="_blank" rel="noopener noreferrer">
@@ -57,29 +67,13 @@ export default function Research() {
           {papers.map((paper, index) => (
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
               <CardHeader className="relative">
-                {paper.title === "Mitigation of User-Prompt Bias in Large Language Models" && (
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-1">
-                      <CardTitle className="font-academic text-xl text-primary">
-                        {paper.title}
-                      </CardTitle>
-                      {paper.subtitle && (
-                        <p className="font-academic text-base text-muted-foreground italic mt-1">
-                          {paper.subtitle}
-                        </p>
-                      )}
-                    </div>
-                    <img 
-                      src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
-                      alt="ICMI 2024 Conference Logo"
-                      className="w-60 h-auto flex-shrink-0"
-                    />
-                  </div>
-                )}
-                {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && (
-                  <CardTitle className="font-academic text-xl text-primary">
-                    {paper.title}
-                  </CardTitle>
+                <CardTitle className="font-academic text-xl text-primary">
+                  {paper.title}
+                </CardTitle>
+                {paper.subtitle && (
+                  <p className="font-academic text-base text-muted-foreground italic mt-1">
+                    {paper.subtitle}
+                  </p>
                 )}
               </CardHeader>
               <CardContent className="space-y-4">
