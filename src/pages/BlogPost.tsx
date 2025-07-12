@@ -607,31 +607,30 @@ export default function BlogPost() {
         </div>
         
         {Object.entries(groupedPeople).map(([category, people]) => (
-          <div key={category} className="space-y-3">
-            <h4 className="font-semibold text-primary text-lg">{category}</h4>
-            <div className="grid gap-3">
+          <div key={category} className="space-y-2">
+            <h4 className="font-semibold text-primary text-base">{category}</h4>
+            <div className="grid gap-2">
               {people.map((person) => (
-                <Card key={person.name} className="p-4 hover:shadow-md transition-shadow">
-                  <div className="flex items-center gap-4">
-                    <Avatar className="h-12 w-12">
-                      <AvatarFallback className="bg-primary-blue-light text-primary-blue font-semibold">
+                <Card key={person.name} className="p-3 hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3">
+                    <Avatar className="h-8 w-8">
+                      <AvatarFallback className="bg-primary-blue-light text-primary-blue font-semibold text-xs">
                         {getInitials(person.name)}
                       </AvatarFallback>
                     </Avatar>
                     <div className="flex-1">
-                      <h5 className="font-semibold text-primary">{person.name}</h5>
-                      <p className="text-sm text-academic-gray">{person.role}</p>
+                      <h5 className="font-semibold text-primary text-sm">{person.name}</h5>
+                      <p className="text-xs text-academic-gray">{person.role}</p>
                     </div>
                     <Button variant="outline" size="sm" asChild>
                       <a
                         href={person.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2"
+                        className="flex items-center gap-1 text-xs px-2 py-1"
                       >
-                        <Linkedin className="h-4 w-4" />
-                        LinkedIn
-                        <ExternalLink className="h-3 w-3" />
+                        <Linkedin className="h-3 w-3" />
+                        <ExternalLink className="h-2 w-2" />
                       </a>
                     </Button>
                   </div>
