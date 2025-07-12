@@ -82,6 +82,8 @@ Stripe Sessions 2025 opened with a striking statistic: over 2 million U.S. busin
         {
           id: "1.2",
           title: "Meta's Autonomy Mantra", 
+          image: "/lovable-uploads/4685ec1c-467d-4eed-9286-53c7396346d4.png",
+          imageCaption: '"You can\'t hire trust. You have to build it." – Mark Zuckerberg',
           content: `Zuckerberg flipped the idea that scaling means letting go. He argued real autonomy comes from a strong nucleus—a constant feedback loop of quick strategy check-ins and rapid decision reviews that keep every team aligned and prevent feature drift.
 
 Stripe mirrors this in its architecture: Connect and Radar push intelligence out to the edge—blocking fraud and routing payments locally—yet they all report back to a central control plane. That core layer enforces policies, gathers metrics, and ensures every service stays in sync.
