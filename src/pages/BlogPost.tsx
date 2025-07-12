@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { BlogComments } from "@/components/BlogComments";
 
 
 const blogPosts = {
@@ -678,6 +679,11 @@ export default function BlogPost() {
             </CardContent>
           </Card>
         </aside>
+      </div>
+
+      {/* Comments Section */}
+      <div className="mt-12">
+        <BlogComments />
       </div>
     </div>
   );
