@@ -615,28 +615,27 @@ export default function BlogPost() {
         {Object.entries(groupedPeople).map(([category, people]) => (
           <div key={category} className="space-y-2">
             <h4 className="font-semibold text-primary text-base">{category}</h4>
-            <div className="grid gap-2">
+            <div className="grid grid-cols-2 gap-2">
               {people.map((person) => (
-                <Card key={person.name} className="p-3 hover:shadow-md transition-shadow">
-                  <div className="flex items-center gap-3">
-                    <Avatar className="h-8 w-8">
+                <Card key={person.name} className="p-2 hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2">
+                    <Avatar className="h-6 w-6">
                       <AvatarFallback className="bg-primary-blue-light text-primary-blue font-semibold text-xs">
                         {getInitials(person.name)}
                       </AvatarFallback>
                     </Avatar>
-                    <div className="flex-1">
-                      <h5 className="font-semibold text-primary text-sm">{person.name}</h5>
-                      <p className="text-xs text-academic-gray">{person.role}</p>
+                    <div className="flex-1 min-w-0">
+                      <h5 className="font-semibold text-primary text-xs truncate">{person.name}</h5>
+                      <p className="text-xs text-academic-gray truncate">{person.role}</p>
                     </div>
                     <Button variant="outline" size="sm" asChild>
                       <a
                         href={person.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-xs px-2 py-1"
+                        className="flex items-center gap-1 text-xs px-1 py-1"
                       >
                         <Linkedin className="h-3 w-3" />
-                        <ExternalLink className="h-2 w-2" />
                       </a>
                     </Button>
                   </div>
