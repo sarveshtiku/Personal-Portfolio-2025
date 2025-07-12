@@ -85,7 +85,14 @@ export default function Research() {
                 <div className="flex items-center gap-4 text-sm text-academic-gray">
                   <div className="flex items-center gap-1">
                     <FileText className="h-4 w-4" />
-                    {paper.venue}
+                    <a 
+                      href="https://ieeexplore.ieee.org/xpl/conhome/10585267/proceeding" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary hover:underline transition-colors"
+                    >
+                      {paper.venue}
+                    </a>
                   </div>
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
