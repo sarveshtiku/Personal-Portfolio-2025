@@ -595,7 +595,7 @@ export default function BlogPost() {
         </article>
 
         {/* Table of Contents Sidebar */}
-        <aside className="lg:sticky lg:top-8 lg:self-start">
+        <aside className="lg:sticky lg:top-8 lg:self-start space-y-6">
           <Card className="academic-shadow">
             <CardContent className="p-6">
               <h3 className="font-academic text-lg font-semibold text-primary mb-4">
@@ -611,6 +611,57 @@ export default function BlogPost() {
                     {section.id} {section.title}
                   </a>
                 ))}
+              </nav>
+            </CardContent>
+          </Card>
+
+          {/* Resources Section */}
+          <Card className="academic-shadow">
+            <CardContent className="p-6">
+              <h3 className="font-academic text-lg font-semibold text-primary mb-4">
+                Resources
+              </h3>
+              <nav className="space-y-3">
+                <a
+                  href="https://stripe.com/sessions/2025/product-keynote"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                >
+                  1. Listen to the Product Keynote
+                </a>
+                <a
+                  href="https://stripe.com/startups"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                >
+                  2. Grow your business with Stripe
+                </a>
+                <a
+                  href="https://docs.stripe.com/api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                >
+                  3. API Docs for developers
+                </a>
+                <a
+                  href="https://stripe.com/payments/payment-links"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                >
+                  4. No Code Payment Links
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=_YCC9Osq6y4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                >
+                  5. Have no idea where to begin? A complete Stripe tutorial
+                </a>
               </nav>
             </CardContent>
           </Card>
