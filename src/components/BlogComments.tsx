@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Heart, MessageCircle, Reply, MoreHorizontal } from "lucide-react";
+import { Heart, MessageCircle, Reply, MoreHorizontal, Edit2, Trash2 } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { useToast } from "@/hooks/use-toast";
 
 interface Comment {
   id: string;
@@ -74,8 +76,11 @@ export function BlogComments() {
   const [newComment, setNewComment] = useState("");
   const [replyingTo, setReplyingTo] = useState<string | null>(null);
   const [replyText, setReplyText] = useState("");
+  const [editingComment, setEditingComment] = useState<string | null>(null);
+  const [editText, setEditText] = useState("");
   const [totalLikes, setTotalLikes] = useState(0);
   const [isPostLiked, setIsPostLiked] = useState(false);
+  const { toast } = useToast();
 
   const handleLike = (commentId: string) => {
     setComments(prev => 
@@ -162,6 +167,68 @@ export function BlogComments() {
     setReplyingTo(null);
   };
 
+  const handleEditComment = (commentId: string) => {
+    const comment = findComment(commentId);
+    if (comment) {
+      setEditingComment(commentId);
+      setEditText(comment.content);
+    }
+  };
+
+  const handleSaveEdit = (commentId: string) => {
+    if (!editText.trim()) return;
+
+    const updateComment = (comments: Comment[]): Comment[] => {
+      return comments.map(comment => {
+        if (comment.id === commentId) {
+          return { ...comment, content: editText, timestamp: "Just now (edited)" };
+        }
+        if (comment.replies) {
+          return { ...comment, replies: updateComment(comment.replies) };
+        }
+        return comment;
+      });
+    };
+
+    setComments(updateComment(comments));
+    setEditingComment(null);
+    setEditText("");
+    toast({
+      title: "Comment updated",
+      description: "Your comment has been successfully updated.",
+    });
+  };
+
+  const handleDeleteComment = (commentId: string) => {
+    const deleteComment = (comments: Comment[]): Comment[] => {
+      return comments.filter(comment => {
+        if (comment.id === commentId) return false;
+        if (comment.replies) {
+          comment.replies = deleteComment(comment.replies);
+        }
+        return true;
+      });
+    };
+
+    setComments(deleteComment(comments));
+    toast({
+      title: "Comment deleted",
+      description: "Your comment has been successfully deleted.",
+    });
+  };
+
+  const findComment = (commentId: string): Comment | null => {
+    for (const comment of comments) {
+      if (comment.id === commentId) return comment;
+      if (comment.replies) {
+        for (const reply of comment.replies) {
+          if (reply.id === commentId) return reply;
+        }
+      }
+    }
+    return null;
+  };
+
   const CommentComponent = ({ comment, isReply = false }: { comment: Comment; isReply?: boolean }) => (
     <div className={`space-y-3 ${isReply ? 'ml-8 border-l border-border pl-4' : ''}`}>
       <div className="flex items-start gap-3">
@@ -171,12 +238,62 @@ export function BlogComments() {
         </Avatar>
         
         <div className="flex-1 space-y-2">
-          <div className="flex items-center gap-2 text-sm">
-            <span className="font-medium text-primary">{comment.author.name}</span>
-            <span className="text-academic-gray">{comment.timestamp}</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-sm">
+              <span className="font-medium text-primary">{comment.author.name}</span>
+              <span className="text-academic-gray">{comment.timestamp}</span>
+            </div>
+            
+            {comment.author.name === "You" && (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="sm" className="h-7 w-7 p-0">
+                    <MoreHorizontal className="h-3 w-3" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem onClick={() => handleEditComment(comment.id)}>
+                    <Edit2 className="h-3 w-3 mr-2" />
+                    Edit
+                  </DropdownMenuItem>
+                  <DropdownMenuItem 
+                    onClick={() => handleDeleteComment(comment.id)}
+                    className="text-destructive"
+                  >
+                    <Trash2 className="h-3 w-3 mr-2" />
+                    Delete
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            )}
           </div>
           
-          <p className="text-academic-gray leading-relaxed">{comment.content}</p>
+          {editingComment === comment.id ? (
+            <div className="space-y-2 animate-fade-in">
+              <Textarea
+                value={editText}
+                onChange={(e) => setEditText(e.target.value)}
+                className="min-h-[80px] resize-none"
+              />
+              <div className="flex gap-2">
+                <Button size="sm" onClick={() => handleSaveEdit(comment.id)}>
+                  Save
+                </Button>
+                <Button 
+                  size="sm" 
+                  variant="ghost" 
+                  onClick={() => {
+                    setEditingComment(null);
+                    setEditText("");
+                  }}
+                >
+                  Cancel
+                </Button>
+              </div>
+            </div>
+          ) : (
+            <p className="text-academic-gray leading-relaxed">{comment.content}</p>
+          )}
           
           <div className="flex items-center gap-4">
             <Button
