@@ -102,12 +102,17 @@ We wrapped up the session with Werner Gropp, Senior Product Marketing Manager at
         {
           id: "1.4",
           title: "API Deep Dive: Thin Events",
+          image: "/lovable-uploads/0ce3ca2c-0ce9-4f10-82b7-790853f1e061.png",
+          imageCaption: "Stripe's Thin Events presentation showcasing the streamlined approach to webhook notifications with minimal payload and maximum flexibility.",
           content: `In the webhook deep dive, the Stripe team unveiled Thin Events, a streamlined way to receive webhook notifications with minimal payload and maximum flexibility. Instead of sending your entire object every time—often bloating your queues—Stripe now emits a lightweight event signal containing only the ID and essential metadata.
 
-Your endpoint can then: 
-• Skip version pins: You no longer need to lock your webhook URL to a specific API version. 
-• Fetch on demand: Decide at runtime whether to pull the full event or directly retrieve the related API object. 
-• Upgrade safely: With the payload pared down, moving between API versions becomes far less risky. 
+Your endpoint can then:
+
+☐ **Skip version pins:** You no longer need to lock your webhook URL to a specific API version.
+
+☐ **Fetch on demand:** Decide at runtime whether to pull the full event or directly retrieve the related API object.
+
+☐ **Upgrade safely:** With the payload pared down, moving between API versions becomes far less risky.
 
 The result is a faster, leaner webhook flow that's easier to maintain and upgrade—so you can spend less time wrestling with payload sizes and version mismatches, and more time shipping features.
 
