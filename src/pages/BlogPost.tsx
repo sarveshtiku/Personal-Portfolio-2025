@@ -116,7 +116,7 @@ Your endpoint can then:
 
 The result is a faster, leaner webhook flow that's easier to maintain and upgrade—so you can spend less time wrestling with payload sizes and version mismatches, and more time shipping features.
 
-I learned that Stripe's thin events strip webhook payloads down to just the IDs and essential metadata, letting you fetch full objects on demand and drop API-version pins from your endpoints. I've been building PermitPal—an agent that automates permit applications and tracks their progress for San Francisco homeowners. After hearing the talk, it occurred to me that PermitPal's orchestrator can subscribe to lightweight signals for payment or permit-status changes and only invoke Stripe's API when it actually needs full invoice or payment-intent details.`
+I learned that Stripe's thin events strip webhook payloads down to just the IDs and essential metadata, letting you fetch full objects on demand and drop API-version pins from your endpoints. I've been building <a href="/projects" class="text-blue-600 hover:text-blue-800 underline">PermitPal</a>—an agent that automates permit applications and tracks their progress for San Francisco homeowners. After hearing the talk, it occurred to me that PermitPal's orchestrator can subscribe to lightweight signals for payment or permit-status changes and only invoke Stripe's API when it actually needs full invoice or payment-intent details.`
         },
         {
           id: "1.5",
