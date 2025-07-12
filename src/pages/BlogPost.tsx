@@ -108,11 +108,11 @@ We wrapped up the session with Werner Gropp, Senior Product Marketing Manager at
 
 Your endpoint can then:
 
-☐ **Skip version pins:** You no longer need to lock your webhook URL to a specific API version.
+• Skip version pins: You no longer need to lock your webhook URL to a specific API version.
 
-☐ **Fetch on demand:** Decide at runtime whether to pull the full event or directly retrieve the related API object.
+• Fetch on demand: Decide at runtime whether to pull the full event or directly retrieve the related API object.
 
-☐ **Upgrade safely:** With the payload pared down, moving between API versions becomes far less risky.
+• Upgrade safely: With the payload pared down, moving between API versions becomes far less risky.
 
 The result is a faster, leaner webhook flow that's easier to maintain and upgrade—so you can spend less time wrestling with payload sizes and version mismatches, and more time shipping features.
 
