@@ -599,6 +599,12 @@ export default function BlogPost() {
 
     return (
       <div className="space-y-6">
+        <div className="p-3 bg-muted/50 rounded-lg border-l-4 border-primary/30 mb-4">
+          <p className="text-xs text-muted-foreground italic">
+            <strong>Disclaimer:</strong> The individuals mentioned below did not contribute to any of the thoughts or views expressed in this conference summary. All opinions and interpretations are my own, and these people should not be held responsible for any views presented here.
+          </p>
+        </div>
+        
         <div className="flex items-center gap-2 mb-6">
           <Users className="h-5 w-5 text-primary" />
           <p className="text-academic-gray">
