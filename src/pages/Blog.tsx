@@ -31,7 +31,8 @@ export default function Blog() {
       date: "2025-05-08",
       readTime: "15 min read",
       category: "Conference",
-      slug: "distributed-systems-lessons"
+      slug: "distributed-systems-lessons",
+      image: "/lovable-uploads/f824f7f5-b38a-4fc8-b26c-829c3a25fffb.png"
     },
     {
       title: "AI Ethics in Practice: A Developer's Perspective",
@@ -203,6 +204,15 @@ export default function Blog() {
           {posts.slice(1).map((post, index) => (
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 p-3">
               <div className="space-y-3">
+                {post.image && (
+                  <div className="w-full h-32 rounded-lg overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <div className="flex items-center gap-2 text-xs text-academic-gray">
                   <Badge className={`${getCategoryColor(post.category)} text-xs px-2 py-1`}>
                     {post.category}
