@@ -38,7 +38,7 @@ export default function Research() {
         </p>
         <div className="flex justify-center pt-4">
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4xxpk46Nnyc6_R33u0nGUbSJXUY7rgCHhjK5seT4-urV0y3qz48kkfj8FfSsDLaEC3_x4U51pkPORGnbw&user=KB6pL-sAAAAJ" target="_blank" rel="noopener noreferrer">
               <GraduationCap className="mr-2 h-5 w-5" />
               Google Scholar Profile
             </a>
