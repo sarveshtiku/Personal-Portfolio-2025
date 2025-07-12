@@ -26,11 +26,11 @@ export default function Blog() {
       slug: "art-of-code-review"
     },
     {
-      title: "Understanding Distributed Systems: Lessons from Building at Scale",
-      excerpt: "Real-world insights from designing and implementing distributed systems that handle millions of requests. Common pitfalls, architectural decisions, and monitoring strategies.",
-      date: "2024-01-08",
-      readTime: "12 min read",
-      category: "Architecture",
+      title: "Stripe Sessions Conference: The Future of Commerce",
+      excerpt: "Stripe Sessions 2025 opened with a striking statistic: over 2 million U.S. businesses—6 percent of all companies, including half of the Fortune 100—now run on Stripe's platform. Here are my key takeaways from the conference.",
+      date: "2025-05-08",
+      readTime: "15 min read",
+      category: "Conference",
       slug: "distributed-systems-lessons"
     },
     {
@@ -98,7 +98,8 @@ export default function Blog() {
     const colors: { [key: string]: string } = {
       "Engineering": "bg-primary-blue-light text-primary-blue",
       "Architecture": "bg-warm-orange-light text-warm-orange",
-      "AI Ethics": "bg-success/10 text-success"
+      "AI Ethics": "bg-success/10 text-success",
+      "Conference": "bg-primary/10 text-primary"
     };
     return colors[category] || "bg-muted text-muted-foreground";
   };
