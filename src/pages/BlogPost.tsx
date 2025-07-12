@@ -1,7 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, Clock, ArrowLeft } from "lucide-react";
+import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BlogComments } from "@/components/BlogComments";
@@ -626,41 +626,51 @@ export default function BlogPost() {
                   href="https://stripe.com/sessions/2025/product-keynote"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
-                  1. Listen to the Product Keynote
+                  <Play className="h-4 w-4 flex-shrink-0" />
+                  <span>1. Listen to the Product Keynote</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
                 <a
                   href="https://stripe.com/startups"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
-                  2. Grow your business with Stripe
+                  <TrendingUp className="h-4 w-4 flex-shrink-0" />
+                  <span>2. Grow your business with Stripe</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
                 <a
                   href="https://docs.stripe.com/api"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
-                  3. API Docs for developers
+                  <Code className="h-4 w-4 flex-shrink-0" />
+                  <span>3. API Docs for developers</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
                 <a
                   href="https://stripe.com/payments/payment-links"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
-                  4. No Code Payment Links
+                  <LinkIcon className="h-4 w-4 flex-shrink-0" />
+                  <span>4. No Code Payment Links</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
                 <a
                   href="https://www.youtube.com/watch?v=_YCC9Osq6y4"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-academic-gray hover:text-primary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
-                  5. Have no idea where to begin? A complete Stripe tutorial
+                  <GraduationCap className="h-4 w-4 flex-shrink-0" />
+                  <span>5. Have no idea where to begin? A complete Stripe tutorial</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
               </nav>
             </CardContent>
