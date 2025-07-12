@@ -144,13 +144,7 @@ On the ground in Africa, Chris Maurice of Yellow Card showed how stablecoins alr
           image: "/lovable-uploads/e1061868-c1fd-454c-ab55-6b0681d22d6a.png",
           content: `I owe a huge thanks to Tanisha, my CS 2110 & Grand Challenges survivor at Georgia Tech, for joining me on my official second day in San Francisco. We dived into tough questions with booth partners and had our little brain rot breaks that kept us sane and happy that we still have time to figure things out. When we spotted that 30-minute photobooth line, we laughed it off and moved on (no headshots, but plenty of gossip!), and those Klarna bonbon treats made our networking even sweeter. Thanks for keeping me energized and inspired every step of the way! I miss you Tanisha <3
 
-To everyone who shared a kind word,
-
-To everyone who stopped by and listened,
-
-To everyone who offered genuine advice,
-
-Thank you, it truly means a lot to me!
+To everyone who shared a kind word; To everyone who stopped by and listened; To everyone who offered genuine advice,; Thank you, it truly means a lot to me!
 
 People Mentioned: 
 • Werner Gropp: https://www.linkedin.com/in/wernergropp/
