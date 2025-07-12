@@ -1,10 +1,11 @@
 import { useParams, Navigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink } from "lucide-react";
+import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink, Linkedin, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BlogComments } from "@/components/BlogComments";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 
 const blogPosts = {
@@ -141,16 +142,17 @@ But as our expert panel laid out, the road to true interoperability still has po
 On the ground in Africa, Chris Maurice of Yellow Card showed how stablecoins already pave "dirt roads" into the global banking superhighways—unlocking commerce for merchants with no SWIFT connections. Looking ahead to 2030, we should expect a two-tier market: a handful of "ecosystem" stablecoins with deep liquidity alongside a long tail of app-specific tokens. But the real victory will be when it doesn't matter which token you use—you just click "pay," and your dollars move like cash.`
         },
         {
-          id: "1.7",
-          title: "Acknowledgments",
-          image: "/lovable-uploads/e1061868-c1fd-454c-ab55-6b0681d22d6a.png",
-          content: `I owe a huge thanks to Tanisha, my CS 2110 & Grand Challenges survivor at Georgia Tech, for joining me on my official second day in San Francisco. We dived into tough questions with booth partners and had our little brain rot breaks that kept us sane and happy that we still have time to figure things out. When we spotted that 30-minute photobooth line, we laughed it off and moved on (no headshots, but plenty of gossip!), and those Klarna bonbon treats made our networking even sweeter. Thanks for keeping me energized and inspired every step of the way! I miss you Tanisha <3
+            id: "1.7",
+            title: "Acknowledgments",
+            image: "/lovable-uploads/e1061868-c1fd-454c-ab55-6b0681d22d6a.png",
+            content: `I owe a huge thanks to Tanisha, my CS 2110 & Grand Challenges survivor at Georgia Tech, for joining me on my official second day in San Francisco. We dived into tough questions with booth partners and had our little brain rot breaks that kept us sane and happy that we still have time to figure things out. When we spotted that 30-minute photobooth line, we laughed it off and moved on (no headshots, but plenty of gossip!), and those Klarna bonbon treats made our networking even sweeter. Thanks for keeping me energized and inspired every step of the way! I miss you Tanisha <3
 
-To everyone who shared a kind word; To everyone who stopped by and listened; To everyone who offered genuine advice; Thank you, it truly means a lot to me!
-
-People Mentioned: 
-• Werner Gropp: https://www.linkedin.com/in/wernergropp/
-• Josh Kliot: https://www.linkedin.com/in/joshkliot/`
+To everyone who shared a kind word; To everyone who stopped by and listened; To everyone who offered genuine advice; Thank you, it truly means a lot to me!`
+          },
+          {
+            id: "1.8",
+            title: "People Mentioned",
+            content: "people-mentioned-section"
         }
       ]
     }
@@ -504,6 +506,7 @@ export default function BlogPost() {
       "Engineering": "bg-primary-blue-light text-primary-blue",
       "Architecture": "bg-warm-orange-light text-warm-orange", 
       "AI Ethics": "bg-success/10 text-success",
+      "Conference": "bg-primary-blue-light text-primary-blue",
       "Issue #1": "bg-warm-orange-light text-warm-orange",
       "Issue #2": "bg-warm-orange-light text-warm-orange", 
       "Issue #3": "bg-warm-orange-light text-warm-orange",
@@ -512,6 +515,127 @@ export default function BlogPost() {
       "Issue #6": "bg-warm-orange-light text-warm-orange"
     };
     return colors[category] || "bg-warm-orange-light text-warm-orange";
+  };
+
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase())
+      .slice(0, 2)
+      .join('');
+  };
+
+  const peopleMentioned = [
+    {
+      name: "Werner Gropp",
+      role: "Senior Product Marketing Manager at Amazon",
+      linkedin: "https://www.linkedin.com/in/wernergropp/",
+      category: "Amazon Pay"
+    },
+    {
+      name: "Josh Kliot",
+      role: "Software Engineer",
+      linkedin: "https://www.linkedin.com/in/joshkliot/",
+      category: "General"
+    },
+    {
+      name: "Patrick Collison",
+      role: "Co-founder & CEO at Stripe",
+      linkedin: "https://www.linkedin.com/in/patrickcollison",
+      category: "Stripe Leadership"
+    },
+    {
+      name: "John Collison",
+      role: "Co-founder & President at Stripe",
+      linkedin: "https://www.linkedin.com/in/johnbcollison",
+      category: "Stripe Leadership"
+    },
+    {
+      name: "Ethan Senturia",
+      role: "Partner at Tidemark",
+      linkedin: "https://www.linkedin.com/in/ethansenturia",
+      category: "VSaaS Growth Playbook Panel"
+    },
+    {
+      name: "Andrew Walsh",
+      role: "Partner at Tidemark",
+      linkedin: "https://www.linkedin.com/in/awalsh14",
+      category: "VSaaS Growth Playbook Panel"
+    },
+    {
+      name: "Christian DiCarlo",
+      role: "Head of Platform Partnerships at Stripe",
+      linkedin: "https://www.linkedin.com/in/dicarlo",
+      category: "VSaaS Growth Playbook Panel"
+    },
+    {
+      name: "Erica Khalili",
+      role: "Chief Legal & Risk Officer at Lead Bank",
+      linkedin: "https://www.linkedin.com/in/erica-khalili-48138570",
+      category: "Stablecoins & Fintech Panel"
+    },
+    {
+      name: "Chris Maurice",
+      role: "CEO at Yellow Card",
+      linkedin: "https://www.linkedin.com/in/chrismaurice18",
+      category: "Stablecoins & Fintech Panel"
+    }
+  ];
+
+  const renderPeopleMentioned = () => {
+    const groupedPeople = peopleMentioned.reduce((acc, person) => {
+      if (!acc[person.category]) {
+        acc[person.category] = [];
+      }
+      acc[person.category].push(person);
+      return acc;
+    }, {} as Record<string, typeof peopleMentioned>);
+
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center gap-2 mb-6">
+          <Users className="h-5 w-5 text-primary" />
+          <p className="text-academic-gray">
+            Special thanks to everyone who made this conference insightful and memorable:
+          </p>
+        </div>
+        
+        {Object.entries(groupedPeople).map(([category, people]) => (
+          <div key={category} className="space-y-3">
+            <h4 className="font-semibold text-primary text-lg">{category}</h4>
+            <div className="grid gap-3">
+              {people.map((person) => (
+                <Card key={person.name} className="p-4 hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-4">
+                    <Avatar className="h-12 w-12">
+                      <AvatarFallback className="bg-primary-blue-light text-primary-blue font-semibold">
+                        {getInitials(person.name)}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="flex-1">
+                      <h5 className="font-semibold text-primary">{person.name}</h5>
+                      <p className="text-sm text-academic-gray">{person.role}</p>
+                    </div>
+                    <Button variant="outline" size="sm" asChild>
+                      <a
+                        href={person.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        <Linkedin className="h-4 w-4" />
+                        LinkedIn
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    </Button>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   return (
@@ -587,9 +711,13 @@ export default function BlogPost() {
                   </div>
                 )}
                 <div className="prose prose-lg max-w-none text-academic-gray leading-relaxed">
-                  {section.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
-                  ))}
+                  {section.content === 'people-mentioned-section' ? (
+                    renderPeopleMentioned()
+                  ) : (
+                    section.content.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                    ))
+                  )}
                 </div>
               </section>
             ))}
