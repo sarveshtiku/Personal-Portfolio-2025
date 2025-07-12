@@ -527,6 +527,12 @@ export default function BlogPost() {
 
   const peopleMentioned = [
     {
+      name: "Tanisha V Gupta",
+      role: "CS @ Georgia Tech",
+      linkedin: "https://www.linkedin.com/in/tanishag24/",
+      category: "Friends & Colleagues"
+    },
+    {
       name: "Werner Gropp",
       role: "Senior Product Marketing Manager at Amazon",
       linkedin: "https://www.linkedin.com/in/wernergropp/",
