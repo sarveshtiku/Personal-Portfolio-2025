@@ -108,11 +108,11 @@ We wrapped up the session with Werner Gropp, Senior Product Marketing Manager at
 
 Your endpoint can then:
 
-1. **Skip version pins:** You no longer need to lock your webhook URL to a specific API version.
+1. <strong>Skip version pins:</strong> You no longer need to lock your webhook URL to a specific API version.
 
-2. **Fetch on demand:** Decide at runtime whether to pull the full event or directly retrieve the related API object.
+2. <strong>Fetch on demand:</strong> Decide at runtime whether to pull the full event or directly retrieve the related API object.
 
-3. **Upgrade safely:** With the payload pared down, moving between API versions becomes far less risky.
+3. <strong>Upgrade safely:</strong> With the payload pared down, moving between API versions becomes far less risky.
 
 The result is a faster, leaner webhook flow that's easier to maintain and upgrade—so you can spend less time wrestling with payload sizes and version mismatches, and more time shipping features.
 
@@ -583,9 +583,7 @@ export default function BlogPost() {
                 )}
                 <div className="prose prose-lg max-w-none text-academic-gray leading-relaxed">
                   {section.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="mb-4">
-                      {paragraph}
-                    </p>
+                    <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
                   ))}
                 </div>
               </section>
