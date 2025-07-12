@@ -13,7 +13,7 @@ export default function Research() {
       date: "2024-04-13",
       status: "Published",
       type: "Conference Paper",
-      tags: ["Deep Learning", "Large Language Models", "Bias Mitigation", "Natural Language Processing", "Transformers", "BERT", "Real-time Systems", "Artificial Intelligence", "Neural Networks", "Text Generation", "Computational Modeling", "Dynamic Prompt Debiasing", "Inference-Time Bias Correction", "Transformer-Based Debiaser", "CrowS-Pairs Benchmarking", "Prompt-Level Fairness", "Stereotype Bias Detection", "Real-Time Neutralization Algorithm", "Accuracy–F1 Optimization", "User Input Sanitization", "Bias Amplification Prevention"],
+      tags: ["Deep learning", "Training", "Large language models", "Computational modeling", "Prevention and mitigation", "Transformers", "Real-time systems"],
       link: "https://ieeexplore.ieee.org/abstract/document/10585628"
     },
     {
@@ -69,14 +69,17 @@ export default function Research() {
                         </p>
                       )}
                       
-                      {/* Tags below title */}
+                      {/* IEEE Keywords below title */}
                       {paper.tags && (
-                        <div className="flex flex-wrap gap-2 pt-3">
-                          {paper.tags.map((tag, tagIndex) => (
-                            <Badge key={tagIndex} variant="secondary" className="text-xs">
-                              {tag}
-                            </Badge>
-                          ))}
+                        <div className="pt-3">
+                          <span className="text-sm font-medium text-muted-foreground">IEEE Keywords: </span>
+                          <div className="flex flex-wrap gap-2 mt-1">
+                            {paper.tags.map((tag, tagIndex) => (
+                              <Badge key={tagIndex} variant="secondary" className="text-xs">
+                                {tag}
+                              </Badge>
+                            ))}
+                          </div>
                         </div>
                       )}
                     </div>
