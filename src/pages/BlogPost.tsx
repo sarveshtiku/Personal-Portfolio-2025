@@ -545,6 +545,11 @@ export default function BlogPost() {
                 <Clock className="h-4 w-4" />
                 {post.readTime}
               </div>
+              {(post as any).location && (
+                <div className="flex items-center gap-1">
+                  📍 {(post as any).location}
+                </div>
+              )}
             </div>
             
             <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary leading-tight">
@@ -555,13 +560,8 @@ export default function BlogPost() {
               {post.content.intro}
             </p>
             
-            <div className="text-sm text-academic-gray space-y-1">
-              <div>by <span className="font-medium">{post.author}</span></div>
-              {(post as any).location && (
-                <div className="flex items-center gap-1">
-                  📍 {(post as any).location}
-                </div>
-              )}
+            <div className="text-sm text-academic-gray">
+              by <span className="font-medium">{post.author}</span>
             </div>
           </header>
 

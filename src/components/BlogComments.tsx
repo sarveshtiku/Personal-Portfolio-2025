@@ -74,7 +74,7 @@ export function BlogComments() {
   const [newComment, setNewComment] = useState("");
   const [replyingTo, setReplyingTo] = useState<string | null>(null);
   const [replyText, setReplyText] = useState("");
-  const [totalLikes, setTotalLikes] = useState(47);
+  const [totalLikes, setTotalLikes] = useState(0);
   const [isPostLiked, setIsPostLiked] = useState(false);
 
   const handleLike = (commentId: string) => {
