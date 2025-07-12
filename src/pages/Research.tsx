@@ -56,12 +56,19 @@ export default function Research() {
         <div className="space-y-6">
           {papers.map((paper, index) => (
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="font-academic text-xl text-primary">
+              <CardHeader className="relative">
+                {paper.title === "Mitigation of User-Prompt Bias in Large Language Models" && (
+                  <img 
+                    src="/lovable-uploads/c2718822-9515-40af-aebf-f7b833b9b12b.png" 
+                    alt="ICMI 2024 Conference Logo"
+                    className="absolute top-4 right-4 w-20 h-auto"
+                  />
+                )}
+                <CardTitle className="font-academic text-xl text-primary pr-24">
                   {paper.title}
                 </CardTitle>
                 {paper.subtitle && (
-                  <p className="font-academic text-base text-muted-foreground italic mt-1">
+                  <p className="font-academic text-base text-muted-foreground italic mt-1 pr-24">
                     {paper.subtitle}
                   </p>
                 )}
