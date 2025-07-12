@@ -12,6 +12,7 @@ export default function Research() {
       date: "2024-04-13",
       status: "Published",
       type: "Conference Paper",
+      tags: ["Deep Learning", "Large Language Models", "Bias Mitigation", "Natural Language Processing", "Transformers", "BERT", "Real-time Systems"],
       link: "https://ieeexplore.ieee.org/abstract/document/10585628"
     },
     {
@@ -63,6 +64,18 @@ export default function Research() {
                 <p className="text-academic-gray leading-relaxed">
                   {paper.abstract}
                 </p>
+                
+                {/* Tags */}
+                {paper.tags && (
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {paper.tags.map((tag, tagIndex) => (
+                      <Badge key={tagIndex} variant="secondary" className="text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
+                
                 <div className="flex items-center gap-4 text-sm text-academic-gray">
                   <div className="flex items-center gap-1">
                     <FileText className="h-4 w-4" />
