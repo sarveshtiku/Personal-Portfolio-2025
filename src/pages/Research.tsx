@@ -58,19 +58,35 @@ export default function Research() {
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
               <CardHeader className="relative">
                 {paper.title === "Mitigation of User-Prompt Bias in Large Language Models" && (
-                  <img 
-                    src="/lovable-uploads/c2718822-9515-40af-aebf-f7b833b9b12b.png" 
-                    alt="ICMI 2024 Conference Logo"
-                    className="absolute top-4 right-4 w-28 h-auto"
-                  />
+                  <>
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-1">
+                        <CardTitle className="font-academic text-xl text-primary">
+                          {paper.title}
+                        </CardTitle>
+                        {paper.subtitle && (
+                          <p className="font-academic text-base text-muted-foreground italic mt-1">
+                            {paper.subtitle}
+                          </p>
+                        )}
+                      </div>
+                      <img 
+                        src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
+                        alt="ICMI 2024 Conference Logo"
+                        className="w-32 h-auto flex-shrink-0"
+                      />
+                    </div>
+                    <img 
+                      src="/lovable-uploads/4a070806-d22a-403d-a36a-b439363a3064.png" 
+                      alt="ICMI 2024 Circle Logo"
+                      className="absolute bottom-4 right-4 w-12 h-auto opacity-20"
+                    />
+                  </>
                 )}
-                <CardTitle className="font-academic text-xl text-primary pr-24">
-                  {paper.title}
-                </CardTitle>
-                {paper.subtitle && (
-                  <p className="font-academic text-base text-muted-foreground italic mt-1 pr-24">
-                    {paper.subtitle}
-                  </p>
+                {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && (
+                  <CardTitle className="font-academic text-xl text-primary">
+                    {paper.title}
+                  </CardTitle>
                 )}
               </CardHeader>
               <CardContent className="space-y-4">
