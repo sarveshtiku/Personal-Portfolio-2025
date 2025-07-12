@@ -73,6 +73,8 @@ Effective use of these tools includes:
         {
           id: "1.1",
           title: "Opening Keynote – The Future of Commerce",
+          image: "/lovable-uploads/fe62777b-91de-4345-ac8f-b4d2a298f0a4.png",
+          imageCaption: "Patrick and John Collison explore the internet economy's rapid evolution, spotlight Stripe's fastest-growing companies, and identify AI and stablecoins as the twin tailwinds powering the next decade of global commerce.",
           content: `Patrick and John Collison explore the internet economy's rapid evolution, spotlight Stripe's fastest-growing companies, and identify AI and stablecoins as the twin tailwinds powering the next decade of global commerce.
 
 Stripe Sessions 2025 opened with a striking statistic: over 2 million U.S. businesses—6 percent of all companies, including half of the Fortune 100—now run on Stripe's platform. The pace of scale is staggering too, with more than 80 companies each month leaping from $1M to $10M ARR in 2024 alone—a rate that's more than tripled since 2018. Even more telling, the top AI-powered businesses on Stripe retain new users slightly better over a 12-month window than their SaaS peers, underscoring AI's stickiness in real-world products. In a live demo, a Cursor-driven agent parsed "add Vercel's advanced bot protection" and instantly scaffolded the code right inside a Next.js editor. And to cap it off, they hooked up a fully functional $10/month Checkout Link hosted on Stripe inside the same workflow—no backend glue required.`
@@ -560,6 +562,20 @@ export default function BlogPost() {
                 <h2 className="font-academic text-2xl font-semibold text-primary">
                   {section.id} {section.title}
                 </h2>
+                {(section as any).image && (
+                  <div className="space-y-3">
+                    <img 
+                      src={(section as any).image} 
+                      alt={(section as any).imageCaption || section.title}
+                      className="w-full rounded-lg academic-shadow"
+                    />
+                    {(section as any).imageCaption && (
+                      <p className="text-sm text-academic-gray italic text-center">
+                        {(section as any).imageCaption}
+                      </p>
+                    )}
+                  </div>
+                )}
                 <div className="prose prose-lg max-w-none text-academic-gray leading-relaxed">
                   {section.content.split('\n\n').map((paragraph, index) => (
                     <p key={index} className="mb-4">
