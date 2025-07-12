@@ -84,7 +84,7 @@ export default function Research() {
                     <img 
                       src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
                       alt="ICMI 2024 Conference Logo"
-                      className="w-72 h-auto flex-shrink-0"
+                      className="w-96 h-auto flex-shrink-0"
                     />
                   </div>
                 )}
