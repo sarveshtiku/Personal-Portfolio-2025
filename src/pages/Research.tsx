@@ -68,6 +68,17 @@ export default function Research() {
                           {paper.subtitle}
                         </p>
                       )}
+                      
+                      {/* Tags below title */}
+                      {paper.tags && (
+                        <div className="flex flex-wrap gap-2 pt-3">
+                          {paper.tags.map((tag, tagIndex) => (
+                            <Badge key={tagIndex} variant="secondary" className="text-xs">
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
                     </div>
                     <img 
                       src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
@@ -77,9 +88,21 @@ export default function Research() {
                   </div>
                 )}
                 {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && (
-                  <CardTitle className="font-academic text-xl text-primary">
-                    {paper.title}
-                  </CardTitle>
+                  <>
+                    <CardTitle className="font-academic text-xl text-primary">
+                      {paper.title}
+                    </CardTitle>
+                    {/* Tags for other papers */}
+                    {paper.tags && (
+                      <div className="flex flex-wrap gap-2 pt-3">
+                        {paper.tags.map((tag, tagIndex) => (
+                          <Badge key={tagIndex} variant="secondary" className="text-xs">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
+                  </>
                 )}
               </CardHeader>
               <CardContent className="space-y-4">
@@ -108,17 +131,6 @@ export default function Research() {
                     })}
                   </div>
                 </div>
-                
-                {/* Tags */}
-                {paper.tags && (
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {paper.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
                 <Button variant="outline" size="sm" asChild>
                   <a href={paper.link}>
                     <ExternalLink className="h-4 w-4 mr-2" />
