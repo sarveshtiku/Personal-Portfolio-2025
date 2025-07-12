@@ -6,7 +6,8 @@ import { FileText, ExternalLink, Calendar, GraduationCap } from "lucide-react";
 export default function Research() {
   const papers = [
     {
-      title: "Mitigation of User-Prompt Bias in Large Language Models: A Natural Langauge Processing and Deep Learning Based Framework",
+      title: "Mitigation of User-Prompt Bias in Large Language Models",
+      subtitle: "A Natural Language Processing and Deep Learning Based Framework",
       abstract: "The advent of large language models has opened new frontiers in the field of automated text generation, enabling more refined engagement with complex language-based tasks. Concurrently, this advancement has revealed a potential vulnerability: the inadvertent amplification of biases from user prompts, which may lead to the reinforcement of detrimental stereotypes and misinformation by these large language models. Addressing this multifaceted challenge, this paper delineates a framework that integrates natural language processing and deep learning, designed to detect, and neutralize bias in user prompts in real time. The core of this system is a carefully formulated algorithm, the result of rigorous training, validation, and testing on the CrowS-Pairs dataset, specifically aimed at measuring the degree to which U.S. stereotypical biases are present in language models. The framework achieved an accuracy of 93% and an F1Score of 0.92 in pinpointing and alleviating biases.",
       venue: "2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI)",
       date: "2024-04-13",
@@ -59,6 +60,11 @@ export default function Research() {
                 <CardTitle className="font-academic text-xl text-primary">
                   {paper.title}
                 </CardTitle>
+                {paper.subtitle && (
+                  <p className="font-academic text-base text-muted-foreground italic mt-1">
+                    {paper.subtitle}
+                  </p>
+                )}
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-academic-gray leading-relaxed">
