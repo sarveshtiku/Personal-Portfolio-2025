@@ -13,7 +13,7 @@ export default function Research() {
       date: "2024-04-13",
       status: "Published",
       type: "Conference Paper",
-      tags: ["Deep Learning", "Large Language Models", "Bias Mitigation", "Natural Language Processing", "Transformers", "BERT", "Real-time Systems"],
+      tags: ["Deep Learning", "Large Language Models", "Bias Mitigation", "Natural Language Processing", "Transformers", "BERT", "Real-time Systems", "Artificial Intelligence", "Neural Networks", "Text Generation", "Computational Modeling", "Stereotypes", "Misinformation", "F1 Score", "Training", "Predictive Modeling"],
       link: "https://ieeexplore.ieee.org/abstract/document/10585628"
     },
     {
