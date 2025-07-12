@@ -71,15 +71,13 @@ export default function Research() {
                       
                       {/* IEEE Keywords below title */}
                       {paper.tags && (
-                        <div className="pt-3">
-                          <span className="text-sm font-medium text-muted-foreground">IEEE Keywords: </span>
-                          <div className="flex flex-wrap gap-2 mt-1">
-                            {paper.tags.map((tag, tagIndex) => (
-                              <Badge key={tagIndex} variant="secondary" className="text-xs">
-                                {tag}
-                              </Badge>
-                            ))}
-                          </div>
+                        <div className="flex flex-wrap items-center gap-2 pt-3">
+                          <span className="text-sm font-medium text-muted-foreground">IEEE Keywords:</span>
+                          {paper.tags.map((tag, tagIndex) => (
+                            <Badge key={tagIndex} variant="secondary" className="text-xs">
+                              {tag}
+                            </Badge>
+                          ))}
                         </div>
                       )}
                     </div>
