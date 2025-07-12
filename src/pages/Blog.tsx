@@ -198,12 +198,12 @@ export default function Blog() {
         <h2 className="font-academic text-2xl font-semibold mb-8 text-primary">
           Recent Posts
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-4">
           {posts.slice(1).map((post, index) => (
-            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
-                  <Badge className={getCategoryColor(post.category)}>
+            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 p-3">
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-xs text-academic-gray">
+                  <Badge className={`${getCategoryColor(post.category)} text-xs px-2 py-1`}>
                     {post.category}
                   </Badge>
                   <div className="flex items-center gap-1">
@@ -218,20 +218,18 @@ export default function Blog() {
                     {post.readTime}
                   </div>
                 </div>
-                <CardTitle className="font-academic text-xl text-primary leading-tight">
+                <h3 className="font-academic text-lg text-primary leading-tight">
                   {post.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-academic-gray leading-relaxed">
+                </h3>
+                <p className="text-academic-gray leading-relaxed text-sm">
                   {post.excerpt}
                 </p>
-                <Button variant="outline" asChild>
+                <Button variant="outline" size="sm" asChild>
                   <Link to={`/blog/${post.slug}`}>
                     Read More <ArrowRight className="ml-2 h-3 w-3" />
                   </Link>
                 </Button>
-              </CardContent>
+              </div>
             </Card>
           ))}
         </div>
