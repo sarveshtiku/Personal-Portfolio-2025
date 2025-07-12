@@ -87,18 +87,8 @@ export default function Research() {
                   {paper.abstract}
                 </p>
                 
-                {/* Tags */}
-                {paper.tags && (
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {paper.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
-                
-                <div className="flex items-center gap-4 text-sm text-academic-gray">
+                {/* Conference Info */}
+                <div className="flex items-center gap-4 text-sm text-academic-gray pt-2">
                   <div className="flex items-center gap-1">
                     <FileText className="h-4 w-4" />
                     <a 
@@ -118,6 +108,17 @@ export default function Research() {
                     })}
                   </div>
                 </div>
+                
+                {/* Tags */}
+                {paper.tags && (
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {paper.tags.map((tag, tagIndex) => (
+                      <Badge key={tagIndex} variant="secondary" className="text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
                 <Button variant="outline" size="sm" asChild>
                   <a href={paper.link}>
                     <ExternalLink className="h-4 w-4 mr-2" />
