@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { BlogComments } from "@/components/BlogComments";
+
 
 const blogPosts = {
   "art-of-code-review": {
@@ -62,10 +62,11 @@ Effective use of these tools includes:
   },
   "distributed-systems-lessons": {
     title: "Stripe Sessions Conference: The Future of Commerce",
-    date: "2024-01-08", 
+    date: "2025-05-09", 
     readTime: "15 min read",
     category: "Conference",
     author: "Sarvesh",
+    location: "San Francisco, California",
     type: "blog",
     content: {
       intro: "Stripe Sessions 2025 opened with a striking statistic: over 2 million U.S. businesses—6 percent of all companies, including half of the Fortune 100—now run on Stripe's platform. Here are my key takeaways from the conference.",
@@ -553,8 +554,13 @@ export default function BlogPost() {
               {post.content.intro}
             </p>
             
-            <div className="text-sm text-academic-gray">
-              by <span className="font-medium">{post.author}</span>
+            <div className="text-sm text-academic-gray space-y-1">
+              <div>by <span className="font-medium">{post.author}</span></div>
+              {(post as any).location && (
+                <div className="flex items-center gap-1">
+                  📍 {(post as any).location}
+                </div>
+              )}
             </div>
           </header>
 
@@ -588,10 +594,6 @@ export default function BlogPost() {
             ))}
           </div>
 
-          {/* Comments Section */}
-          <div className="mt-12">
-            <BlogComments />
-          </div>
         </article>
 
         {/* Table of Contents Sidebar */}
