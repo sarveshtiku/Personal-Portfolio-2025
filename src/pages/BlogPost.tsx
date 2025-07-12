@@ -91,6 +91,8 @@ To me this all connected back to how AI agents work: they pull in the right cont
         {
           id: "1.3", 
           title: "Customer-First at Amazon Pay",
+          image: "/lovable-uploads/b77e6ce9-824c-4f8c-b0df-85a72e913480.png",
+          imageCaption: "Left: Me, Werner Gropp, and Tanisha catching up at the Amazon Pay booth | Right: Natalia Finelli De Moraes on the Stripe Sessions main stage, sharing how Amazon's \"working backward\" process keeps every feature relentlessly focused on customer value.",
           content: `Natalia Finelli De Moraes kicked off by reminding us that at Amazon, every new idea starts with the customer—not the roadmap or the org chart. Their signature "working backward" process means teams draft a mock press release and FAQ before writing a single line of code. This forces laser focus on real user value from day one. Decisions are treated as "two-way doors": reversible bets get fast feedback loops, while high-stakes launches go through rigorous peer "bar raiser" reviews. Narrative-driven memos replace slide decks in leadership meetings, ensuring clarity and context flow through every layer of the business.
 
 She went on to show how Amazon Pay scales this by empowering small, autonomous two-pizza teams with end-to-end ownership—each squad owns its customer metrics, live dashboards, and A/B testing pipelines. Real-time analytics on transaction success rates, dispute volumes, and funnel drop-offs feed into those dashboards, so every engineer and product manager stays tuned to customer pain points.
