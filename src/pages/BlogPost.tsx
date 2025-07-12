@@ -130,9 +130,9 @@ My takeaways from it were to turn your core workflow into a control point, then 
         {
           id: "1.6",
           title: "Stablecoins: Moving Like Cash?",
-          content: `"Our North Star is getting stablecoins to be treated as cash across all these different dimensions."
-
-Ever sent money overseas only to watch it creep along for days? Stablecoins promised to change that—instant, low-cost cross-border payments on a global digital rail. 
+          image: "/lovable-uploads/bce9274b-6770-4719-b136-4397838df642.png",
+          imageCaption: "\"Our North Star is getting stablecoins to be treated as cash across all these different dimensions.\"",
+          content: `Ever sent money overseas only to watch it creep along for days? Stablecoins promised to change that—instant, low-cost cross-border payments on a global digital rail. 
 
 But as our expert panel laid out, the road to true interoperability still has potholes. First, regulatory clarity is key. Erica Khalili of Lead Bank reminded us how murky rules once scared off banks and customers alike. Now, as clear standards emerge, stablecoins start to shed their "digital-asset drama" and win real-world trust. 
 
