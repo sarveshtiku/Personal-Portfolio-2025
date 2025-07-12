@@ -121,9 +121,9 @@ I learned that Stripe's thin events strip webhook payloads down to just the IDs 
         {
           id: "1.5",
           title: "VSaaS Growth Playbook",
-          content: `"Control point dominance = high retention." — Andrew Walsh (Tidemark)
-
-In their Tidemark benchmark session, Ethan Senturia, Andrew Walsh, and Christian DiCarlo distilled a clear three-step VSaaS playbook: win your category, expand your offerings, and extend through the value chain. The follow-up "own the control point" framework is essential to why that first win matters—owning a core touchpoint (like payments, scheduling, or analytics) directly translates into higher retention and creates multiproduct upsell paths.
+          image: "/lovable-uploads/5f2745fb-077e-4e1d-b337-215a384fb375.png",
+          imageCaption: "\"Control point dominance = high retention.\" — Andrew Walsh (Tidemark)",
+          content: `In their Tidemark benchmark session, Ethan Senturia, Andrew Walsh, and Christian DiCarlo distilled a clear three-step VSaaS playbook: win your category, expand your offerings, and extend through the value chain. The follow-up "own the control point" framework is essential to why that first win matters—owning a core touchpoint (like payments, scheduling, or analytics) directly translates into higher retention and creates multiproduct upsell paths.
 
 My takeaways from it were to turn your core workflow into a control point, then build everything else around it. For trades businesses like plumbing and electrical services, that control point is the scheduling calendar—every job booked, every slot filled, flows into real-time insights on cash-flow, resource planning, and hiring needs. Embed Stripe's payments and reporting into that same interface, and you not only lock in stickier retention, you open doors to upsells (subscriptions, financing) without bloating your codebase.`
         },
