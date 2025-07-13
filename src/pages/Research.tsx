@@ -1,10 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FileText, ExternalLink, Calendar, GraduationCap } from "lucide-react";
+import { FileText, ExternalLink, Calendar, GraduationCap, Copy } from "lucide-react";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Research() {
+  const { toast } = useToast();
+  
   const papers = [
     {
       title: "Mitigation of User-Prompt Bias in Large Language Models",
@@ -15,7 +18,8 @@ export default function Research() {
       status: "Published",
       type: "Conference Paper",
       tags: ["Deep learning", "Training", "Large language models", "Computational modeling", "Prevention and mitigation", "Transformers", "Real-time systems"],
-      link: "https://ieeexplore.ieee.org/abstract/document/10585628"
+      link: "https://ieeexplore.ieee.org/abstract/document/10585628",
+      citation: "S. Tiku, \"Mitigation of User-Prompt Bias in Large Language Models: A Natural Langauge Processing and Deep Learning Based Framework,\" 2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI), Mt Pleasant, MI, USA, 2024, pp. 1-5, doi: 10.1109/ICMI60790.2024.10585628. keywords: {Deep learning;Training;Large language models;Computational modeling;Prevention and mitigation;Transformers;Real-time systems;Artificial Intelligence;Deep Learning;Natural Language Processing;Bias Detection Mitigation;Computational Linguistics;Predictive Modeling;Bidirectional Encoder Representations from Transformers (BERT);Robustly Optimized BERT Approach},"
     },
     {
       title: "Ethical Considerations in Automated Code Review Systems",
@@ -27,6 +31,22 @@ export default function Research() {
       link: "#"
     }
   ];
+
+  const handleCiteCopy = async (citation: string) => {
+    try {
+      await navigator.clipboard.writeText(citation);
+      toast({
+        title: "Citation copied!",
+        description: "The citation has been copied to your clipboard.",
+      });
+    } catch (err) {
+      toast({
+        title: "Copy failed",
+        description: "Failed to copy citation to clipboard.",
+        variant: "destructive",
+      });
+    }
+  };
 
   return (
     <div className="space-y-12">
@@ -132,12 +152,25 @@ export default function Research() {
                     })}
                   </div>
                 </div>
-                <Button variant="outline" size="sm" asChild>
-                  <a href={paper.link}>
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Read Paper
-                  </a>
-                </Button>
+                <div className="flex gap-2">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={paper.link}>
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Read Paper
+                    </a>
+                  </Button>
+                  {paper.citation && (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      onClick={() => handleCiteCopy(paper.citation!)}
+                      className="hover:bg-muted"
+                    >
+                      <Copy className="h-4 w-4 mr-2" />
+                      Cite This
+                    </Button>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
