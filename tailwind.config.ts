@@ -86,7 +86,8 @@ export default {
 			},
 			fontFamily: {
 				academic: ['Crimson Text', 'Times New Roman', 'serif'],
-				clean: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+				clean: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+				garamond: ['EB Garamond', 'Crimson Text', 'Times New Roman', 'serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
