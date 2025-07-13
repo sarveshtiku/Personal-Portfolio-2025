@@ -6,6 +6,7 @@ interface TypewriterEffectProps {
   deletingSpeed?: number;
   pauseDuration?: number;
   className?: string;
+  loop?: boolean;
 }
 
 export function TypewriterEffect({ 
@@ -13,7 +14,8 @@ export function TypewriterEffect({
   typingSpeed = 100, 
   deletingSpeed = 50, 
   pauseDuration = 2000,
-  className = ""
+  className = "",
+  loop = true
 }: TypewriterEffectProps) {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
@@ -24,6 +26,7 @@ export function TypewriterEffect({
     const currentPhrase = phrases[currentPhraseIndex];
     
     if (isPaused) {
+      if (!loop) return; // Don't start deleting if loop is false
       const pauseTimer = setTimeout(() => {
         setIsPaused(false);
         setIsDeleting(true);
