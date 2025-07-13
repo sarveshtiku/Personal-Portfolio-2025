@@ -31,14 +31,10 @@ export default function Research() {
     <div className="space-y-12">
       {/* Header */}
       <section className="text-center space-y-4">
-        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
-          Research
-        </h1>
-        <p className="text-xl text-academic-gray max-w-2xl mx-auto">
-          Exploring the intersection of human behavior, technology, and ethics through 
-          rigorous research and empirical studies.
-        </p>
-        <div className="flex justify-center pt-4">
+        <div className="flex items-center justify-center gap-4">
+          <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
+            Research
+          </h1>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
             <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4xxpk46Nnyc6_R33u0nGUbSJXUY7rgCHhjK5seT4-urV0y3qz48kkfj8FfSsDLaEC3_x4U51pkPORGnbw&user=KB6pL-sAAAAJ" target="_blank" rel="noopener noreferrer">
               <GraduationCap className="mr-2 h-5 w-5" />
