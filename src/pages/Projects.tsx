@@ -126,21 +126,39 @@ export default function Projects() {
           )}
         </div>
         
-        <div className="flex flex-wrap gap-2">
-          {allSkills.map((skill) => (
-            <Badge
-              key={skill}
-              variant={selectedSkills.includes(skill) ? "default" : "outline"}
-              className={`cursor-pointer transition-all duration-200 hover:scale-105 ${
-                selectedSkills.includes(skill)
-                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                  : "hover:bg-accent"
-              }`}
-              onClick={() => toggleSkill(skill)}
-            >
-              {skill}
-            </Badge>
-          ))}
+        <div className="relative overflow-hidden">
+          <div className="animate-marquee hover:[animation-play-state:paused] flex gap-2 w-max">
+            {/* First set of skills */}
+            {allSkills.map((skill) => (
+              <Badge
+                key={skill}
+                variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
+                  selectedSkills.includes(skill)
+                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                    : "hover:bg-accent"
+                }`}
+                onClick={() => toggleSkill(skill)}
+              >
+                {skill}
+              </Badge>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {allSkills.map((skill) => (
+              <Badge
+                key={`${skill}-duplicate`}
+                variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
+                  selectedSkills.includes(skill)
+                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                    : "hover:bg-accent"
+                }`}
+                onClick={() => toggleSkill(skill)}
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
         </div>
       </section>
 
