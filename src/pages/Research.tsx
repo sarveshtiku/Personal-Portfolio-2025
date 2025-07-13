@@ -108,7 +108,7 @@ export default function Research() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <span className="font-semibold text-primary">Abstract: </span>
+                  <span className="font-semibold text-primary font-garamond">Abstract: </span>
                   <span className="text-academic-gray leading-relaxed text-justify font-garamond">
                     {paper.abstract}
                   </span>
