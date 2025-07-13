@@ -2,7 +2,12 @@ import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Filter } from "lucide-react";
+import { ExternalLink, Github, Filter, ChevronDown, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Projects() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
@@ -126,40 +131,76 @@ export default function Projects() {
           )}
         </div>
         
-        <div className="relative overflow-hidden">
-          <div className="animate-marquee hover:[animation-play-state:paused] flex gap-2 w-max">
-            {/* First set of skills */}
-            {allSkills.map((skill) => (
+        {/* Selected Skills Display */}
+        {selectedSkills.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {selectedSkills.map((skill) => (
               <Badge
                 key={skill}
-                variant={selectedSkills.includes(skill) ? "default" : "outline"}
-                className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
-                  selectedSkills.includes(skill)
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "hover:bg-accent"
-                }`}
-                onClick={() => toggleSkill(skill)}
+                variant="default"
+                className="bg-primary text-primary-foreground flex items-center gap-1 pr-1"
               >
                 {skill}
-              </Badge>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {allSkills.map((skill) => (
-              <Badge
-                key={`${skill}-duplicate`}
-                variant={selectedSkills.includes(skill) ? "default" : "outline"}
-                className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
-                  selectedSkills.includes(skill)
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "hover:bg-accent"
-                }`}
-                onClick={() => toggleSkill(skill)}
-              >
-                {skill}
+                <button
+                  onClick={() => toggleSkill(skill)}
+                  className="ml-1 hover:bg-primary-foreground/20 rounded-full p-0.5 transition-colors"
+                >
+                  <X className="h-3 w-3" />
+                </button>
               </Badge>
             ))}
           </div>
-        </div>
+        )}
+        
+        {/* Skills Dropdown */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="w-full lg:w-auto">
+              <Filter className="h-4 w-4 mr-2" />
+              Select Skills to Filter
+              <ChevronDown className="h-4 w-4 ml-2" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent 
+            className="w-80 p-4 bg-background border shadow-lg z-50" 
+            align="start"
+          >
+            <div className="relative overflow-hidden">
+              <div className="animate-marquee hover:[animation-play-state:paused] flex gap-2 w-max">
+                {/* First set of skills */}
+                {allSkills.map((skill) => (
+                  <Badge
+                    key={skill}
+                    variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                    className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
+                      selectedSkills.includes(skill)
+                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                        : "hover:bg-accent"
+                    }`}
+                    onClick={() => toggleSkill(skill)}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+                {/* Duplicate set for seamless loop */}
+                {allSkills.map((skill) => (
+                  <Badge
+                    key={`${skill}-duplicate`}
+                    variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                    className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
+                      selectedSkills.includes(skill)
+                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                        : "hover:bg-accent"
+                    }`}
+                    onClick={() => toggleSkill(skill)}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </section>
 
       {/* Projects Grid */}
