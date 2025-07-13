@@ -107,9 +107,12 @@ export default function Research() {
                 )}
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-academic-gray leading-relaxed text-justify font-garamond">
-                  {paper.abstract}
-                </p>
+                <div>
+                  <span className="font-semibold text-primary">Abstract: </span>
+                  <span className="text-academic-gray leading-relaxed text-justify font-garamond">
+                    {paper.abstract}
+                  </span>
+                </div>
                 
                 {/* Conference Info */}
                 <div className="flex items-center gap-4 text-sm text-academic-gray pt-2">
