@@ -107,7 +107,7 @@ export default function Research() {
                 )}
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-academic-gray leading-relaxed text-justify">
+                <p className="text-academic-gray leading-relaxed text-justify italic">
                   {paper.abstract}
                 </p>
                 
