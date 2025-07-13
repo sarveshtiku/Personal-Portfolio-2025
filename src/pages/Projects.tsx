@@ -2,15 +2,11 @@ import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Filter, ChevronDown, X } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { ExternalLink, Github, Filter, X } from "lucide-react";
 
 export default function Projects() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
+  const [showAllSkills, setShowAllSkills] = useState(false);
 
   const projects = [
     {
@@ -124,11 +120,20 @@ export default function Projects() {
               </span>
             )}
           </div>
-          {selectedSkills.length > 0 && (
-            <Button variant="outline" onClick={clearFilters} size="sm">
-              Clear Filters
+          <div className="flex gap-2">
+            <Button 
+              variant="outline" 
+              onClick={() => setShowAllSkills(!showAllSkills)} 
+              size="sm"
+            >
+              {showAllSkills ? "Show Moving" : "View All"}
             </Button>
-          )}
+            {selectedSkills.length > 0 && (
+              <Button variant="outline" onClick={clearFilters} size="sm">
+                Clear Filters
+              </Button>
+            )}
+          </div>
         </div>
         
         {/* Selected Skills Display */}
@@ -152,55 +157,62 @@ export default function Projects() {
           </div>
         )}
         
-        {/* Skills Dropdown */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="w-full lg:w-auto">
-              <Filter className="h-4 w-4 mr-2" />
-              Select Skills to Filter
-              <ChevronDown className="h-4 w-4 ml-2" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent 
-            className="w-80 p-4 bg-background border shadow-lg z-50" 
-            align="start"
-          >
-            <div className="relative overflow-hidden">
-              <div className="animate-marquee hover:[animation-play-state:paused] flex gap-2 w-max">
-                {/* First set of skills */}
-                {allSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant={selectedSkills.includes(skill) ? "default" : "outline"}
-                    className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
-                      selectedSkills.includes(skill)
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "hover:bg-accent"
-                    }`}
-                    onClick={() => toggleSkill(skill)}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-                {/* Duplicate set for seamless loop */}
-                {allSkills.map((skill) => (
-                  <Badge
-                    key={`${skill}-duplicate`}
-                    variant={selectedSkills.includes(skill) ? "default" : "outline"}
-                    className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
-                      selectedSkills.includes(skill)
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "hover:bg-accent"
-                    }`}
-                    onClick={() => toggleSkill(skill)}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+        {/* Skills Selection */}
+        {showAllSkills ? (
+          // Grid view of all skills
+          <div className="flex flex-wrap gap-2">
+            {allSkills.map((skill) => (
+              <Badge
+                key={skill}
+                variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                className={`cursor-pointer transition-all duration-200 hover:scale-105 ${
+                  selectedSkills.includes(skill)
+                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                    : "hover:bg-accent"
+                }`}
+                onClick={() => toggleSkill(skill)}
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
+        ) : (
+          // Moving marquee view
+          <div className="relative overflow-hidden">
+            <div className="animate-marquee hover:[animation-play-state:paused] flex gap-2 w-max">
+              {/* First set of skills */}
+              {allSkills.map((skill) => (
+                <Badge
+                  key={skill}
+                  variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                  className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
+                    selectedSkills.includes(skill)
+                      ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                      : "hover:bg-accent"
+                  }`}
+                  onClick={() => toggleSkill(skill)}
+                >
+                  {skill}
+                </Badge>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {allSkills.map((skill) => (
+                <Badge
+                  key={`${skill}-duplicate`}
+                  variant={selectedSkills.includes(skill) ? "default" : "outline"}
+                  className={`cursor-pointer transition-all duration-200 hover:scale-105 whitespace-nowrap ${
+                    selectedSkills.includes(skill)
+                      ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                      : "hover:bg-accent"
+                  }`}
+                  onClick={() => toggleSkill(skill)}
+                >
+                  {skill}
+                </Badge>
+              ))}
             </div>
-          </DropdownMenuContent>
-        </DropdownMenu>
+          </div>
+        )}
       </section>
 
       {/* Projects Grid */}
