@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, ExternalLink, Calendar, GraduationCap } from "lucide-react";
+import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 export default function Research() {
   const papers = [
@@ -32,8 +33,8 @@ export default function Research() {
       {/* Header */}
       <section className="text-center space-y-6">
         <div className="flex items-center justify-center gap-8 animate-fade-in">
-          <h1 className="font-academic text-4xl lg:text-6xl font-bold text-primary bg-gradient-to-r from-primary to-primary-foreground bg-clip-text text-transparent">
-            Research
+          <h1 className="font-academic text-4xl lg:text-6xl font-bold text-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary-foreground hover:bg-clip-text hover:text-transparent transition-all duration-500">
+            <TypewriterEffect phrases={["Research"]} typingSpeed={150} className="inline-block" />
           </h1>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white hover-scale transition-all duration-300 shadow-lg hover:shadow-xl">
             <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4xxpk46Nnyc6_R33u0nGUbSJXUY7rgCHhjK5seT4-urV0y3qz48kkfj8FfSsDLaEC3_x4U51pkPORGnbw&user=KB6pL-sAAAAJ" target="_blank" rel="noopener noreferrer">
