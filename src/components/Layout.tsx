@@ -16,7 +16,7 @@ export function Layout({ children }: LayoutProps) {
       <footer className="border-t border-border bg-background/50">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <p className="text-center text-sm text-muted-foreground">
-            made with love by sarvesh on tiny cafe desks with tripple espressos in san francisco &lt;3
+            made with love by sarvesh on tiny cafe desks in san francisco &lt;3
           </p>
         </div>
       </footer>
