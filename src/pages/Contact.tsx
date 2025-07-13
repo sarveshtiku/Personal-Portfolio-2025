@@ -4,12 +4,38 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Github, Linkedin, Twitter, MapPin, Calendar } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted");
+    const form = e.currentTarget;
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value;
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    const subject = (form.elements.namedItem('subject') as HTMLInputElement).value;
+    const message = (form.elements.namedItem('message') as HTMLInputElement).value;
+
+    try {
+      const response = await fetch('http://localhost:3001/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      const data = await response.json();
+      toast({
+        title: "Message Sent!",
+        description: data.message,
+      });
+      form.reset();
+    } catch (err) {
+      toast({
+        title: "Error",
+        description: "Failed to send message",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -84,7 +110,7 @@ export default function Contact() {
                 <Mail className="h-5 w-5 text-warm-orange" />
                 <div>
                   <p className="font-medium text-primary">Email</p>
-                  <p className="text-sm">hello@yourname.dev</p>
+                  <p className="text-sm">sarveshtiku@gmail.com</p>
                 </div>
               </div>
               
@@ -92,7 +118,7 @@ export default function Contact() {
                 <MapPin className="h-5 w-5 text-warm-orange" />
                 <div>
                   <p className="font-medium text-primary">Location</p>
-                  <p className="text-sm">San Francisco, CA</p>
+                  <p className="text-sm">Atlanta, GA</p>
                 </div>
               </div>
               
@@ -114,27 +140,27 @@ export default function Contact() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <a href="#" className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
+              <a href="https://github.com/sarveshtiku" className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
                 <Github className="h-5 w-5 text-academic-gray" />
                 <div>
                   <p className="font-medium text-primary">GitHub</p>
-                  <p className="text-sm text-academic-gray">@yourusername</p>
+                  <p className="text-sm text-academic-gray">@sarveshtiku</p>
                 </div>
               </a>
               
-              <a href="#" className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
+              <a href="https://www.linkedin.com/in/sarveshtiku/" className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
                 <Linkedin className="h-5 w-5 text-academic-gray" />
                 <div>
                   <p className="font-medium text-primary">LinkedIn</p>
-                  <p className="text-sm text-academic-gray">Professional Profile</p>
+                  <p className="text-sm text-academic-gray">linkedin.com/in/sarveshtiku</p>
                 </div>
               </a>
               
-              <a href="#" className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
+              <a href="https://x.com/sarveshtiku" className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
                 <Twitter className="h-5 w-5 text-academic-gray" />
                 <div>
                   <p className="font-medium text-primary">Twitter</p>
-                  <p className="text-sm text-academic-gray">@yourusername</p>
+                  <p className="text-sm text-academic-gray">@sarveshtiku</p>
                 </div>
               </a>
             </CardContent>
