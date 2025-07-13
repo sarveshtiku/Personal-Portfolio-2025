@@ -33,7 +33,7 @@ export default function Research() {
       {/* Header */}
       <section className="text-center space-y-6">
         <div className="flex items-center justify-center gap-8 animate-fade-in">
-          <h1 className="font-academic text-4xl lg:text-6xl font-bold text-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary-foreground hover:bg-clip-text hover:text-transparent transition-all duration-500">
+          <h1 className="font-academic text-3xl lg:text-5xl font-bold text-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary-foreground hover:bg-clip-text hover:text-transparent transition-all duration-500">
             <TypewriterEffect phrases={["Research"]} typingSpeed={150} loop={false} className="inline-block" />
           </h1>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white hover-scale transition-all duration-300 shadow-lg hover:shadow-xl">
