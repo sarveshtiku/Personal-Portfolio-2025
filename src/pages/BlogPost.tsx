@@ -157,7 +157,7 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
       ]
     }
   },
-  "ai-ethics-practice": {
+  "ai-finance-conference": {
     title: "AI and Future of Finance",
     date: "2025-05-22",
     readTime: "15 min read", 
@@ -879,64 +879,100 @@ export default function BlogPost() {
 
   const peopleMentioned = [
     {
-      name: "Tanisha V Gupta",
-      role: "CS @ Georgia Tech",
-      linkedin: "https://www.linkedin.com/in/tanishag24/",
+      name: "Steven W. McLaughlin",
+      role: "Provost & Executive VP, Georgia Tech",
+      linkedin: "https://www.linkedin.com/in/steve-mclaughlin-505464100",
+      category: "Georgia Tech Leadership"
+    },
+    {
+      name: "Sudheer Chava",
+      role: "Professor & Lab Director, Georgia Tech",
+      linkedin: "https://www.linkedin.com/in/sudheer-chava-b5883021",
+      category: "Georgia Tech Faculty"
+    },
+    {
+      name: "Shannon Johnston",
+      role: "CIO & COO, Invesco",
+      linkedin: "https://www.linkedin.com/in/shannonajohnston",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Christopher Edmonds",
+      role: "President, Fixed Income & Data Services, ICE",
+      linkedin: "https://www.linkedin.com/in/christopher-edmonds-483037a",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Chandra Kapireddy",
+      role: "Firm-wide Head of Gen AI, ML & Analytics, Truist",
+      linkedin: "https://www.linkedin.com/in/chandra-kapireddy",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Thomas Bodenski",
+      role: "COO & Chief Data & Analytics Officer, TS Imagine",
+      linkedin: "https://www.linkedin.com/in/tbodenski",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Deepika Mahajan, CFA",
+      role: "Chief Data & Analytics Officer, Federal Reserve Bank of New York",
+      linkedin: "https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Gauri Sharma",
+      role: "Friend & CS Student",
+      linkedin: "https://www.linkedin.com/in/gs-softwaredev",
       category: "Friends & Colleagues"
     },
     {
-      name: "Werner Gropp",
-      role: "Senior Product Marketing Manager at Amazon",
-      linkedin: "https://www.linkedin.com/in/wernergropp/",
-      category: "Amazon Pay"
+      name: "Anuj Mehrotra",
+      role: "Dean, Georgia Tech Scheller College of Business",
+      linkedin: "https://www.linkedin.com/in/anuj-mehrotra-13b5154",
+      category: "Georgia Tech Leadership"
     },
     {
-      name: "Josh Kliot",
-      role: "Software Engineer",
-      linkedin: "https://www.linkedin.com/in/joshkliot/",
-      category: "General"
+      name: "William H. Rogers Jr.",
+      role: "CEO, Truist",
+      linkedin: "https://www.linkedin.com/posts/billhrogers_truist-oneteam-iwd25-activity-7303746376209739776-31xA",
+      category: "Industry Leaders"
     },
     {
-      name: "Patrick Collison",
-      role: "Co-founder & CEO at Stripe",
-      linkedin: "https://www.linkedin.com/in/patrickcollison",
-      category: "Stripe Leadership"
+      name: "Andrew Schlossberg",
+      role: "President & CEO, Invesco",
+      linkedin: "https://www.linkedin.com/in/andrew-schlossberg-invesco",
+      category: "Industry Leaders"
     },
     {
-      name: "John Collison",
-      role: "Co-founder & President at Stripe",
-      linkedin: "https://www.linkedin.com/in/johnbcollison",
-      category: "Stripe Leadership"
+      name: "Deep Ratna Srivastav",
+      role: "Chief AI Officer, Franklin Templeton",
+      linkedin: "https://www.linkedin.com/in/deepsrivastavinnovate",
+      category: "Industry Leaders"
     },
     {
-      name: "Ethan Senturia",
-      role: "Partner at Tidemark",
-      linkedin: "https://www.linkedin.com/in/ethansenturia",
-      category: "VSaaS Growth Playbook Panel"
+      name: "Sudipta Sengupta",
+      role: "Research Principal at Microsoft",
+      linkedin: "https://www.linkedin.com/in/sudiptasengupta/",
+      category: "Industry Leaders"
     },
     {
-      name: "Andrew Walsh",
-      role: "Partner at Tidemark",
-      linkedin: "https://www.linkedin.com/in/awalsh14",
-      category: "VSaaS Growth Playbook Panel"
+      name: "Robbie Birbeck",
+      role: "Tech Professional",
+      linkedin: "https://www.linkedin.com/in/robertbirbeck/",
+      category: "Industry Leaders"
     },
     {
-      name: "Christian DiCarlo",
-      role: "Head of Platform Partnerships at Stripe",
-      linkedin: "https://www.linkedin.com/in/dicarlo",
-      category: "VSaaS Growth Playbook Panel"
+      name: "Allen Stewart",
+      role: "Tech Professional",
+      linkedin: "https://www.linkedin.com/in/allen-stewart/",
+      category: "Industry Leaders"
     },
     {
-      name: "Erica Khalili",
-      role: "Chief Legal & Risk Officer at Lead Bank",
-      linkedin: "https://www.linkedin.com/in/erica-khalili-48138570",
-      category: "Stablecoins & Fintech Panel"
-    },
-    {
-      name: "Chris Maurice",
-      role: "CEO at Yellow Card",
-      linkedin: "https://www.linkedin.com/in/chrismaurice18",
-      category: "Stablecoins & Fintech Panel"
+      name: "Mark Riedl",
+      role: "Professor & AI Researcher, Georgia Tech",
+      linkedin: "https://www.linkedin.com/in/markriedl",
+      category: "Georgia Tech Faculty"
     }
   ];
 
@@ -964,34 +1000,42 @@ export default function BlogPost() {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {Object.entries(groupedPeople).map(([category, people]) => (
-            <div key={category} className="space-y-2">
-              <h4 className="font-semibold text-primary text-base">{category}</h4>
-              <div className="grid gap-2">
-                {people.map((person) => (
-                  <Card key={person.name} className="p-2 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-2">
-                      <Avatar className="h-6 w-6">
-                        <AvatarFallback className="bg-primary-blue-light text-primary-blue font-semibold text-xs">
-                          {getInitials(person.name)}
-                        </AvatarFallback>
-                      </Avatar>
-                      <div className="flex-1 min-w-0">
-                        <h5 className="font-semibold text-primary text-xs truncate">{person.name}</h5>
-                        <p className="text-xs text-academic-gray truncate">{person.role}</p>
-                      </div>
-                      <Button variant="outline" size="sm" asChild>
-                        <a
-                          href={person.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-1 text-xs px-1 py-1"
+            <div key={category} className="space-y-3">
+              <h4 className="text-sm font-semibold text-foreground flex items-center gap-2 px-1">
+                <div className="h-px bg-border flex-1" />
+                {category}
+                <div className="h-px bg-border flex-1" />
+              </h4>
+              <div className="space-y-2">
+                {people.map((person, index) => (
+                  <Card key={index} className="border border-muted/30 bg-gradient-to-br from-card/50 to-muted/20 transition-all duration-200 hover:border-primary/30 hover:shadow-sm">
+                    <CardContent className="p-3">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3 min-w-0 flex-1">
+                          <Avatar className="h-8 w-8 bg-primary/10 border border-primary/20 flex-shrink-0">
+                            <AvatarFallback className="text-xs font-medium text-primary bg-primary/10">
+                              {getInitials(person.name)}
+                            </AvatarFallback>
+                          </Avatar>
+                          <div className="min-w-0 flex-1">
+                            <h4 className="text-sm font-medium leading-none truncate">{person.name}</h4>
+                            <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{person.role}</p>
+                          </div>
+                        </div>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          asChild
+                          className="h-8 w-8 p-0 text-muted-foreground hover:text-primary hover:bg-primary/10 flex-shrink-0 ml-2"
                         >
-                          <Linkedin className="h-3 w-3" />
-                        </a>
-                      </Button>
-                    </div>
+                          <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      </div>
+                    </CardContent>
                   </Card>
                 ))}
               </div>

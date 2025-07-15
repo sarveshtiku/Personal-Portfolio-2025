@@ -40,7 +40,7 @@ export default function Blog() {
       date: "2025-05-22",
       readTime: "15 min read",
       category: "Conference",
-      slug: "ai-ethics-practice",
+      slug: "ai-finance-conference",
       image: "/lovable-uploads/115f906d-35e9-456b-9154-cc254bbf56d3.png",
       tags: ["FinTech"],
       location: "Atlanta, Georgia"
