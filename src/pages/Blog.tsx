@@ -36,11 +36,14 @@ export default function Blog() {
     },
     {
       title: "AI and Future of Finance",
-      excerpt: "Moving beyond theoretical discussions of AI ethics to practical implementation. How to build ethical considerations into your development workflow and decision-making process.",
-      date: "2023-12-20",
-      readTime: "10 min read",
-      category: "AI Ethics",
-      slug: "ai-ethics-practice"
+      excerpt: "Last week, I attended Georgia Tech's AI & Future of Finance Conference organised by the Scheller College of Business—and it exceeded all my expectations. Over two days, I connected with fellow students, researchers, and C-suite leaders.",
+      date: "2025-05-22",
+      readTime: "15 min read",
+      category: "Conference",
+      slug: "ai-ethics-practice",
+      image: "/lovable-uploads/115f906d-35e9-456b-9154-cc254bbf56d3.png",
+      tags: ["FinTech"],
+      location: "Atlanta, Georgia"
     }
   ];
 
@@ -100,7 +103,8 @@ export default function Blog() {
       "Engineering": "bg-primary-blue-light text-primary-blue",
       "Architecture": "bg-warm-orange-light text-warm-orange",
       "AI Ethics": "bg-success/10 text-success",
-      "Conference": "bg-primary/10 text-primary"
+      "Conference": "bg-primary/10 text-primary",
+      "FinTech": "bg-success/10 text-success"
     };
     return colors[category] || "bg-muted text-muted-foreground";
   };
