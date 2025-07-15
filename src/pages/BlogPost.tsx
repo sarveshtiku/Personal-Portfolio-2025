@@ -1,7 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink, Linkedin, Users } from "lucide-react";
+import { CalendarDays, Clock, ArrowLeft, Play, TrendingUp, Code, Link as LinkIcon, GraduationCap, ExternalLink, Linkedin, Users, Database, BookOpen, FlaskConical } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BlogComments } from "@/components/BlogComments";
@@ -766,53 +766,63 @@ export default function BlogPost() {
               </h3>
               <nav className="space-y-3">
                 <a
-                  href="https://stripe.com/sessions/2025/product-keynote"
+                  href="https://www.youtube.com/watch?v=-G1skt3qNBE&t"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
                   <Play className="h-4 w-4 flex-shrink-0" />
-                  <span>1. Listen to the Product Keynote</span>
+                  <span>Tech Talks Business Features Bill Rogers, Chairman and CEO of Truist</span>
                   <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
                 <a
-                  href="https://stripe.com/startups"
+                  href="https://www.youtube.com/watch?v=34cEgLpKJUg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
+                >
+                  <Play className="h-4 w-4 flex-shrink-0" />
+                  <span>Tech Talks Business Featuring Andrew Schlossberg, President and CEO of Invesco</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
+                </a>
+                <a
+                  href="https://quickstarts.snowflake.com/guide/s_and_p_market_intelligence_analyze_earnings_transcripts_in_cortex_ai/index.html#0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
+                >
+                  <Database className="h-4 w-4 flex-shrink-0" />
+                  <span>S&P Market Intelligence: Analyze Earnings Transcripts with LLMs in Cortex AI</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
+                </a>
+                <a
+                  href="https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks#explore-notebooks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
+                >
+                  <BookOpen className="h-4 w-4 flex-shrink-0" />
+                  <span>Experience Snowflake with notebooks</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
+                </a>
+                <a
+                  href="https://colab.research.google.com/drive/1O1dClDV_5DBgoy6lwvKEGHfo2EJVsugC?usp=sharing#scrollTo=crSFYwOTpNa3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
+                >
+                  <FlaskConical className="h-4 w-4 flex-shrink-0" />
+                  <span>Test Time Scaling Inference using CoT and PoT on Llama Model</span>
+                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
+                </a>
+                <a
+                  href="https://colab.research.google.com/drive/11CQP1yOoSz942r3mina7WRB-KJDHeQN2?usp=sharing#scrollTo=QQwkqqKIlXMX"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
                 >
                   <TrendingUp className="h-4 w-4 flex-shrink-0" />
-                  <span>2. Grow your business with Stripe</span>
-                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
-                </a>
-                <a
-                  href="https://docs.stripe.com/api"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
-                >
-                  <Code className="h-4 w-4 flex-shrink-0" />
-                  <span>3. API Docs for developers</span>
-                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
-                </a>
-                <a
-                  href="https://stripe.com/payments/payment-links"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
-                >
-                  <LinkIcon className="h-4 w-4 flex-shrink-0" />
-                  <span>4. No Code Payment Links</span>
-                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
-                </a>
-                <a
-                  href="https://www.youtube.com/watch?v=_YCC9Osq6y4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-academic-gray hover:text-primary transition-colors py-1 group"
-                >
-                  <GraduationCap className="h-4 w-4 flex-shrink-0" />
-                  <span>5. Have no idea where to begin? A complete Stripe tutorial</span>
+                  <span>Graph Retrieval Augmented Generation</span>
                   <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                 </a>
               </nav>
