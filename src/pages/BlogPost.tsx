@@ -204,7 +204,10 @@ On investment strategy, Rogers explained how Truist takes an "offensive" approac
 
 Looking ahead, Rogers sees the future of banking as uncertain and volatile—AI will drive disruption, but institutions must remain agile and keep the human element at the center. He highlighted the critical need for inclusivity, both in technology adoption and access to financial services, advocating for a broader, more equitable approach to banking.
 
-Rogers closed by speaking directly to students and early-career professionals: align your work with personal purpose, take ownership of your career, and stay engaged in driving innovation—not just within organizations, but across the industry.`
+Rogers closed by speaking directly to students and early-career professionals: align your work with personal purpose, take ownership of your career, and stay engaged in driving innovation—not just within organizations, but across the industry.
+
+<img src="/lovable-uploads/a2bba184-e7f0-43e2-9cde-5b5e12d439aa.png" alt="Bill Rogers fireside chat and student group photo" class="w-full rounded-lg mb-4 mt-6" />
+<p class="text-sm text-gray-600 italic text-center mb-6">Left: Bill Rogers, CEO of Truist, during his fireside chat at the AI & Future of Finance Conference. Right: Students from the Truist Immersive Learning Experience, alongside Anuj Mehrotra (Dean, Scheller College of Business) and Bill Rogers (CEO, Truist, third from right). I am on the far right.</p>`
         },
         {
           id: "1.5",
