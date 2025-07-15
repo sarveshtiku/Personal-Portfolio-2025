@@ -334,6 +334,9 @@ Hearing from C-suite leaders and industry veterans brought a new level of realis
           title: "Gratitude and Acknowledgments",
           content: `I want to end this post with a huge amount of gratitude—for Georgia Tech and for everyone, seen and unseen, who helped make this conference happen. It takes real effort to bring so many brilliant minds together and to keep things running smoothly. Special thanks to Prof. Sudheer Chava—I barely got a chance to speak with you, but your humility and genuine passion for creating this kind of platform for students to learn and connect came through in every detail. The Scheller College of Business and the Financial Services Innovation Lab both deserve a shoutout for supporting and elevating student voices.
 
+<img src="/lovable-uploads/56548e5e-77e7-4957-9afb-f84f7f734d21.png" alt="Conference attendees and networking" class="w-full rounded-lg mb-4 mt-6" />
+<p class="text-sm text-gray-600 italic text-center mb-6">Networking and connections made at the Georgia Tech AI in Finance conference - the people who made this experience truly memorable.</p>
+
 And finally, the biggest thanks goes to Gauri—for sharing these resources with me in the first place, for being my 6am wake-up call over spring break, and for sprinting across Ferst Center with me in uncomfortable shoes at sunrise just to make it on time. I've never been more grateful to have a friend like you in my life.`
         }
       ]
