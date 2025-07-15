@@ -958,7 +958,7 @@ export default function BlogPost() {
     },
     {
       name: "Robbie Birbeck",
-      role: "Tech Professional",
+      role: "Tech Professional", 
       linkedin: "https://www.linkedin.com/in/robertbirbeck/",
       category: "Industry Leaders"
     },
