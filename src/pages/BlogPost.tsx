@@ -304,6 +304,9 @@ Thank you to everyone who took the time to stop by and share a conversation with
           content: `<strong>Future of Gen AI</strong>
 The "Future of Gen AI" panel brought together leaders from AWS, Salesforce, and Microsoft to debate where generative AI is heading next. Panelists discussed practical enterprise adoption, emerging risks, and how foundational models are changing the pace of software and business innovation. The session emphasized the need for responsible deployment, cross-industry collaboration, and continuous research to keep up with rapid advances.
 
+<img src="/lovable-uploads/5a0743b9-a0d9-4a8e-9243-237920ac12b2.png" alt="Future of Gen AI panel discussion" class="w-full rounded-lg mb-4 mt-6" />
+<p class="text-sm text-gray-600 italic text-center mb-6">The "Future of Gen AI" panel featuring leaders from AWS, Salesforce, and Microsoft discussing enterprise AI adoption and innovation at the Georgia Tech Scheller College of Business.</p>
+
 Panel included:
 • Sudipta Sengupta, Vice President and Distinguished Scientist, Amazon AWS
 • Robbie Birbeck, Vice President of BT Customer Zero, Salesforce
@@ -314,6 +317,9 @@ Hearing from Robbie Birbeck was a highlight for me, especially since I had just 
 
 <strong>Panel: View from the C-Suite: Promises and Challenges of AI in Finance</strong>
 The "View from the C-Suite" panel featured top executives from Invesco, ICE, and the New York Fed, offering an unfiltered look at how AI is transforming finance from the inside. Panelists shared both the strategic opportunities—like risk management, automation, and unlocking new data-driven insights—and the regulatory and operational challenges that come with AI adoption. The discussion made clear that success in AI for finance will require not just technology, but also leadership, governance, and trust.
+
+<img src="/lovable-uploads/968ba52c-8c72-4e2d-acd9-d0ef483b9a10.png" alt="C-Suite panel on AI in Finance" class="w-full rounded-lg mb-4 mt-6" />
+<p class="text-sm text-gray-600 italic text-center mb-6">The "View from the C-Suite: Promises and Challenges of AI in Finance" panel featuring Shannon Johnston (Invesco), Christopher Edmonds (ICE), and Deepika Mahajan (Federal Reserve Bank of New York) with moderator Prof. Sudheer Chava at Georgia Tech.</p>
 
 Panel included:
 • Shannon Johnston, Senior Managing Director and Chief Information and Operations Officer, Invesco
