@@ -35,7 +35,7 @@ export default function Blog() {
       image: "/lovable-uploads/f824f7f5-b38a-4fc8-b26c-829c3a25fffb.png"
     },
     {
-      title: "AI and Future of Finance",
+      title: "AI and the Future of Finance Conference",
       excerpt: "Last week, I attended Georgia Tech's AI & Future of Finance Conference organised by the Scheller College of Business—and it exceeded all my expectations. Over two days, I connected with fellow students, researchers, and C-suite leaders.",
       date: "2025-05-22",
       readTime: "15 min read",
@@ -221,6 +221,11 @@ export default function Blog() {
                   <Badge className={`${getCategoryColor(post.category)} text-xs px-2 py-1`}>
                     {post.category}
                   </Badge>
+                  {(post as any).tags && (post as any).tags.map((tag: string) => (
+                    <Badge key={tag} className={`${getCategoryColor(tag)} text-xs px-2 py-1`}>
+                      {tag}
+                    </Badge>
+                  ))}
                   <div className="flex items-center gap-1">
                     <CalendarDays className="h-3 w-3" />
                     {new Date(post.date).toLocaleDateString('en-US', { 
