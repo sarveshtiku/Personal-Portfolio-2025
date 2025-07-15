@@ -339,229 +339,212 @@ Hearing from C-suite leaders and industry veterans brought a new level of realis
           title: "People Mentioned",
           content: `<h3 class="text-2xl font-bold mb-6">People Mentioned</h3>
 
-<div class="bg-gray-50 border-l-4 border-gray-300 p-4 mb-8 italic text-gray-700">
+<div class="bg-gray-50 border-l-4 border-gray-300 p-4 mb-6 italic text-gray-700">
   <p><strong>Disclaimer:</strong> The individuals mentioned below did not contribute to any of the thoughts or views expressed in this conference summary. All opinions and interpretations are my own, and these people should not be held responsible for any views presented here.</p>
 </div>
 
-<div class="mb-6">
-  <p class="text-gray-600 flex items-center gap-2 mb-6">
+<div class="mb-4">
+  <p class="text-gray-600 flex items-center gap-2">
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
     Special thanks to everyone who made this conference insightful and memorable:
   </p>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-  <!-- Leadership -->
-  <div>
-    <h4 class="text-xl font-semibold mb-4 text-gray-800">Leadership</h4>
-    <div class="space-y-3">
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">
-          SM
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+  <!-- Left Column -->
+  <div class="space-y-6">
+    <!-- Leadership -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800">Leadership</h4>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-xs">SM</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Steven W. McLaughlin</div>
+            <div class="text-xs text-gray-600 truncate">Provost & Executive VP, Georgia Tech</div>
+          </div>
+          <a href="https://www.linkedin.com/in/steve-mclaughlin-505464100" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Steven W. McLaughlin</div>
-          <div class="text-sm text-gray-600">Provost & Executive VP, Georgia Tech</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-semibold text-xs">AM</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Anuj Mehrotra</div>
+            <div class="text-xs text-gray-600 truncate">Dean, Georgia Tech Scheller College of Business</div>
+          </div>
+          <a href="https://www.linkedin.com/in/anuj-mehrotra-13b5154" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <a href="https://www.linkedin.com/in/steve-mclaughlin-505464100" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
       </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-semibold text-sm">
-          AM
+    </div>
+
+    <!-- Future of Gen AI Panel -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800">Future of Gen AI Panel</h4>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-semibold text-xs">SS</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Sudipta Sengupta</div>
+            <div class="text-xs text-gray-600 truncate">VP & Distinguished Scientist, Amazon AWS</div>
+          </div>
+          <div class="w-4 h-4 text-gray-400 flex-shrink-0">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
         </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Anuj Mehrotra</div>
-          <div class="text-sm text-gray-600">Dean, Georgia Tech Scheller College of Business</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-semibold text-xs">RB</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Robbie Birbeck</div>
+            <div class="text-xs text-gray-600 truncate">VP of BT Customer Zero, Salesforce</div>
+          </div>
+          <div class="w-4 h-4 text-gray-400 flex-shrink-0">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
         </div>
-        <a href="https://www.linkedin.com/in/anuj-mehrotra-13b5154" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-semibold text-xs">AS</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Allen Stewart</div>
+            <div class="text-xs text-gray-600 truncate">Partner Director, Microsoft</div>
+          </div>
+          <div class="w-4 h-4 text-gray-400 flex-shrink-0">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-semibold text-xs">MR</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Mark Riedl</div>
+            <div class="text-xs text-gray-600 truncate">Professor, Georgia Tech (Moderator)</div>
+          </div>
+          <div class="w-4 h-4 text-gray-400 flex-shrink-0">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Speakers (Part 1) -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800">Other Speakers</h4>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-semibold text-xs">CK</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Chandra Kapireddy</div>
+            <div class="text-xs text-gray-600 truncate">Head of Gen AI, ML & Analytics, Truist</div>
+          </div>
+          <a href="https://www.linkedin.com/in/chandra-kapireddy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-semibold text-xs">TB</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Thomas Bodenski</div>
+            <div class="text-xs text-gray-600 truncate">COO & Chief Data & Analytics Officer, TS Imagine</div>
+          </div>
+          <a href="https://www.linkedin.com/in/tbodenski" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Future of Gen AI Panel -->
-  <div>
-    <h4 class="text-xl font-semibold mb-4 text-gray-800">Future of Gen AI Panel</h4>
-    <div class="space-y-3">
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-semibold text-sm">
-          SS
+  <!-- Right Column -->
+  <div class="space-y-6">
+    <!-- C-Suite Panel -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800">C-Suite Panel</h4>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-xs">SJ</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Shannon Johnston</div>
+            <div class="text-xs text-gray-600 truncate">CIO & COO, Invesco</div>
+          </div>
+          <a href="https://www.linkedin.com/in/shannonajohnston" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Sudipta Sengupta</div>
-          <div class="text-sm text-gray-600">VP & Distinguished Scientist, Amazon AWS</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-semibold text-xs">CE</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Christopher Edmonds</div>
+            <div class="text-xs text-gray-600 truncate">President, Fixed Income & Data Services, ICE</div>
+          </div>
+          <a href="https://www.linkedin.com/in/christopher-edmonds-483037a" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <div class="w-5 h-5 text-gray-400">
-          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-semibold text-xs">DM</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Deepika Mahajan</div>
+            <div class="text-xs text-gray-600 truncate">Chief Data & Analytics Officer, Federal Reserve Bank of NY</div>
+          </div>
+          <a href="https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-semibold text-sm">
-          RB
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Robbie Birbeck</div>
-          <div class="text-sm text-gray-600">VP of BT Customer Zero, Salesforce</div>
-        </div>
-        <div class="w-5 h-5 text-gray-400">
-          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </div>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-semibold text-sm">
-          AS
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Allen Stewart</div>
-          <div class="text-sm text-gray-600">Partner Director, Microsoft</div>
-        </div>
-        <div class="w-5 h-5 text-gray-400">
-          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </div>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-semibold text-sm">
-          MR
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Mark Riedl</div>
-          <div class="text-sm text-gray-600">Professor, Georgia Tech (Moderator)</div>
-        </div>
-        <div class="w-5 h-5 text-gray-400">
-          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-semibold text-xs">SC</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Sudheer Chava</div>
+            <div class="text-xs text-gray-600 truncate">Professor & Lab Director, Georgia Tech (Moderator)</div>
+          </div>
+          <a href="https://www.linkedin.com/in/sudheer-chava-b5883021" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- C-Suite Panel -->
-  <div>
-    <h4 class="text-xl font-semibold mb-4 text-gray-800">C-Suite Panel</h4>
-    <div class="space-y-3">
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">
-          SJ
+    <!-- Other Speakers (Part 2) -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800">Additional Speakers</h4>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 font-semibold text-xs">DS</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Deep Ratna Srivastav</div>
+            <div class="text-xs text-gray-600 truncate">Chief AI Officer, Franklin Templeton</div>
+          </div>
+          <a href="https://www.linkedin.com/in/deepsrivastavinnovate" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Shannon Johnston</div>
-          <div class="text-sm text-gray-600">CIO & COO, Invesco</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 font-semibold text-xs">AS</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Andrew Schlossberg</div>
+            <div class="text-xs text-gray-600 truncate">President & CEO, Invesco</div>
+          </div>
+          <a href="https://www.linkedin.com/in/andrew-schlossberg-invesco" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <a href="https://www.linkedin.com/in/shannonajohnston" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-semibold text-sm">
-          CE
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Christopher Edmonds</div>
-          <div class="text-sm text-gray-600">President, Fixed Income & Data Services, ICE</div>
-        </div>
-        <a href="https://www.linkedin.com/in/christopher-edmonds-483037a" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-semibold text-sm">
-          DM
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Deepika Mahajan</div>
-          <div class="text-sm text-gray-600">Chief Data & Analytics Officer, Federal Reserve Bank of NY</div>
-        </div>
-        <a href="https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-semibold text-sm">
-          SC
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Sudheer Chava</div>
-          <div class="text-sm text-gray-600">Professor & Lab Director, Georgia Tech (Moderator)</div>
-        </div>
-        <a href="https://www.linkedin.com/in/sudheer-chava-b5883021" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
       </div>
     </div>
-  </div>
 
-  <!-- Other Speakers -->
-  <div>
-    <h4 class="text-xl font-semibold mb-4 text-gray-800">Other Speakers</h4>
-    <div class="space-y-3">
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-semibold text-sm">
-          CK
+    <!-- Friends & Colleagues -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800">Friends & Colleagues</h4>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
+          <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 font-semibold text-xs">GS</div>
+          <div class="flex-1 min-w-0">
+            <div class="font-medium text-gray-900 text-sm">Gauri Sharma</div>
+            <div class="text-xs text-gray-600 truncate">CS @ Georgia Tech</div>
+          </div>
+          <a href="https://www.linkedin.com/in/gs-softwaredev" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23-227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Chandra Kapireddy</div>
-          <div class="text-sm text-gray-600">Head of Gen AI, ML & Analytics, Truist</div>
-        </div>
-        <a href="https://www.linkedin.com/in/chandra-kapireddy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-semibold text-sm">
-          TB
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Thomas Bodenski</div>
-          <div class="text-sm text-gray-600">COO & Chief Data & Analytics Officer, TS Imagine</div>
-        </div>
-        <a href="https://www.linkedin.com/in/tbodenski" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 font-semibold text-sm">
-          DS
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Deep Ratna Srivastav</div>
-          <div class="text-sm text-gray-600">Chief AI Officer, Franklin Templeton</div>
-        </div>
-        <a href="https://www.linkedin.com/in/deepsrivastavinnovate" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 font-semibold text-sm">
-          AS
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Andrew Schlossberg</div>
-          <div class="text-sm text-gray-600">President & CEO, Invesco</div>
-        </div>
-        <a href="https://www.linkedin.com/in/andrew-schlossberg-invesco" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Friends & Colleagues -->
-  <div>
-    <h4 class="text-xl font-semibold mb-4 text-gray-800">Friends & Colleagues</h4>
-    <div class="space-y-3">
-      <div class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200">
-        <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 font-semibold text-sm">
-          GS
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-gray-900">Gauri Sharma</div>
-          <div class="text-sm text-gray-600">CS @ Georgia Tech</div>
-        </div>
-        <a href="https://www.linkedin.com/in/gs-softwaredev" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
       </div>
     </div>
   </div>
