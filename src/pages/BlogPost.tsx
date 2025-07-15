@@ -158,7 +158,7 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
     }
   },
   "ai-ethics-practice": {
-    title: "AI Ethics in Practice: A Developer's Perspective",
+    title: "AI and Future of Finance",
     date: "2023-12-20",
     readTime: "10 min read", 
     category: "AI Ethics",

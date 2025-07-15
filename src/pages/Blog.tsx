@@ -35,7 +35,7 @@ export default function Blog() {
       image: "/lovable-uploads/f824f7f5-b38a-4fc8-b26c-829c3a25fffb.png"
     },
     {
-      title: "AI Ethics in Practice: A Developer's Perspective",
+      title: "AI and Future of Finance",
       excerpt: "Moving beyond theoretical discussions of AI ethics to practical implementation. How to build ethical considerations into your development workflow and decision-making process.",
       date: "2023-12-20",
       readTime: "10 min read",
