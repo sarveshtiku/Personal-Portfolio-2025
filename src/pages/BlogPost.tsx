@@ -159,9 +159,11 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
   },
   "ai-ethics-practice": {
     title: "AI and Future of Finance",
-    date: "2023-12-20",
+    date: "2025-05-22",
     readTime: "15 min read", 
     category: "Conference",
+    location: "Atlanta, Georgia",
+    tags: ["FinTech"],
     author: "Sarvesh Tiku",
     type: "blog",
     content: {
@@ -820,6 +822,16 @@ export default function BlogPost() {
                 </div>
               )}
             </div>
+            
+            {(post as any).tags && (post as any).tags.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {(post as any).tags.map((tag: string) => (
+                  <Badge key={tag} variant="secondary" className="text-xs">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+            )}
             
             <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary leading-tight">
               {post.title}
