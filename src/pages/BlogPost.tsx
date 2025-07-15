@@ -256,6 +256,9 @@ Tina Zhao showed that LLMs are no longer "just" research. At BlackRock, they are
           title: "Quantamental Research in Snowflake — Jonathan Regenstein",
           content: `Jonathan Regenstein, Head of Financial Services AI at Snowflake, demonstrated how Snowflake is operationalizing quantamental research by embedding LLM-powered analytics directly into the financial data pipeline.
 
+<img src="/lovable-uploads/08a013d5-bc91-4e5e-9192-933146cd530f.png" alt="Jonathan Regenstein presenting Snowflake financial services solutions" class="w-full rounded-lg mb-4 mt-6" />
+<p class="text-sm text-gray-600 italic text-center mb-6">Jonathan Regenstein, Head of Financial Services AI at Snowflake, presenting quantamental research capabilities with a focus on financial services verticals including Wealth & Asset Management, Ecosystem, Payments, and Insurance at the AI & Future of Finance Conference.</p>
+
 <strong>Key Takeaways from the S&P Market Intelligence QuickStart:</strong>
 
 <strong>Earnings Call Analysis, Automated:</strong>
