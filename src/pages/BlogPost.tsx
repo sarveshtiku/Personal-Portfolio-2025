@@ -312,10 +312,10 @@ The "Future of Gen AI" panel brought together leaders from AWS, Salesforce, and 
 <img src="/lovable-uploads/5a0743b9-a0d9-4a8e-9243-237920ac12b2.png" alt="Future of Gen AI panel discussion" class="w-full rounded-lg mb-4 mt-6" />
 <p class="text-sm text-gray-600 italic text-center mb-6">The "Future of Gen AI" panel featuring leaders from AWS, Salesforce, and Microsoft discussing enterprise AI adoption and innovation at the Georgia Tech Scheller College of Business.</p>
 
-Panel included:
-• Sudipta Sengupta, Vice President and Distinguished Scientist, Amazon AWS
-• Robbie Birbeck, Vice President of BT Customer Zero, Salesforce
-• Allen Stewart, Partner Director of Software Engineering, Microsoft
+Panel included:<br/>
+• Sudipta Sengupta, Vice President and Distinguished Scientist, Amazon AWS<br/>
+• Robbie Birbeck, Vice President of BT Customer Zero, Salesforce<br/>
+• Allen Stewart, Partner Director of Software Engineering, Microsoft<br/>
 • Moderator: Mark Riedl, Professor, Georgia Tech School of Interactive Computing
 
 Hearing from Robbie Birbeck was a highlight for me, especially since I had just accepted my offer to intern at Salesforce this summer. It was exciting to get an insider's perspective on the Customer Zero Experience—where Salesforce employees are the platform's first users. Later, I had a great conversation with Robbie and he introduced me to the Agentforce Specialist Certification, which is free for students. I jumped on the opportunity and am now officially Agentforce Specialized. I can't wait to learn even more with Salesforce this summer!
@@ -326,10 +326,10 @@ The "View from the C-Suite" panel featured top executives from Invesco, ICE, and
 <img src="/lovable-uploads/968ba52c-8c72-4e2d-acd9-d0ef483b9a10.png" alt="C-Suite panel on AI in Finance" class="w-full rounded-lg mb-4 mt-6" />
 <p class="text-sm text-gray-600 italic text-center mb-6">The "View from the C-Suite: Promises and Challenges of AI in Finance" panel featuring Shannon Johnston (Invesco), Christopher Edmonds (ICE), and Deepika Mahajan (Federal Reserve Bank of New York) with moderator Prof. Sudheer Chava at Georgia Tech.</p>
 
-Panel included:
-• Shannon Johnston, Senior Managing Director and Chief Information and Operations Officer, Invesco
-• Christopher Edmonds, President, Fixed Income & Data Services, Intercontinental Exchange
-• Deepika Mahajan, Chief Data and Analytics Officer, Federal Reserve Bank of New York
+Panel included:<br/>
+• Shannon Johnston, Senior Managing Director and Chief Information and Operations Officer, Invesco<br/>
+• Christopher Edmonds, President, Fixed Income & Data Services, Intercontinental Exchange<br/>
+• Deepika Mahajan, Chief Data and Analytics Officer, Federal Reserve Bank of New York<br/>
 • Moderator: Sudheer Chava, Alton M. Costley Chair, Professor of Finance, Georgia Tech Scheller College of Business, Georgia Tech Financial Services Innovation Lab
 
 Hearing from C-suite leaders and industry veterans brought a new level of realism to the whole event. Their candid take on the promises and challenges of AI in finance made it clear: building the future of finance will take more than just new tools—it's about people, leadership, and trust.`
