@@ -224,6 +224,9 @@ Unlike standard RAG pipelines, which can surface context but rarely explain rela
           title: "LLM Applications in Investment Management — Tina Zhao, BlackRock",
           content: `Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, delivered a grounded and pragmatic overview of how large language models are reshaping investment management at scale. Her talk made it clear: LLMs are not hype—they are already operational across the investment lifecycle.
 
+<img src="/lovable-uploads/abeea4d0-5cf9-4be3-a634-c509390e1996.png" alt="Tina Zhao presenting at Georgia Tech" class="w-full rounded-lg mb-4 mt-6" />
+<p class="text-sm text-gray-600 italic text-center mb-6">Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, presenting "LLM Applications in Investment Management" at the AI & Future of Finance Conference at Georgia Tech, with conference sponsors including Snowflake, Truist, Salesforce, BlackRock, and RelationalAI.</p>
+
 <strong>AI Applications Across BlackRock</strong>
 Zhao outlined how LLMs drive impact in three core areas:
 
