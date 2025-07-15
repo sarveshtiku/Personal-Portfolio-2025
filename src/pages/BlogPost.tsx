@@ -269,10 +269,10 @@ Regenstein's demo centered on analyzing earnings transcripts with LLMs via Snowf
 <strong>Modern Data Stack, End-to-End:</strong>
 The workflow starts by ingesting machine-readable transcripts (from S&P Global Market Intelligence), storing them in Snowflake tables, and applying SQL/Python Cortex functions—all within Snowflake Notebooks.
 
-Key steps:
-• Create database objects and load transcript data from S3.
-• Generate text embeddings for questions and answers.
-• Use cosine similarity to compare how closely executive answers track analyst queries.
+Key steps:<br/>
+• Create database objects and load transcript data from S3.<br/>
+• Generate text embeddings for questions and answers.<br/>
+• Use cosine similarity to compare how closely executive answers track analyst queries.<br/>
 • Leverage LLMs (via Cortex) to benchmark executive answers against ideal model-generated responses.
 
 <strong>Snowflake Cortex: AI/ML at Scale, Natively</strong>
@@ -281,9 +281,9 @@ Snowflake Cortex is a fully managed platform for deploying LLM and ML functions 
 <strong>Why This Matters:</strong>
 Traditional financial research workflows are manual and fragmented. By running NLP and LLM-driven analysis natively in Snowflake, teams gain speed, scalability, and reproducibility—critical for modern quantamental strategies.
 
-<strong>What You Can Build:</strong>
-• Automated scoring of management communication quality for any public company.
-• Systematic signals for alpha generation based on real language data, not just numbers.
+<strong>What You Can Build:</strong><br/>
+• Automated scoring of management communication quality for any public company.<br/>
+• Systematic signals for alpha generation based on real language data, not just numbers.<br/>
 • A unified, version-controlled workflow using Snowflake Notebooks—integrated with GitHub for collaboration.
 
 <strong>Broader Implications:</strong>
