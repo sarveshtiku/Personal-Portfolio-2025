@@ -166,6 +166,7 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
     tags: ["FinTech"],
     author: "Sarvesh Tiku",
     type: "blog",
+    coverImage: "/lovable-uploads/115f906d-35e9-456b-9154-cc254bbf56d3.png",
     content: {
       intro: "Last week, I attended Georgia Tech's AI & Future of Finance Conference organised by the Scheller College of Business—and it exceeded all my expectations. Over two days, I connected with fellow students, researchers, and C-suite leaders. Each conversation helped me understand and hear for myself the ways with which finance and technology intersect and how much potential for innovation still lies ahead.",
       sections: [
@@ -845,6 +846,17 @@ export default function BlogPost() {
               by <span className="font-medium">{post.author}</span>
             </div>
           </header>
+
+          {/* Cover Image */}
+          {(post as any).coverImage && (
+            <div className="space-y-3">
+              <img 
+                src={(post as any).coverImage} 
+                alt={`Cover image for ${post.title}`}
+                className="w-full rounded-lg academic-shadow"
+              />
+            </div>
+          )}
 
           {/* Content Sections */}
           <div className="space-y-8">
