@@ -160,52 +160,160 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
   "ai-ethics-practice": {
     title: "AI and Future of Finance",
     date: "2023-12-20",
-    readTime: "10 min read", 
-    category: "AI Ethics",
-    author: "Your Name",
+    readTime: "15 min read", 
+    category: "Conference",
+    author: "Sarvesh Tiku",
     type: "blog",
     content: {
-      intro: "Moving beyond theoretical discussions of AI ethics to practical implementation. How to build ethical considerations into your development workflow and decision-making process.",
+      intro: "Last week, I attended Georgia Tech's AI & Future of Finance Conference organised by the Scheller College of Business—and it exceeded all my expectations. Over two days, I connected with fellow students, researchers, and C-suite leaders. Each conversation helped me understand and hear for myself the ways with which finance and technology intersect and how much potential for innovation still lies ahead.",
       sections: [
         {
           id: "1.1",
-          title: "Ethics as Code",
-          content: `Ethical AI development requires embedding ethical considerations directly into the development process. This means creating frameworks, checklists, and automated checks that make ethical behavior the default path.
-
-Rather than treating ethics as an afterthought, successful teams integrate ethical review into their definition of done, just like security and performance considerations.`
+          title: "Introduction",
+          content: `Hello! I'm Sarvesh Tiku, a Computer Science student at Georgia Tech with a passion for large language models, natural language processing, and—most recently—AI agents and agentic workflows. Writing this article, I was struck by just how seamlessly technology and finance intertwine, and I'm excited to share the insights I gathered at the conference.`
         },
         {
           id: "1.2",
-          title: "Bias Detection and Mitigation",
-          content: `Bias in AI systems often reflects biases in training data or model design. Detecting these biases requires systematic testing across different demographic groups and use cases.
+          title: "How I Earned My Seat",
+          content: `I'm constantly inspired by Georgia Tech's relentless drive for innovation. Special thanks to Jesse Sammons, Director of Corporate Engagement at Georgia Tech, for bringing Truist and AWS together for an Immersive Learning Experience. This event brought together interdisciplinary student teams to build AI-driven prototypes in just four hours. I'm grateful to Gauri Sharma for sharing this opportunity with me and for my selection to the Truist ILE program. My teammates—Vedika Singh, Anika Nallur, and I—created an AI-powered tour automation tool using Amazon S3 and Bedrock's generative AI architecture. We pitched our solution to Chandra Kapireddy, Firmwide Head of Gen AI, ML and Analytics @Truist and Truist design leaders, alongside AWS Solution architects. With support from Jesse, Eric Fender, Stephanie Ray, and Darren Price, we were later invited to the AI and Future of Finance Conference, where we shared the stage with Truist CEO Bill Rogers following Tech Talks Business, hosted by Scheller College of Business Dean Anuj Mehrotra.
 
-Practical approaches include:
-- Diverse training datasets with careful curation
-- Regular bias testing with representative user groups
-- Fairness metrics integrated into model evaluation
-- Ongoing monitoring of model behavior in production`
+(Side Note: I might have almost lost my iPad at the event if not for Jesse. Thanks a lot to you & Dev Patel for being my one call away friend with the most trustworthy driving skills!)`
         },
         {
           id: "1.3",
-          title: "Transparency and Explainability",
-          content: `Users have a right to understand how AI systems make decisions that affect them. This requires both technical transparency (how the model works) and operational transparency (how it's being used).
+          title: "Fireside Chat with Andrew Schlossberg, Invesco CEO",
+          content: `Andrew Schlossberg, CEO of Invesco, laid out a practical playbook for deploying AI in asset management: start small, measure everything, and integrate compliance from the beginning. He opened with an example—a $500M bond portfolio pilot where a compact team leveraged a generative AI model to draft allocation summaries. By benchmarking AI outputs against analyst write-ups, they cut the reporting cycle from 48 hours to just six. Crucially, Invesco's legal and risk teams were embedded in weekly standups, vetting data sources, establishing guardrails, and ensuring end-to-end audit trails. "We avoided months of rework by building the compliance framework before the model," Schlossberg said.
 
-Implementation strategies:
-- Model documentation and data cards
-- Explanation interfaces for end users
-- Clear disclosure of AI involvement in decision-making
-- Regular algorithmic audits and public reporting`
+He highlighted three fundamentals for leadership: balance principles with adaptability, maintain rigorous oversight in volatile markets, and be honest about setbacks. The session explored how AI, while still slow to integrate, is driving operational efficiency in asset management—especially when coupled with tight human oversight. Schlossberg discussed the emerging role of tokenization in democratizing investment access, emphasizing its potential to broaden private asset participation.
+
+Market volatility, he noted, creates both risk and new opportunities for corporate spending and investment. Digital assets and ETFs are gaining traction, underlining the need for strong financial literacy. On geopolitical risk, he stressed that firms must adapt investment strategies to rapidly shifting global conditions.
+
+In audience Q&A, Schlossberg forecasted that AI's greatest impact would be in personalized portfolios, but warned that success hinges on striking a balance between advanced technology and sound human judgment. He closed with a reminder: "Admit failure fast—your quickest course corrections become your biggest breakthroughs."`
         },
         {
-          id: "1.4", 
-          title: "Stakeholder Engagement",
-          content: `Ethical AI development isn't just a technical challenge—it's a social one. Engaging with affected communities, domain experts, and ethicists throughout the development process leads to better outcomes.
+          id: "1.4",
+          title: "Fireside Chat with Bill Rogers, CEO of Truist",
+          content: `Bill Rogers, CEO of Truist, approached AI and banking transformation with a clear, principle-driven mindset. He opened by framing Truist as a "merger of equals," now the seventh-largest U.S. bank, focused on building better communities and embedding happiness as a core corporate value. For Rogers, purpose isn't just a slogan—it's operationalized through investment in technology, culture, and service.
 
-Effective engagement includes:
-- User research with diverse participant groups
-- Advisory boards with domain expertise
-- Public consultation on high-impact applications
-- Iterative feedback loops with affected communities`
+Rogers emphasized AI's dual impact: boosting both client experience and risk governance. He drew a sharp line between "artificial intelligence" and "augmented intelligence," underscoring that in finance, technology is only as good as the human oversight and purpose backing it. The risk governance conversation was frank: AI brings powerful tools for fraud detection and defense, but must be tightly integrated with compliance, especially as threats evolve.
+
+On investment strategy, Rogers explained how Truist takes an "offensive" approach—deploying AI to improve client service, personalize advice, and enhance employee tools in wealth management. But he was clear: this must be balanced with robust data privacy, giving clients full control and opt-out options.
+
+Looking ahead, Rogers sees the future of banking as uncertain and volatile—AI will drive disruption, but institutions must remain agile and keep the human element at the center. He highlighted the critical need for inclusivity, both in technology adoption and access to financial services, advocating for a broader, more equitable approach to banking.
+
+Rogers closed by speaking directly to students and early-career professionals: align your work with personal purpose, take ownership of your career, and stay engaged in driving innovation—not just within organizations, but across the industry.`
+        },
+        {
+          id: "1.5",
+          title: "Technical Demonstrations: GraphRAG",
+          content: `At the conference, the GraphRAG notebook cut through the hype around retrieval-augmented generation (RAG) with a demonstration that was both technical and practical. The diagrams I captured—layering vector search, graph analytics, and LLM reasoning—show how GraphRAG fuses two worlds: the flexibility of dense vector embeddings and the precision of knowledge graphs. This isn't just stacking methods for the sake of novelty. The system actually grounds LLM outputs in compositional, queryable facts, so answers aren't just plausible—they're traceable.
+
+Unlike standard RAG pipelines, which can surface context but rarely explain relationships, GraphRAG pulls meaning into explicit triples (think: "Larry Fink, is_ceo_of, BlackRock"), builds a structured map of the knowledge space, and enables true multi-hop reasoning. Suddenly, the LLM can move beyond "retrieve and regurgitate" to perform graph-based synthesis: connecting facts across documents, disambiguating entities, and making logic chains transparent. This kind of architecture isn't academic—it's the difference between getting an answer and understanding why it's the answer. For finance, compliance, and high-stakes domains, GraphRAG marks a real step toward explainable AI systems that work with both scale and rigor.`
+        },
+        {
+          id: "1.6",
+          title: "LLM Applications in Investment Management — Tina Zhao, BlackRock",
+          content: `Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, delivered a grounded and pragmatic overview of how large language models are reshaping investment management at scale. Her talk made it clear: LLMs are not hype—they are already operational across the investment lifecycle.
+
+<strong>AI Applications Across BlackRock</strong>
+Zhao outlined how LLMs drive impact in three core areas:
+
+<strong>Client Experience and Sales:</strong>
+Tools like Aladdin Copilot leverage LLMs to shorten onboarding, automate manual compliance, and deliver instant "how to" and "where" answers for portfolio analytics. Client intelligence is becoming actionable, surfacing recommendations and meeting prep with less friction.
+
+<strong>Operational Efficiency:</strong>
+LLMs automate everything from business operational workflows to employee empowerment. For engineers, AI copilots are optimizing internal tooling and streamlining software development lifecycles.
+
+<strong>Investments:</strong>
+LLMs now augment research assistants, generate trading signals, and automate key aspects of market and trading workflows—driving both research depth and performance.
+
+<strong>AI Foundations and Responsible Deployment</strong>
+She emphasized the foundational investments enabling this scale: custom AI infrastructure, robust data platforms for unstructured and alternative data, and—crucially—responsible AI frameworks that prioritize guardrails, explainability, and trust.
+
+<strong>Overcoming Human Analyst Limits</strong>
+Zhao didn't sidestep the analyst challenges: bounded rationality, recency bias, and overconfidence. LLMs can ingest a firehose of earnings reports, market research, and alternative data (even Reddit threads), surfacing non-obvious anomalies and reducing cognitive blind spots.
+
+<strong>LLM Techniques and Multi-Agent Systems</strong>
+From sentiment analysis and knowledge graph extraction to agentic workflows for risk analytics, Zhao's team deploys LLMs in all asset classes—equities, fixed income, security lending, and private markets. She highlighted experiments with multi-agent systems, where specialized agents (fundamental, sentiment, valuation) debate and converge on investment recommendations—bringing transparency and robustness to automated decision pipelines.
+
+<strong>Key Takeaway:</strong>
+Tina Zhao showed that LLMs are no longer "just" research. At BlackRock, they are deeply integrated—amplifying analyst capacity, compressing manual workflows, and, most importantly, enforcing a high bar for responsible AI deployment in finance.`
+        },
+        {
+          id: "1.7",
+          title: "Quantamental Research in Snowflake — Jonathan Regenstein",
+          content: `Jonathan Regenstein, Head of Financial Services AI at Snowflake, demonstrated how Snowflake is operationalizing quantamental research by embedding LLM-powered analytics directly into the financial data pipeline.
+
+<strong>Key Takeaways from the S&P Market Intelligence QuickStart:</strong>
+
+<strong>Earnings Call Analysis, Automated:</strong>
+Regenstein's demo centered on analyzing earnings transcripts with LLMs via Snowflake Cortex AI. By comparing analyst questions, executive responses, and LLM-generated answers, users can quantitatively score "on-topicness" and "proactiveness"—two behavioral metrics proven to generate alpha. Proactive, on-topic management correlates to +515bps of annualized outperformance.
+
+<strong>Modern Data Stack, End-to-End:</strong>
+The workflow starts by ingesting machine-readable transcripts (from S&P Global Market Intelligence), storing them in Snowflake tables, and applying SQL/Python Cortex functions—all within Snowflake Notebooks.
+
+Key steps:
+• Create database objects and load transcript data from S3.
+• Generate text embeddings for questions and answers.
+• Use cosine similarity to compare how closely executive answers track analyst queries.
+• Leverage LLMs (via Cortex) to benchmark executive answers against ideal model-generated responses.
+
+<strong>Snowflake Cortex: AI/ML at Scale, Natively</strong>
+Snowflake Cortex is a fully managed platform for deploying LLM and ML functions via SQL and Python. It allows analysts and quants to run NLP workflows, build embeddings, perform sentiment analysis, and deploy generative models—without leaving the data warehouse environment.
+
+<strong>Why This Matters:</strong>
+Traditional financial research workflows are manual and fragmented. By running NLP and LLM-driven analysis natively in Snowflake, teams gain speed, scalability, and reproducibility—critical for modern quantamental strategies.
+
+<strong>What You Can Build:</strong>
+• Automated scoring of management communication quality for any public company.
+• Systematic signals for alpha generation based on real language data, not just numbers.
+• A unified, version-controlled workflow using Snowflake Notebooks—integrated with GitHub for collaboration.
+
+<strong>Broader Implications:</strong>
+Regenstein's talk made it clear: the next generation of financial research is natively AI-driven and cloud-first. Analysts can now move from fragmented scripts and spreadsheets to unified, production-grade pipelines—directly connected to their firm's data cloud.`
+        },
+        {
+          id: "1.8",
+          title: "Personal Connections and Conversations",
+          content: `As much as I enjoyed digging into new AI workflows and infrastructure, the real highlights were the conversations that happened in between. Here's where the conference moved beyond technology and became something much more personal:
+
+Honestly, the most memorable part of the day wasn't even on the official agenda. Right before lunch, I introduced Gauri (who had actually tipped me off about the Truist Immersive Learning Experience) to Astrid, and somehow we ended up sharing a table with Nancy Razzouk from Invesco and Anqi Zou from Truist. The conversation drifted from casual intros to Nancy's story—what it was like growing up in the Middle East, how those roots shaped her, and the reality of building a career so far from home. Hearing her talk about balancing identity with the demands of finance felt unexpectedly personal. For a moment, I didn't feel like just another face at a conference—I realized this is exactly why we decided to attend such a conference!
+
+We also got honest advice from Anqi Zou, Head of Fair & Responsible Banking Analytics at Truist. What started as small talk turned into a real discussion about the challenges of being an international student figuring things out in the corporate world. We shared those small victories and setbacks you never see on LinkedIn—the kind of real talk that makes you feel less alone in the process. Gauri and I both walked away from lunch feeling lighter, almost reassured every time someone reminded us that there's no rush, that we still have time. After a morning packed with talks—some that clicked, some that flew over our heads—it was exactly the kind of conversation we needed to keep us going.
+
+Thank you to everyone who took the time to stop by and share a conversation with a group of excited freshmen like us. Your genuine advice and encouragement meant more than you know. As someone attending one of my very first professional conferences, I'll remember your words and kindness every time I walk into a new event. If there's one thing I've learned, it's that humility and generosity really do go a long way.`
+        },
+        {
+          id: "1.9",
+          title: "Panel Discussions and Executive Insights",
+          content: `<strong>Future of Gen AI</strong>
+The "Future of Gen AI" panel brought together leaders from AWS, Salesforce, and Microsoft to debate where generative AI is heading next. Panelists discussed practical enterprise adoption, emerging risks, and how foundational models are changing the pace of software and business innovation. The session emphasized the need for responsible deployment, cross-industry collaboration, and continuous research to keep up with rapid advances.
+
+Panel included:
+• Sudipta Sengupta, Vice President and Distinguished Scientist, Amazon AWS
+• Robbie Birbeck, Vice President of BT Customer Zero, Salesforce
+• Allen Stewart, Partner Director of Software Engineering, Microsoft
+• Moderator: Mark Riedl, Professor, Georgia Tech School of Interactive Computing
+
+Hearing from Robbie Birbeck was a highlight for me, especially since I had just accepted my offer to intern at Salesforce this summer. It was exciting to get an insider's perspective on the Customer Zero Experience—where Salesforce employees are the platform's first users. Later, I had a great conversation with Robbie and he introduced me to the Agentforce Specialist Certification, which is free for students. I jumped on the opportunity and am now officially Agentforce Specialized. I can't wait to learn even more with Salesforce this summer!
+
+<strong>Panel: View from the C-Suite: Promises and Challenges of AI in Finance</strong>
+The "View from the C-Suite" panel featured top executives from Invesco, ICE, and the New York Fed, offering an unfiltered look at how AI is transforming finance from the inside. Panelists shared both the strategic opportunities—like risk management, automation, and unlocking new data-driven insights—and the regulatory and operational challenges that come with AI adoption. The discussion made clear that success in AI for finance will require not just technology, but also leadership, governance, and trust.
+
+Panel included:
+• Shannon Johnston, Senior Managing Director and Chief Information and Operations Officer, Invesco
+• Christopher Edmonds, President, Fixed Income & Data Services, Intercontinental Exchange
+• Deepika Mahajan, Chief Data and Analytics Officer, Federal Reserve Bank of New York
+• Moderator: Sudheer Chava, Alton M. Costley Chair, Professor of Finance, Georgia Tech Scheller College of Business, Georgia Tech Financial Services Innovation Lab
+
+Hearing from C-suite leaders and industry veterans brought a new level of realism to the whole event. Their candid take on the promises and challenges of AI in finance made it clear: building the future of finance will take more than just new tools—it's about people, leadership, and trust.`
+        },
+        {
+          id: "1.10",
+          title: "Gratitude and Acknowledgments",
+          content: `I want to end this post with a huge amount of gratitude—for Georgia Tech and for everyone, seen and unseen, who helped make this conference happen. It takes real effort to bring so many brilliant minds together and to keep things running smoothly. Special thanks to Prof. Sudheer Chava—I barely got a chance to speak with you, but your humility and genuine passion for creating this kind of platform for students to learn and connect came through in every detail. The Scheller College of Business and the Financial Services Innovation Lab both deserve a shoutout for supporting and elevating student voices.
+
+And finally, the biggest thanks goes to Gauri—for sharing these resources with me in the first place, for being my 6am wake-up call over spring break, and for sprinting across Ferst Center with me in uncomfortable shoes at sunrise just to make it on time. I've never been more grateful to have a friend like you in my life.`
         }
       ]
     }
