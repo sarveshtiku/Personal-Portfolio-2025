@@ -881,7 +881,7 @@ export default function BlogPost() {
     // Leadership
     {
       name: "Steven W. McLaughlin",
-      role: "Provost & Executive VP, Georgia Tech",
+      role: "Provost and Executive Vice President for Academic Affairs, Georgia Tech",
       linkedin: "https://www.linkedin.com/in/steve-mclaughlin-505464100",
       category: "Leadership"
     },
@@ -892,19 +892,21 @@ export default function BlogPost() {
       category: "Leadership"
     },
     
-    // C-Suite Panel
+    // Fireside Chat
     {
       name: "Bill Rogers",
       role: "CEO, Truist",
       linkedin: "https://www.linkedin.com/posts/billhrogers_truist-oneteam-iwd25-activity-7303746376209739776-31xA",
-      category: "C-Suite Panel"
+      category: "Fireside Chat"
     },
     {
       name: "Andrew Schlossberg",
       role: "President and Chief Executive Officer, Invesco",
       linkedin: "https://www.linkedin.com/in/andrew-schlossberg-invesco",
-      category: "C-Suite Panel"
+      category: "Fireside Chat"
     },
+    
+    // C-Suite Panel
     {
       name: "Shannon Johnston",
       role: "Chief Information and Operations Officer, Invesco",
@@ -976,7 +978,13 @@ export default function BlogPost() {
       category: "Other Speakers"
     },
     
-    // Additional Industry Leaders
+    // Industry Leaders
+    {
+      name: "Andrew Dietderich",
+      role: "Co-Head of Global Finance & Restructuring Group, Sullivan and Cromwell",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
     {
       name: "Brett Wilson",
       role: "Partner, McKinsey & Company",
@@ -1049,12 +1057,6 @@ export default function BlogPost() {
       linkedin: "",
       category: "Industry Leaders"
     },
-    {
-      name: "Andrew Dietderich",
-      role: "Co-Head of Global Finance & Restructuring Group, Sullivan and Cromwell",
-      linkedin: "",
-      category: "Industry Leaders"
-    },
     
     // Georgia Tech Team
     {
@@ -1107,6 +1109,8 @@ export default function BlogPost() {
       linkedin: "",
       category: "Students & Researchers"
     },
+    
+    // Friends & Colleagues
     {
       name: "Gauri Sharma",
       role: "CS @ Georgia Tech",
