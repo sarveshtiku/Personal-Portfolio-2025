@@ -180,7 +180,7 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
           title: "How I Earned My Seat",
           content: `I'm constantly inspired by Georgia Tech's relentless drive for innovation. Special thanks to Jesse Sammons, Director of Corporate Engagement at Georgia Tech, for bringing Truist and AWS together for an Immersive Learning Experience. This event brought together interdisciplinary student teams to build AI-driven prototypes in just four hours. I'm grateful to Gauri Sharma for sharing this opportunity with me and for my selection to the Truist ILE program. My teammates—Vedika Singh, Anika Nallur, and I—created an AI-powered tour automation tool using Amazon S3 and Bedrock's generative AI architecture. We pitched our solution to Chandra Kapireddy, Firmwide Head of Gen AI, ML and Analytics @Truist and Truist design leaders, alongside AWS Solution architects. With support from Jesse, Eric Fender, Stephanie Ray, and Darren Price, we were later invited to the AI and Future of Finance Conference, where we shared the stage with Truist CEO Bill Rogers following Tech Talks Business, hosted by Scheller College of Business Dean Anuj Mehrotra.
 
-(PS: Almost lost my iPad at the Truist ILE event. Thanks a lot to Jesse for keeping it safe. Big shoutout to Gauri & Dev Patel being my literal one call away friends, my baby iPad would not have made if not for the both fo you!)`
+(PS: Almost lost my iPad at the Truist ILE event. Thanks a lot to Jesse for keeping it safe. Big shoutout to Gauri & Dev Patel being my literal one call away friends, my baby iPad would not have made if not for the both of you!)`
         },
         {
           id: "1.3",
@@ -194,7 +194,9 @@ He highlighted three fundamentals for leadership: balance principles with adapta
 
 Market volatility, he noted, creates both risk and new opportunities for corporate spending and investment. Digital assets and ETFs are gaining traction, underlining the need for strong financial literacy. On geopolitical risk, he stressed that firms must adapt investment strategies to rapidly shifting global conditions.
 
-In audience Q&A, Schlossberg forecasted that AI's greatest impact would be in personalized portfolios, but warned that success hinges on striking a balance between advanced technology and sound human judgment. He closed with a reminder: "Admit failure fast—your quickest course corrections become your biggest breakthroughs."`
+In audience Q&A, Schlossberg forecasted that AI's greatest impact would be in personalized portfolios, but warned that success hinges on striking a balance between advanced technology and sound human judgment. He closed with a reminder: "Admit failure fast—your quickest course corrections become your biggest breakthroughs."
+
+If you want to listen to the whole talk: https://www.youtube.com/watch?v=34cEgLpKJUg`
         },
         {
           id: "1.4",
@@ -209,6 +211,8 @@ Looking ahead, Rogers sees the future of banking as uncertain and volatile—AI 
 
 Rogers closed by speaking directly to students and early-career professionals: align your work with personal purpose, take ownership of your career, and stay engaged in driving innovation—not just within organizations, but across the industry.
 
+If you want to listen to the whole talk: https://www.youtube.com/watch?v=-G1skt3qNBE
+
 <img src="/lovable-uploads/a2bba184-e7f0-43e2-9cde-5b5e12d439aa.png" alt="Bill Rogers fireside chat and student group photo" class="w-full rounded-lg mb-4 mt-6" />
 <p class="text-sm text-gray-600 italic text-center mb-6">Left: Bill Rogers, CEO of Truist, during his fireside chat at the AI & Future of Finance Conference. Right: Students from the Truist Immersive Learning Experience, alongside Anuj Mehrotra (Dean, Scheller College of Business) and Bill Rogers (CEO, Truist, third from right). I am on the far right.</p>`
         },
@@ -220,7 +224,11 @@ Rogers closed by speaking directly to students and early-career professionals: a
 <img src="/lovable-uploads/b34abccf-a523-4e06-ba5f-8a673c79e426.png" alt="GraphRAG technical architecture and methodology" class="w-full rounded-lg mb-4 mt-6" />
 <p class="text-sm text-gray-600 italic text-center mb-6">Technical diagrams from the GraphRAG demonstration showing: (top left) knowledge graph modeling with entity relationships, (top right) comparison between vector retrieval and graph retrieval approaches, and (bottom) the complete pipeline from unstructured data sources through NLP parsing, entity extraction, and triple generation to final graph database storage.</p>
 
-Unlike standard RAG pipelines, which can surface context but rarely explain relationships, GraphRAG pulls meaning into explicit triples (think: "Larry Fink, is_ceo_of, BlackRock"), builds a structured map of the knowledge space, and enables true multi-hop reasoning. Suddenly, the LLM can move beyond "retrieve and regurgitate" to perform graph-based synthesis: connecting facts across documents, disambiguating entities, and making logic chains transparent. This kind of architecture isn't academic—it's the difference between getting an answer and understanding why it's the answer. For finance, compliance, and high-stakes domains, GraphRAG marks a real step toward explainable AI systems that work with both scale and rigor.`
+Unlike standard RAG pipelines, which can surface context but rarely explain relationships, GraphRAG pulls meaning into explicit triples (think: "Larry Fink, is_ceo_of, BlackRock"), builds a structured map of the knowledge space, and enables true multi-hop reasoning. Suddenly, the LLM can move beyond "retrieve and regurgitate" to perform graph-based synthesis: connecting facts across documents, disambiguating entities, and making logic chains transparent. This kind of architecture isn't academic—it's the difference between getting an answer and understanding why it's the answer. For finance, compliance, and high-stakes domains, GraphRAG marks a real step toward explainable AI systems that work with both scale and rigor.
+
+Google Colab notebooks:
+- https://colab.research.google.com/drive/1O1dClDV_5DBgoy6lwvKEGHfo2EJVsugC?usp=sharing#scrollTo=crSFYwOTpNa3
+- https://colab.research.google.com/drive/11CQP1yOoSz942r3mina7WRB-KJDHeQN2?usp=sharing#scrollTo=QQwkqqKIlXMX`
         },
         {
           id: "1.6",
@@ -288,7 +296,9 @@ Traditional financial research workflows are manual and fragmented. By running N
 • A unified, version-controlled workflow using Snowflake Notebooks—integrated with GitHub for collaboration.
 
 <strong>Broader Implications:</strong>
-Regenstein's talk made it clear: the next generation of financial research is natively AI-driven and cloud-first. Analysts can now move from fragmented scripts and spreadsheets to unified, production-grade pipelines—directly connected to their firm's data cloud.`
+Regenstein's talk made it clear: the next generation of financial research is natively AI-driven and cloud-first. Analysts can now move from fragmented scripts and spreadsheets to unified, production-grade pipelines—directly connected to their firm's data cloud.
+
+If you want to try out the earnings transcripts lab yourself: https://quickstarts.snowflake.com/guide/s_and_p_market_intelligence_analyze_earnings_transcripts_in_cortex_ai/index.html#0`
         },
         {
           id: "1.8",
