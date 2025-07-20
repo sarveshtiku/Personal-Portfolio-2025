@@ -11,7 +11,7 @@ import Projects from "./pages/Projects";
 
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import Research from "./pages/Research";
+
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 
@@ -35,7 +35,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/blog/newsletter/:slug" element={<BlogPost />} />
-            <Route path="/research" element={<Research />} />
+            
             <Route path="/experience" element={<Experience />} />
             
             <Route path="/contact" element={<Contact />} />

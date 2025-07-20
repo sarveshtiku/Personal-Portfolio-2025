@@ -7,7 +7,7 @@ const navigation = [
   { name: "About", href: "/about", icon: User },
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Experience", href: "/experience", icon: Briefcase },
-  { name: "Research", href: "/research", icon: FileText },
+  
   { name: "Blog", href: "/blog", icon: BookOpen },
   
   
