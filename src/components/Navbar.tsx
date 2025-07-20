@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X, Camera } from "lucide-react";
 
 const navigation = [
-  { name: "Home", href: "/", icon: Home },
+  
   { name: "About", href: "/about", icon: User },
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Experience", href: "/experience", icon: Briefcase },
-  
   { name: "Blog", href: "/blog", icon: BookOpen },
+  { name: "Research", href: "/research", icon: FileText },
   
   
   { name: "Contact", href: "/contact", icon: Mail },
