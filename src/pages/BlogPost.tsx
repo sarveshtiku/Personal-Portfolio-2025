@@ -1122,6 +1122,9 @@ export default function BlogPost() {
   ];
 
   const renderPeopleMentioned = () => {
+    console.log("Total people:", peopleMentioned.length);
+    console.log("People data:", peopleMentioned);
+    
     const groupedPeople = peopleMentioned.reduce((acc, person) => {
       if (!acc[person.category]) {
         acc[person.category] = [];
@@ -1129,6 +1132,9 @@ export default function BlogPost() {
       acc[person.category].push(person);
       return acc;
     }, {} as Record<string, typeof peopleMentioned>);
+
+    console.log("Grouped people:", groupedPeople);
+    console.log("Categories found:", Object.keys(groupedPeople));
 
     return (
       <div className="space-y-6">
