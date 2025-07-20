@@ -149,11 +149,11 @@ On the ground in Africa, Chris Maurice of Yellow Card showed how stablecoins alr
 
 To everyone who shared a kind word; To everyone who stopped by and listened; To everyone who offered genuine advice; Thank you, it truly means a lot to me!`
           },
-          {
-            id: "1.8",
-            title: "People Mentioned",
-            content: "people-mentioned-section"
-        }
+        {
+          id: "1.8",
+          title: "People Mentioned",
+          content: "people-mentioned-section"
+      }
       ]
     }
   },
@@ -878,101 +878,240 @@ export default function BlogPost() {
   };
 
   const peopleMentioned = [
+    // Leadership
     {
       name: "Steven W. McLaughlin",
       role: "Provost & Executive VP, Georgia Tech",
       linkedin: "https://www.linkedin.com/in/steve-mclaughlin-505464100",
-      category: "Georgia Tech Leadership"
-    },
-    {
-      name: "Sudheer Chava",
-      role: "Professor & Lab Director, Georgia Tech",
-      linkedin: "https://www.linkedin.com/in/sudheer-chava-b5883021",
-      category: "Georgia Tech Faculty"
-    },
-    {
-      name: "Shannon Johnston",
-      role: "CIO & COO, Invesco",
-      linkedin: "https://www.linkedin.com/in/shannonajohnston",
-      category: "Industry Leaders"
-    },
-    {
-      name: "Christopher Edmonds",
-      role: "President, Fixed Income & Data Services, ICE",
-      linkedin: "https://www.linkedin.com/in/christopher-edmonds-483037a",
-      category: "Industry Leaders"
-    },
-    {
-      name: "Chandra Kapireddy",
-      role: "Firm-wide Head of Gen AI, ML & Analytics, Truist",
-      linkedin: "https://www.linkedin.com/in/chandra-kapireddy",
-      category: "Industry Leaders"
-    },
-    {
-      name: "Thomas Bodenski",
-      role: "COO & Chief Data & Analytics Officer, TS Imagine",
-      linkedin: "https://www.linkedin.com/in/tbodenski",
-      category: "Industry Leaders"
-    },
-    {
-      name: "Deepika Mahajan, CFA",
-      role: "Chief Data & Analytics Officer, Federal Reserve Bank of New York",
-      linkedin: "https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b",
-      category: "Industry Leaders"
-    },
-    {
-      name: "Gauri Sharma",
-      role: "Friend & CS Student",
-      linkedin: "https://www.linkedin.com/in/gs-softwaredev",
-      category: "Friends & Colleagues"
+      category: "Leadership"
     },
     {
       name: "Anuj Mehrotra",
       role: "Dean, Georgia Tech Scheller College of Business",
       linkedin: "https://www.linkedin.com/in/anuj-mehrotra-13b5154",
-      category: "Georgia Tech Leadership"
+      category: "Leadership"
     },
+    
+    // C-Suite Panel
     {
-      name: "William H. Rogers Jr.",
+      name: "Bill Rogers",
       role: "CEO, Truist",
       linkedin: "https://www.linkedin.com/posts/billhrogers_truist-oneteam-iwd25-activity-7303746376209739776-31xA",
-      category: "Industry Leaders"
+      category: "C-Suite Panel"
     },
     {
       name: "Andrew Schlossberg",
-      role: "President & CEO, Invesco",
+      role: "President and Chief Executive Officer, Invesco",
       linkedin: "https://www.linkedin.com/in/andrew-schlossberg-invesco",
-      category: "Industry Leaders"
+      category: "C-Suite Panel"
     },
     {
-      name: "Deep Ratna Srivastav",
-      role: "Chief AI Officer, Franklin Templeton",
-      linkedin: "https://www.linkedin.com/in/deepsrivastavinnovate",
-      category: "Industry Leaders"
+      name: "Shannon Johnston",
+      role: "Chief Information and Operations Officer, Invesco",
+      linkedin: "https://www.linkedin.com/in/shannonajohnston",
+      category: "C-Suite Panel"
     },
+    {
+      name: "Christopher Edmonds",
+      role: "President, Fixed Income & Data Services, Intercontinental Exchange",
+      linkedin: "https://www.linkedin.com/in/christopher-edmonds-483037a",
+      category: "C-Suite Panel"
+    },
+    {
+      name: "Deepika Mahajan",
+      role: "Chief Data and Analytics Officer, Federal Reserve Bank of New York",
+      linkedin: "https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b",
+      category: "C-Suite Panel"
+    },
+    {
+      name: "Sudheer Chava",
+      role: "Alton M. Costley Chair Professor of Finance, Georgia Tech Scheller College of Business, Georgia Tech Financial Services Innovation Lab",
+      linkedin: "https://www.linkedin.com/in/sudheer-chava-b5883021",
+      category: "C-Suite Panel"
+    },
+    
+    // Future of Gen AI Panel
     {
       name: "Sudipta Sengupta",
-      role: "Research Principal at Microsoft",
+      role: "Vice President and Distinguished Scientist, Amazon AWS",
       linkedin: "https://www.linkedin.com/in/sudiptasengupta/",
-      category: "Industry Leaders"
+      category: "Future of Gen AI Panel"
     },
     {
       name: "Robbie Birbeck",
-      role: "Tech Professional", 
+      role: "Vice President, BT Customer Zero, Salesforce",
       linkedin: "https://www.linkedin.com/in/robertbirbeck/",
-      category: "Industry Leaders"
+      category: "Future of Gen AI Panel"
     },
     {
       name: "Allen Stewart",
-      role: "Tech Professional",
+      role: "Partner Director of Software Engineering, Microsoft",
       linkedin: "https://www.linkedin.com/in/allen-stewart/",
-      category: "Industry Leaders"
+      category: "Future of Gen AI Panel"
     },
     {
       name: "Mark Riedl",
-      role: "Professor & AI Researcher, Georgia Tech",
+      role: "Professor, School of Interactive Computing, Georgia Tech; Associate Director, Georgia Tech Machine Learning Center",
       linkedin: "https://www.linkedin.com/in/markriedl",
-      category: "Georgia Tech Faculty"
+      category: "Future of Gen AI Panel"
+    },
+    
+    // Other Speakers
+    {
+      name: "Chandra Kapireddy",
+      role: "Head of AI, Truist",
+      linkedin: "https://www.linkedin.com/in/chandra-kapireddy",
+      category: "Other Speakers"
+    },
+    {
+      name: "Thomas Bodenski",
+      role: "Chief Operating Officer, TS Imagine",
+      linkedin: "https://www.linkedin.com/in/tbodenski",
+      category: "Other Speakers"
+    },
+    {
+      name: "Deep Ratna Srivastav",
+      role: "Chief AI Officer, Franklin Templeton Investments",
+      linkedin: "https://www.linkedin.com/in/deepsrivastavinnovate",
+      category: "Other Speakers"
+    },
+    
+    // Additional Industry Leaders
+    {
+      name: "Brett Wilson",
+      role: "Partner, McKinsey & Company",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Manav Misra",
+      role: "Chief Data and Analytics Officer, Regions Bank",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Stephen Markwell",
+      role: "Head of Fintech Partnerships, Global Banking, JPMorgan Chase",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Kumanan Ramanathan",
+      role: "Co-Head of Crypto, Alvarez & Marsal",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Jonathan Regenstein",
+      role: "Head of Financial Services AI, Snowflake",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "John Neubauer",
+      role: "Managing Director, Global Head of Corporate Equity Derivatives, Structured Lending and Convertible Bond Trading, JPMorgan",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Mitchell Sonkin",
+      role: "Independent Director, FTX Bankruptcy",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Brett Kotch",
+      role: "Head of Trading Technology, Millennium",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Scott Ferber",
+      role: "Partner, Raj Ferber PLLC",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Tianjiao (Tina) Zhao",
+      role: "Director, Head of Applied AI Modeling, BlackRock",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Nick Vasiloglou",
+      role: "VP of Research ML, RelationalAI",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Che Guan",
+      role: "Principal Data Scientist, Alliance Bernstein",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    {
+      name: "Andrew Dietderich",
+      role: "Co-Head of Global Finance & Restructuring Group, Sullivan and Cromwell",
+      linkedin: "",
+      category: "Industry Leaders"
+    },
+    
+    // Georgia Tech Team
+    {
+      name: "Jesse Sammons",
+      role: "Corporate Partnerships, Georgia Tech",
+      linkedin: "",
+      category: "Georgia Tech Team"
+    },
+    {
+      name: "Eric Fender",
+      role: "SVP, Director of Innovation and Immersive Experiences at Truist",
+      linkedin: "",
+      category: "Georgia Tech Team"
+    },
+    {
+      name: "Stephanie Ray",
+      role: "VP | Senior Project Manager | Innovation & Immersive Experiences Truist",
+      linkedin: "",
+      category: "Georgia Tech Team"
+    },
+    {
+      name: "Darren Price",
+      role: "Ent. Account Executive AWS",
+      linkedin: "",
+      category: "Georgia Tech Team"
+    },
+    
+    // Students & Researchers
+    {
+      name: "Agam Shah",
+      role: "Ph.D. Candidate, Georgia Tech College of Computing, Georgia Tech Financial Services Innovation Lab",
+      linkedin: "",
+      category: "Students & Researchers"
+    },
+    {
+      name: "Michael Galarnyk",
+      role: "Ph.D. Student, Georgia Tech College of Engineering, Georgia Tech Financial Services Innovation Lab",
+      linkedin: "",
+      category: "Students & Researchers"
+    },
+    {
+      name: "Glenn Matlin",
+      role: "Ph.D. Student, Georgia Tech College of Computing, Georgia Tech Financial Services Innovation Lab",
+      linkedin: "",
+      category: "Students & Researchers"
+    },
+    {
+      name: "Nikita Tatarinov",
+      role: "PhD student, College of Computing, Georgia Tech; Georgia Tech Financial Services Innovation Lab",
+      linkedin: "",
+      category: "Students & Researchers"
+    },
+    {
+      name: "Gauri Sharma",
+      role: "CS @ Georgia Tech",
+      linkedin: "https://www.linkedin.com/in/gs-softwaredev",
+      category: "Friends & Colleagues"
     }
   ];
 
