@@ -180,7 +180,7 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
           title: "How I Earned My Seat",
           content: `I'm constantly inspired by Georgia Tech's relentless drive for innovation. Special thanks to Jesse Sammons, Director of Corporate Engagement at Georgia Tech, for bringing Truist and AWS together for an Immersive Learning Experience. This event brought together interdisciplinary student teams to build AI-driven prototypes in just four hours. I'm grateful to Gauri Sharma for sharing this opportunity with me and for my selection to the Truist ILE program. My teammates—Vedika Singh, Anika Nallur, and I—created an AI-powered tour automation tool using Amazon S3 and Bedrock's generative AI architecture. We pitched our solution to Chandra Kapireddy, Firmwide Head of Gen AI, ML and Analytics @Truist and Truist design leaders, alongside AWS Solution architects. With support from Jesse, Eric Fender, Stephanie Ray, and Darren Price, we were later invited to the AI and Future of Finance Conference, where we shared the stage with Truist CEO Bill Rogers following Tech Talks Business, hosted by Scheller College of Business Dean Anuj Mehrotra.
 
-(Side Note: I might have almost lost my iPad at the event if not for Jesse. Thanks a lot to you & Dev Patel for being my one call away friend with the most trustworthy driving skills!)`
+(PS: Almost lost my iPad at the Truist ILE event. Thanks a lot to Jesse for keeping it safe. Big shoutout to Gauri & Dev Patel being my literal one call away friends, my baby iPad would not have made if not for the both fo you!)`
         },
         {
           id: "1.3",
@@ -231,7 +231,7 @@ Unlike standard RAG pipelines, which can surface context but rarely explain rela
 <p class="text-sm text-gray-600 italic text-center mb-6">Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, presenting "LLM Applications in Investment Management" at the AI & Future of Finance Conference</p>
 
 <strong>AI Applications Across BlackRock</strong>
-Zhao outlined how LLMs drive impact in three core areas:
+Zhao outlined how LLMs drive impact in these core areas:
 
 <strong>Client Experience and Sales:</strong>
 Tools like Aladdin Copilot leverage LLMs to shorten onboarding, automate manual compliance, and deliver instant "how to" and "where" answers for portfolio analytics. Client intelligence is becoming actionable, surfacing recommendations and meeting prep with less friction.
