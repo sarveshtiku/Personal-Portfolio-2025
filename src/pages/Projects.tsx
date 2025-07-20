@@ -16,7 +16,7 @@ export default function Projects() {
       status: "Production",
       links: {
         github: "https://github.com/sarveshtiku/Travel-Buddy-Android-Application",
-        demo: null
+        demo: "https://drive.google.com/file/d/1ldB_73UGCHlmKnRBEEyY7yQgRVem_mmq/view"
       }
     },
     {
