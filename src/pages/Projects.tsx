@@ -10,6 +10,16 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Trading-GT Market Analysis",
+      description: "Weekly equity-market commentaries for Georgia Tech Trading Club analyzing S&P 500 sectors. Features macro backdrop analysis, earnings catalysts, and thematic forces driving price action with custom Python visualizations and data analysis.",
+      technologies: ["Python", "Jupyter Notebooks", "Data Analysis", "Yahoo Finance API", "Finviz", "LinkedIn Publishing", "Financial Modeling"],
+      status: "Active Development",
+      links: {
+        github: "https://github.com/sarveshtiku/Trading-GT",
+        demo: "https://github.com/sarveshtiku/Trading-GT/tree/main/Commentaries-Spring-2025-Equities"
+      }
+    },
+    {
       title: "Travel Buddy Android Application",
       description: "An Android application designed to help users explore new places effortlessly, plan visits efficiently, get personalized recommendations, and save favorite destinations. Features Google Maps integration, secure authentication, and dynamic content management.",
       technologies: ["Java", "Android Studio", "Android Development", "RecyclerView", "JSON Parsing", "Google Maps API", "Appwrite", "Google Places API"],
