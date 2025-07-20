@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X, Camera } from "lucide-react";
+import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X, Camera, Sun, Moon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
 
 const navigation = [
   
@@ -16,6 +18,11 @@ const navigation = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="max-w-6xl mx-auto px-6">
@@ -27,39 +34,56 @@ export function Navbar() {
             </NavLink>
           </div>
           
-          {/* Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navigation.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.href}
-                className={({ isActive }) =>
-                  `flex items-center gap-x-2 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-accent text-primary"
-                      : "text-foreground hover:text-primary hover:bg-accent"
-                  }`
-                }
-              >
-                <item.icon className="h-4 w-4" />
-                {item.name}
-              </NavLink>
-            ))}
+          {/* Centered Navigation */}
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-1">
+              {navigation.map((item) => (
+                <NavLink
+                  key={item.name}
+                  to={item.href}
+                  className={({ isActive }) =>
+                    `flex items-center gap-x-2 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                      isActive
+                        ? "bg-accent text-primary"
+                        : "text-foreground hover:text-primary hover:bg-accent"
+                    }`
+                  }
+                >
+                  <item.icon className="h-4 w-4" />
+                  {item.name}
+                </NavLink>
+              ))}
+            </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button 
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary hover:bg-accent"
+          {/* Right side - Theme toggle and Mobile menu */}
+          <div className="flex items-center gap-2">
+            {/* Theme Toggle */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="h-9 w-9 p-0"
             >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <X className="block h-6 w-6" />
-              ) : (
-                <Menu className="block h-6 w-6" />
-              )}
-            </button>
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <span className="sr-only">Toggle theme</span>
+            </Button>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button 
+                onClick={() => setIsOpen(!isOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary hover:bg-accent"
+              >
+                <span className="sr-only">Open main menu</span>
+                {isOpen ? (
+                  <X className="block h-6 w-6" />
+                ) : (
+                  <Menu className="block h-6 w-6" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
 
