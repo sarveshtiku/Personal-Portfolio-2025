@@ -906,54 +906,28 @@ export default function BlogPost() {
       category: "Fireside Chat"
     },
     
-    // C-Suite Panel
-    {
-      name: "Shannon Johnston",
-      role: "Chief Information and Operations Officer, Invesco",
-      linkedin: "https://www.linkedin.com/in/shannonajohnston",
-      category: "C-Suite Panel"
-    },
-    {
-      name: "Christopher Edmonds",
-      role: "President, Fixed Income & Data Services, Intercontinental Exchange",
-      linkedin: "https://www.linkedin.com/in/christopher-edmonds-483037a",
-      category: "C-Suite Panel"
-    },
-    {
-      name: "Deepika Mahajan",
-      role: "Chief Data and Analytics Officer, Federal Reserve Bank of New York",
-      linkedin: "https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b",
-      category: "C-Suite Panel"
-    },
-    {
-      name: "Sudheer Chava",
-      role: "Alton M. Costley Chair Professor of Finance, Georgia Tech Scheller College of Business, Georgia Tech Financial Services Innovation Lab",
-      linkedin: "https://www.linkedin.com/in/sudheer-chava-b5883021",
-      category: "C-Suite Panel"
-    },
-    
     // Future of Gen AI Panel
     {
       name: "Sudipta Sengupta",
-      role: "Vice President and Distinguished Scientist, Amazon AWS",
+      role: "VP & Distinguished Scientist, Amazon AWS",
       linkedin: "https://www.linkedin.com/in/sudiptasengupta/",
       category: "Future of Gen AI Panel"
     },
     {
       name: "Robbie Birbeck",
-      role: "Vice President, BT Customer Zero, Salesforce",
+      role: "VP of BT Customer Zero, Salesforce",
       linkedin: "https://www.linkedin.com/in/robertbirbeck/",
       category: "Future of Gen AI Panel"
     },
     {
       name: "Allen Stewart",
-      role: "Partner Director of Software Engineering, Microsoft",
+      role: "Partner Director, Microsoft",
       linkedin: "https://www.linkedin.com/in/allen-stewart/",
       category: "Future of Gen AI Panel"
     },
     {
       name: "Mark Riedl",
-      role: "Professor, School of Interactive Computing, Georgia Tech; Associate Director, Georgia Tech Machine Learning Center",
+      role: "Professor, Georgia Tech (Moderator)",
       linkedin: "https://www.linkedin.com/in/markriedl",
       category: "Future of Gen AI Panel"
     },
@@ -961,21 +935,49 @@ export default function BlogPost() {
     // Other Speakers
     {
       name: "Chandra Kapireddy",
-      role: "Head of AI, Truist",
+      role: "Head of Gen AI, ML & Analytics, Truist",
       linkedin: "https://www.linkedin.com/in/chandra-kapireddy",
       category: "Other Speakers"
     },
     {
       name: "Thomas Bodenski",
-      role: "Chief Operating Officer, TS Imagine",
+      role: "COO & Chief Data & Analytics Officer, TS Imagine",
       linkedin: "https://www.linkedin.com/in/tbodenski",
       category: "Other Speakers"
     },
+    
+    // C-Suite Panel
+    {
+      name: "Shannon Johnston",
+      role: "CIO & COO, Invesco",
+      linkedin: "https://www.linkedin.com/in/shannonajohnston",
+      category: "C-Suite Panel"
+    },
+    {
+      name: "Christopher Edmonds",
+      role: "President, Fixed Income & Data Services, ICE",
+      linkedin: "https://www.linkedin.com/in/christopher-edmonds-483037a",
+      category: "C-Suite Panel"
+    },
+    {
+      name: "Deepika Mahajan",
+      role: "Chief Data & Analytics Officer, Federal Reserve Bank of NY",
+      linkedin: "https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b",
+      category: "C-Suite Panel"
+    },
+    {
+      name: "Sudheer Chava",
+      role: "Professor & Lab Director, Georgia Tech (Moderator)",
+      linkedin: "https://www.linkedin.com/in/sudheer-chava-b5883021",
+      category: "C-Suite Panel"
+    },
+    
+    // Additional Speakers
     {
       name: "Deep Ratna Srivastav",
-      role: "Chief AI Officer, Franklin Templeton Investments",
+      role: "Chief AI Officer, Franklin Templeton",
       linkedin: "https://www.linkedin.com/in/deepsrivastavinnovate",
-      category: "Other Speakers"
+      category: "Additional Speakers"
     },
     
     // Industry Leaders
