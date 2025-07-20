@@ -10,6 +10,16 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Travel Buddy Android Application",
+      description: "An Android application designed to help users explore new places effortlessly, plan visits efficiently, get personalized recommendations, and save favorite destinations. Features Google Maps integration, secure authentication, and dynamic content management.",
+      technologies: ["Java", "Android Studio", "Android Development", "RecyclerView", "JSON Parsing", "Google Maps API", "Appwrite", "Google Places API"],
+      status: "Production",
+      links: {
+        github: "https://github.com/sarveshtiku/Travel-Buddy-Android-Application",
+        demo: null
+      }
+    },
+    {
       title: "Research Data Platform",
       description: "A comprehensive platform for managing and analyzing research data with real-time collaboration features. Built for academic institutions to streamline their research workflows.",
       technologies: ["React", "Node.js", "PostgreSQL", "WebSocket", "Docker"],
