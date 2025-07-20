@@ -186,7 +186,7 @@ To everyone who shared a kind word; To everyone who stopped by and listened; To 
           id: "1.3",
           title: "Fireside Chat with Andrew Schlossberg, Invesco CEO",
           content: `<img src="/lovable-uploads/72294e58-94dc-41fd-bfb0-16f632c96bbf.png" alt="Fireside chat with executives" class="w-full rounded-lg mb-4" />
-<p class="text-sm text-gray-600 italic text-center mb-6">Tech Talks Business fireside chat featuring industry executives at Georgia Tech's Scheller College of Business AI & Future of Finance Conference</p>
+<p class="text-sm text-gray-600 italic text-center mb-6">Tech Talks Business fireside chat featuring Invesco CEO, Andrew Schlossberg and Dean fo Scheller College of Busniness Anuj Mehrotra</p>
 
 Andrew Schlossberg, CEO of Invesco, laid out a practical playbook for deploying AI in asset management: start small, measure everything, and integrate compliance from the beginning. He opened with an example—a $500M bond portfolio pilot where a compact team leveraged a generative AI model to draft allocation summaries. By benchmarking AI outputs against analyst write-ups, they cut the reporting cycle from 48 hours to just six. Crucially, Invesco's legal and risk teams were embedded in weekly standups, vetting data sources, establishing guardrails, and ensuring end-to-end audit trails. "We avoided months of rework by building the compliance framework before the model," Schlossberg said.
 
@@ -228,7 +228,7 @@ Unlike standard RAG pipelines, which can surface context but rarely explain rela
           content: `Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, delivered a grounded and pragmatic overview of how large language models are reshaping investment management at scale. Her talk made it clear: LLMs are not hype—they are already operational across the investment lifecycle.
 
 <img src="/lovable-uploads/abeea4d0-5cf9-4be3-a634-c509390e1996.png" alt="Tina Zhao presenting at Georgia Tech" class="w-full rounded-lg mb-4 mt-6" />
-<p class="text-sm text-gray-600 italic text-center mb-6">Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, presenting "LLM Applications in Investment Management" at the AI & Future of Finance Conference at Georgia Tech, with conference sponsors including Snowflake, Truist, Salesforce, BlackRock, and RelationalAI.</p>
+<p class="text-sm text-gray-600 italic text-center mb-6">Tianjiao (Tina) Zhao, Head of Applied AI Modeling at BlackRock, presenting "LLM Applications in Investment Management" at the AI & Future of Finance Conference</p>
 
 <strong>AI Applications Across BlackRock</strong>
 Zhao outlined how LLMs drive impact in three core areas:
