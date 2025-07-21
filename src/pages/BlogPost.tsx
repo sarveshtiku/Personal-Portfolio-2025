@@ -353,149 +353,100 @@ Hearing from C-suite leaders and industry veterans brought a new level of realis
   <p><strong>Disclaimer:</strong> The individuals mentioned below did not contribute to any of the thoughts or views expressed in this conference summary. All opinions and interpretations are my own, and these people should not be held responsible for any views presented here.</p>
 </div>
 
-<div class="mb-4">
-  <p class="text-gray-600 flex items-center gap-2">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-    Special thanks to everyone who made this conference insightful and memorable:
-  </p>
-</div>
-
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
   <!-- Column 1 -->
-  <div class="space-y-6">
-    <!-- Leadership -->
+  <div class="space-y-4">
     <div>
       <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🔗 Leadership</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/steve-mclaughlin-3420893/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Steve McLaughlin</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/steve-mclaughlin-3420893/" target="_blank" class="text-blue-600 hover:underline">Steve McLaughlin</a></div>
             <div class="text-xs text-gray-600">Provost & Executive VP, Georgia Tech</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/anuj-mehrotra-631b8847/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Anuj Mehrotra</a></div>
-            <div class="text-xs text-gray-600">Dean, Georgia Tech Scheller College of Business</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/anuj-mehrotra-631b8847/" target="_blank" class="text-blue-600 hover:underline">Anuj Mehrotra</a></div>
+            <div class="text-xs text-gray-600">Dean, Georgia Tech Scheller College</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Fireside Chat CEOs -->
     <div>
       <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🔥 Fireside Chat CEOs</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/bill-rogers-48543b6/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Bill Rogers</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/bill-rogers-48543b6/" target="_blank" class="text-blue-600 hover:underline">Bill Rogers</a></div>
             <div class="text-xs text-gray-600">CEO, Truist</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/andrew-schlossberg-4a43196/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Andrew Schlossberg</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/andrew-schlossberg-4a43196/" target="_blank" class="text-blue-600 hover:underline">Andrew Schlossberg</a></div>
             <div class="text-xs text-gray-600">President & CEO, Invesco</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Finance Innovation Lab -->
-    <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🧠 Finance Innovation Lab</h4>
-      <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/sudheerchava/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Sudheer Chava</a></div>
-            <div class="text-xs text-gray-600">Alton M. Costley Chair Professor, Georgia Tech</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Corporate Partners -->
     <div>
       <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🤝 Corporate Partners</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/jesse-sammons/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Jesse Sammons</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/jesse-sammons/" target="_blank" class="text-blue-600 hover:underline">Jesse Sammons</a></div>
             <div class="text-xs text-gray-600">Corporate Partnerships, Georgia Tech</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/ericfender/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Eric Fender</a></div>
-            <div class="text-xs text-gray-600">SVP Innovation & Immersive Experiences, Truist</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/ericfender/" target="_blank" class="text-blue-600 hover:underline">Eric Fender</a></div>
+            <div class="text-xs text-gray-600">SVP Innovation, Truist</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/stephanie-ray-833a7021/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Stephanie Ray</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/stephanie-ray-833a7021/" target="_blank" class="text-blue-600 hover:underline">Stephanie Ray</a></div>
             <div class="text-xs text-gray-600">VP Senior Project Manager, Truist</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/darrenprice/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Darren Price</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/darrenprice/" target="_blank" class="text-blue-600 hover:underline">Darren Price</a></div>
             <div class="text-xs text-gray-600">Enterprise Account Executive, AWS</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Future of Gen AI Panel -->
     <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">⚙️ Future of Gen AI Panel</h4>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">⚙️ Gen AI Panel</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/sudipta-sengupta-9b4603/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Sudipta Sengupta</a></div>
-            <div class="text-xs text-gray-600">VP & Distinguished Scientist, Amazon AWS</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/sudipta-sengupta-9b4603/" target="_blank" class="text-blue-600 hover:underline">Sudipta Sengupta</a></div>
+            <div class="text-xs text-gray-600">VP & Distinguished Scientist, AWS</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/robbie-birbeck/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Robbie Birbeck</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/robbie-birbeck/" target="_blank" class="text-blue-600 hover:underline">Robbie Birbeck</a></div>
             <div class="text-xs text-gray-600">VP BT Customer Zero, Salesforce</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/allen-stewart/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Allen Stewart</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/allen-stewart/" target="_blank" class="text-blue-600 hover:underline">Allen Stewart</a></div>
             <div class="text-xs text-gray-600">Partner Director, Microsoft</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Mark Riedl</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm">Mark Riedl</div>
             <div class="text-xs text-gray-600">Professor, Georgia Tech (Moderator)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- C-Suite Panel -->
-    <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">👔 C-Suite Panel</h4>
-      <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/shannonajohnston/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Shannon Johnston</a></div>
-            <div class="text-xs text-gray-600">CIO & COO, Invesco</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/christopher-edmonds-483037a/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Christopher Edmonds</a></div>
-            <div class="text-xs text-gray-600">President, Fixed Income & Data Services, ICE</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Deepika Mahajan</a></div>
-            <div class="text-xs text-gray-600">Chief Data & Analytics Officer, Federal Reserve Bank of NY</div>
           </div>
         </div>
       </div>
@@ -503,202 +454,135 @@ Hearing from C-suite leaders and industry veterans brought a new level of realis
   </div>
 
   <!-- Column 2 -->
-  <div class="space-y-6">
-    <!-- Additional Speakers -->
+  <div class="space-y-4">
     <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🎤 Additional Speakers</h4>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">👔 C-Suite Panel</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Chandra Kapireddy</div>
-            <div class="text-xs text-gray-600">Head of Gen AI, ML & Analytics, Truist</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/shannonajohnston/" target="_blank" class="text-blue-600 hover:underline">Shannon Johnston</a></div>
+            <div class="text-xs text-gray-600">CIO & COO, Invesco</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Thomas Bodenski</div>
-            <div class="text-xs text-gray-600">COO & Chief Data & Analytics Officer, TS Imagine</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/christopher-edmonds-483037a/" target="_blank" class="text-blue-600 hover:underline">Christopher Edmonds</a></div>
+            <div class="text-xs text-gray-600">President, Fixed Income & Data Services, ICE</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/deepsrivastavinnovate/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Deep Ratna Srivastav</a></div>
-            <div class="text-xs text-gray-600">Chief AI Officer, Franklin Templeton</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Tianjiao (Tina) Zhao</div>
-            <div class="text-xs text-gray-600">Director, Head of Applied AI Modeling, BlackRock</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Jonathan Regenstein</div>
-            <div class="text-xs text-gray-600">Head of Financial Services AI, Snowflake</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/deepika-mahajan-cfa-4015944b/" target="_blank" class="text-blue-600 hover:underline">Deepika Mahajan</a></div>
+            <div class="text-xs text-gray-600">Chief Data Officer, Federal Reserve Bank of NY</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Finance & Investment Professionals -->
     <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">💼 Finance & Investment Professionals</h4>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">💼 Finance Leaders</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/andy-dietderich/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Andrew Dietderich</a></div>
-            <div class="text-xs text-gray-600">Co-Head Global Finance & Restructuring, Sullivan and Cromwell</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/andy-dietderich/" target="_blank" class="text-blue-600 hover:underline">Andrew Dietderich</a></div>
+            <div class="text-xs text-gray-600">Co-Head Global Finance, Sullivan and Cromwell</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/brettmwilson/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Brett Wilson</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/brettmwilson/" target="_blank" class="text-blue-600 hover:underline">Brett Wilson</a></div>
             <div class="text-xs text-gray-600">Partner, McKinsey & Company</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/manavmisra/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Manav Misra</a></div>
-            <div class="text-xs text-gray-600">Chief Data and Analytics Officer, Regions Bank</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/manavmisra/" target="_blank" class="text-blue-600 hover:underline">Manav Misra</a></div>
+            <div class="text-xs text-gray-600">Chief Data Officer, Regions Bank</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/stephen-markwell/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Stephen Markwell</a></div>
-            <div class="text-xs text-gray-600">Head of Fintech Partnerships, Global Banking, JPMorgan Chase</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/stephen-markwell/" target="_blank" class="text-blue-600 hover:underline">Stephen Markwell</a></div>
+            <div class="text-xs text-gray-600">Head of Fintech Partnerships, JPMorgan</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/kumananramanathan/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Kumanan Ramanathan</a></div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/kumananramanathan/" target="_blank" class="text-blue-600 hover:underline">Kumanan Ramanathan</a></div>
             <div class="text-xs text-gray-600">Co-Head of Crypto, Alvarez & Marsal</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/john-neubauer-20078612/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">John Neubauer</a></div>
-            <div class="text-xs text-gray-600">Managing Director, Global Head of Corporate Equity Derivatives, JPMorgan</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/mitchell-sonkin-7ba25b8a/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Mitchell Sonkin</a></div>
-            <div class="text-xs text-gray-600">Independent Director, FTX Bankruptcy</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Brett Kotch</div>
-            <div class="text-xs text-gray-600">Head of Trading Technology, Millennium</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/scott-ferber/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Scott Ferber</a></div>
-            <div class="text-xs text-gray-600">Partner, Raj Ferber PLLC</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/john-neubauer-20078612/" target="_blank" class="text-blue-600 hover:underline">John Neubauer</a></div>
+            <div class="text-xs text-gray-600">Managing Director, JPMorgan</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Technology & AI Professionals -->
     <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🤖 Technology & AI Professionals</h4>
+      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🎤 Additional Speakers</h4>
       <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/vasiloglou/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Nick Vasiloglou</a></div>
-            <div class="text-xs text-gray-600">VP of Research ML, RelationalAI</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/sudheerchava/" target="_blank" class="text-blue-600 hover:underline">Sudheer Chava</a></div>
+            <div class="text-xs text-gray-600">Professor & Lab Director, Georgia Tech</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm"><a href="https://www.linkedin.com/in/che-guan-60117717/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Che Guan</a></div>
-            <div class="text-xs text-gray-600">Principal Data Scientist, Alliance Bernstein</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm">Chandra Kapireddy</div>
+            <div class="text-xs text-gray-600">Head of Gen AI, Truist</div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Georgia Tech Students -->
-    <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🎓 Georgia Tech Students</h4>
-      <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Agam Shah</div>
-            <div class="text-xs text-gray-600">Ph.D. Candidate, Georgia Tech College of Computing</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm">Thomas Bodenski</div>
+            <div class="text-xs text-gray-600">COO, TS Imagine</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Michael Galarnyk</div>
-            <div class="text-xs text-gray-600">Ph.D. Student, Georgia Tech College of Engineering</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm"><a href="https://www.linkedin.com/in/deepsrivastavinnovate/" target="_blank" class="text-blue-600 hover:underline">Deep Ratna Srivastav</a></div>
+            <div class="text-xs text-gray-600">Chief AI Officer, Franklin Templeton</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Glenn Matlin</div>
-            <div class="text-xs text-gray-600">Ph.D. Student, Georgia Tech College of Computing</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm">Tianjiao (Tina) Zhao</div>
+            <div class="text-xs text-gray-600">Director, BlackRock</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Nikita Tatarinov</div>
-            <div class="text-xs text-gray-600">PhD student, College of Computing, Georgia Tech</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm">Jonathan Regenstein</div>
+            <div class="text-xs text-gray-600">Head of Financial Services AI, Snowflake</div>
           </div>
         </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Gauri Sharma</div>
+        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border">
+          <div class="flex-1">
+            <div class="font-medium text-sm">Gauri Sharma</div>
             <div class="text-xs text-gray-600">CS @ Georgia Tech</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Conference Connections -->
-    <div>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🤝 Conference Connections</h4>
-      <div class="space-y-2">
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Nancy Razzouk</div>
-            <div class="text-xs text-gray-600">Invesco</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Anqi Zou</div>
-            <div class="text-xs text-gray-600">Head of Fair & Responsible Banking Analytics, Truist</div>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 p-2 bg-white rounded-lg border border-gray-200">
-          <div class="flex-1 min-w-0">
-            <div class="font-medium text-gray-900 text-sm">Astrid</div>
-            <div class="text-xs text-gray-600">Georgia Tech</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>`
+        },
+        {
+          id: "1.11",
+          title: "Gratitude and Acknowledgments",
+          content: `I want to end this post with a huge amount of gratitude—for Georgia Tech and for everyone, seen and unseen, who helped make this conference happen. It takes real effort to bring so many brilliant minds together and to keep things running smoothly. Special thanks to Prof. Sudheer Chava—I barely got a chance to speak with you, but your humility and genuine passion for creating this kind of platform for students to learn and connect came through in every detail. The Scheller College of Business and the Financial Services Innovation Lab both deserve a shoutout for supporting and elevating student voices.
 
-<div class="bg-gray-50 border-l-4 border-gray-300 p-4 mb-6 italic text-gray-700">
-  <p><strong>Disclaimer:</strong> The individuals mentioned below did not contribute to any of the thoughts or views expressed in this conference summary. All opinions and interpretations are my own, and these people should not be held responsible for any views presented here.</p>
-</div>
+<img src="/lovable-uploads/56548e5e-77e7-4957-9afb-f84f7f734d21.png" alt="Conference attendees and networking" class="w-full rounded-lg mb-4 mt-6" />
 
-<div class="mb-4">
-  <p class="text-gray-600 flex items-center gap-2">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-    Special thanks to everyone who made this conference insightful and memorable:
-  </p>
-</div>
+And finally, the biggest thanks goes to Gauri—for sharing these resources with me in the first place, for being my 6am wake-up call over spring break, and for sprinting across Ferst Center with me in uncomfortable shoes at sunrise just to make it on time. I've never been more grateful to have a friend like you in my life.`
+        }
+      ];
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-  <!-- Column 1 -->
-  <div class="space-y-6">
+  const currentSection = sections.find(section => section.id === sectionId);
     <!-- Leadership -->
     <div>
       <h4 class="text-lg font-semibold mb-3 text-gray-800 flex items-center gap-2">🔗 Leadership</h4>
