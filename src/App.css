@@ -40,3 +40,51 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Vanta Fog Background Styles */
+.vanta-fog-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh; /* Just cover the landing page content */
+  z-index: -10;
+  pointer-events: none;
+  background: radial-gradient(100% 100% at 50% 0%, #1a2248 0%, #10132e 40%, #0a0d1f 100%);
+}
+
+/* Extend the fog background slightly to cover the landing page content */
+.vanta-fog-background::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh; /* Just cover the landing page content */
+  background: inherit;
+  z-index: -10;
+}
+
+/* Make sure the fog background extends to cover all content */
+body {
+  min-height: 120vh; /* Just cover the landing page content */
+  background: radial-gradient(100% 100% at 50% 0%, #1a2248 0%, #10132e 40%, #0a0d1f 100%);
+}
+
+/* Ensure the root element can extend the fog background */
+#root {
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* Ensure text is readable over the fog background */
+.hero-text {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth transitions for the fog effect */
+.fog-transition {
+  transition: opacity 0.5s ease-in-out;
+}

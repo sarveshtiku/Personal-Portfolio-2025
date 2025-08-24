@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative text-center space-y-6 py-12">
         {/* Hero Image */}
-        <div className="absolute inset-0 -z-10 rounded-lg overflow-hidden">
+        <div className="absolute inset-0 -z-20 rounded-lg overflow-hidden">
           <img 
             src={heroImage} 
             alt="Abstract geometric patterns" 
@@ -20,10 +20,10 @@ export default function Home() {
         </div>
         
         <div className="space-y-4">
-          <h1 className="font-academic text-5xl lg:text-6xl font-bold text-primary">
+          <h1 className="font-academic text-5xl lg:text-6xl font-bold text-primary hero-text">
             Hi, I'm Sarvesh
           </h1>
-          <div className="text-xl text-warm-orange font-medium min-h-[2rem]">
+          <div className="text-xl text-warm-orange font-medium min-h-[2rem] hero-text">
             <TypewriterEffect 
               phrases={[
                 "AI Safety Researcher",
@@ -34,13 +34,13 @@ export default function Home() {
               className="font-academic text-2xl lg:text-3xl"
             />
           </div>
-          <p className="text-xl text-academic-gray max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-academic-gray max-w-2xl mx-auto leading-relaxed hero-text">
             Exploring the intersection of technology, research, and human-centered design. 
             Building solutions that matter through code, curiosity, and collaboration.
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 hero-text">
           <Button asChild variant="outline" size="lg" className="border-warm-orange text-warm-orange hover:bg-warm-orange hover:text-white">
             <Link to="/blog">Read My Blog</Link>
           </Button>
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center space-x-6 pt-8">
+        <div className="flex justify-center space-x-6 pt-8 hero-text">
           <a href="https://github.com/sarveshtiku" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
             <Github className="h-6 w-6" />
           </a>
