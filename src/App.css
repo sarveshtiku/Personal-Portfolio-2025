@@ -1,90 +1,71 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-/* Vanta Fog Background Styles */
+/* Vanta Fog Background - Just to Footer Coverage */
 .vanta-fog-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 120vh; /* Just cover the landing page content */
-  z-index: -10;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 9999;
   pointer-events: none;
-  background: radial-gradient(100% 100% at 50% 0%, #1a2248 0%, #10132e 40%, #0a0d1f 100%);
+  /* Background now appears above text content */
 }
 
-/* Extend the fog background slightly to cover the landing page content */
+/* Extended background coverage for content - just enough for footer */
+.vanta-fog-background::before,
 .vanta-fog-background::after {
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 120vh; /* Just cover the landing page content */
-  background: inherit;
-  z-index: -10;
+  height: 155vh; /* Increased coverage for desktop to 155vh for better footer visibility */
+  min-width: 100vw;
+  min-height: 155vh;
+  /* Background now appears above text content */
+  z-index: 9999;
 }
 
-/* Make sure the fog background extends to cover all content */
+/* Ensure body extends to cover content without excessive scrolling */
 body {
-  min-height: 120vh; /* Just cover the landing page content */
-  background: radial-gradient(100% 100% at 50% 0%, #1a2248 0%, #10132e 40%, #0a0d1f 100%);
-}
-
-/* Ensure the root element can extend the fog background */
-#root {
-  min-height: 100vh;
+  min-height: 155vh; /* Match the background extension */
   background: transparent;
 }
 
-/* Ensure text is readable over the fog background */
-.hero-text {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 1;
-}
-
-/* Smooth transitions for the fog effect */
-.fog-transition {
-  transition: opacity 0.5s ease-in-out;
+/* Root element styling */
+#root {
+  min-height: 100vh;
+  background: transparent !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

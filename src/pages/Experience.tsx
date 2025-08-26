@@ -6,63 +6,121 @@ import { Button } from "@/components/ui/button";
 export default function Experience() {
   const experiences = [
     {
-      company: "Tech Research Institute",
-      position: "Senior Research Engineer",
+      company: "Salesforce",
+      position: "Software Engineering Intern",
       location: "San Francisco, CA",
-      period: "2022 - Present",
-      type: "Full-time",
-      description: "Leading research initiatives at the intersection of AI and human-computer interaction. Managing a team of 5 researchers and engineers working on next-generation development tools.",
+      period: "May 2025 - August 2025",
+      type: "Internship",
+      description: "Built and deployed a full-stack sandbox platform to simulate real-world traffic and scale-test AgentForce agents, improving rollout reliability across 10k+ enterprise deployments. Scaled infrastructure to handle 100K+ concurrent requests, enabling stress testing and performance benchmarking under production-like load.",
       achievements: [
-        "Published 3 peer-reviewed papers in top-tier conferences",
-        "Led development of an AI-assisted code review system used by 10,000+ developers",
-        "Secured $2M in research funding from NSF and industry partners"
+        "Developed and launched a sandbox testing platform for AgentForce agents, adopted by internal teams to validate enterprise-scale deployments",
+        "Scaled infrastructure to reliably support 100K+ concurrent requests for high-fidelity stress testing",
+        "Completed 3 Salesforce certifications in 2 weeks (AgentForce Specialist, AgentBlazer Champion), accelerating onboarding in multi-agent orchestration and enterprise AI workflows"
       ],
-      technologies: ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
+      technologies: ["Node.js", "TypeScript", "FastAPI", "Salesforce Apex", "AgentForce APIs", "React", "Lightning Web Components", "PostgreSQL", "Redis", "AWS S3", "Docker", "Kubernetes", "GitHub Actions", "Grafana", "Prometheus", "Einstein GPT", "Agentforce SDK", "LangChain"]
     },
     {
-      company: "InnovateSoft Solutions",
-      position: "Full Stack Developer",
-      location: "Remote",
-      period: "2020 - 2022",
-      type: "Full-time",
-      description: "Developed and maintained large-scale web applications serving 50,000+ active users. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+      company: "Georgia Institute of Technology",
+      position: "Computational Biology Undergraduate Research Assistant",
+      location: "Atlanta, GA",
+      period: "Jan 2025 - Aug 2025",
+      type: "Research",
+      description: "Engineered AI-driven pipelines using R, LLMs (via OpenAI API), and Zotero's metadata to automate statistical analysis and literature synthesis across 500+ papers. Developed a Zotero–OpenAI integration for semantic retrieval and conversational querying of research corpora, with reusable tooling adopted across lab workflows.",
       achievements: [
-        "Reduced application load time by 40% through optimization",
-        "Implemented CI/CD pipeline that reduced deployment time by 60%",
-        "Led migration from monolith to microservices architecture"
+        "Paper accepted to IEEE International Conference on Multimedia Information Processing and Retrieval. 2025",
+        "Nominated for the GT Presidential Undergraduate Research Award to expand and formally publish ongoing research"
       ],
-      technologies: ["React", "Node.js", "AWS", "MongoDB", "Kubernetes"]
+      technologies: ["R", "OpenAI API", "LLMs", "Zotero", "Python", "Statistical Analysis", "Literature Synthesis", "AI Pipelines"]
+    },
+    {
+      company: "Colorado School of Mines",
+      position: "Computing for Good Machine Learning Engineer",
+      location: "Golden, CO",
+      period: "May 2024 - July 2024",
+      type: "Research",
+      description: "Applied ML-driven optimization techniques for solar panel placement, improving projected energy efficiency by 85% through spatial modeling. Reduced development cycle by 40% using Agile methodology and iterative product design workflows. Partnered with 10+ stakeholders via the Google Sunroof Project to drive adoption of solar energy through accurate, accessible deployment tools. Recognized by the State of Colorado for achieving ROI prediction accuracy within <5% error margin, boosting trust in large-scale renewable investments.",
+      achievements: [
+        "Improved projected energy efficiency by 85% through ML-driven spatial modeling",
+        "Reduced development cycle by 40% using Agile methodology and iterative workflows",
+        "Partnered with 10+ stakeholders via Google Sunroof Project for solar energy adoption",
+        "Recognized by State of Colorado for <5% ROI prediction accuracy in renewable investments"
+      ],
+      technologies: ["Machine Learning", "Spatial Modeling", "Solar Energy", "Agile Methodology", "Google Sunroof Project", "ROI Prediction", "Python", "ML Optimization", "Product Design"]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
+      name: "Salesforce Certified Agentforce Specialist",
+      issuer: "Salesforce",
+      issuedDate: "Mar 2025",
+      credentialId: "5925054",
+      link: "https://drive.google.com/file/d/1r7EwR1dkckoP6o_uWG2DG7W1mR5-_pVG/view",
+      logo: "/salesforce-logo.png",
+      skills: ["Salesforce", "CRM", "Business Process", "Customer Service", "Automation"]
+    },
+    {
+      name: "Introduction to Front-End Development",
+      issuer: "Meta",
+      issuedDate: "Jan 2025",
+      credentialId: "JTHU1GLCLMKB",
+      link: "https://www.coursera.org/account/accomplishments/verify/JTHU1GLCLMKB",
+      logo: "/meta-logo.png",
+      skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Responsive Design", "Web Development"]
+    },
+    {
+      name: "GitHub Foundations",
+      issuer: "GitHub",
+      issuedDate: "Dec 2024",
+      expiresDate: "Dec 2027",
+      link: "https://www.credly.com/badges/631e6ea7-4e7c-40f6-b969-19d0805df2b0/linked_in_profile",
+      logo: "/github-logo.png",
+      skills: ["Git", "Version Control", "GitHub", "Collaboration", "Repository Management", "Open Source"]
+    },
+    {
+      name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
-      date: "2023",
-      id: "AWS-SAA-2023-001",
-      link: "#"
+      issuedDate: "Nov 2024",
+      credentialId: "AWS-CP-2024-789",
+      link: "#",
+      logo: "/aws-logo.png",
+      skills: ["AWS", "Cloud Computing", "Cloud Architecture", "Security", "Networking", "Cost Management"]
+    },
+    {
+      name: "Bloomberg Market Concepts",
+      issuer: "Bloomberg",
+      issuedDate: "Oct 2024",
+      credentialId: "BMC-2024-456",
+      link: "#",
+      logo: "/bloomberg-logo.png",
+      skills: ["Financial Markets", "Trading", "Investment", "Market Analysis", "Bloomberg Terminal", "Economics"]
     },
     {
       name: "Google Cloud Professional Cloud Architect",
       issuer: "Google Cloud",
-      date: "2022", 
-      id: "GCP-PCA-2022-045",
-      link: "#"
-    },
-    {
-      name: "TensorFlow Developer Certificate",
-      issuer: "Google",
-      date: "2022",
-      id: "TF-DEV-2022-789",
-      link: "#"
+      issuedDate: "Sep 2024",
+      credentialId: "GCP-PCA-2024-123",
+      link: "#",
+      logo: "/google-cloud-logo.png",
+      skills: ["Google Cloud", "Cloud Architecture", "DevOps", "Microservices", "Security", "Scalability"]
     },
     {
       name: "Certified Kubernetes Administrator",
       issuer: "Cloud Native Computing Foundation",
-      date: "2021",
-      id: "CKA-2021-567",
-      link: "#"
+      issuedDate: "Aug 2024",
+      credentialId: "CKA-2024-567",
+      link: "#",
+      logo: "/kubernetes-logo.png",
+      skills: ["Kubernetes", "Container Orchestration", "DevOps", "Microservices", "Cloud Native", "Docker"]
+    },
+    {
+      name: "Microsoft Azure Solutions Architect Expert",
+      issuer: "Microsoft",
+      issuedDate: "Jul 2024",
+      credentialId: "AZ-305-2024-890",
+      link: "#",
+      logo: "/azure-logo.png",
+      skills: ["Azure", "Cloud Architecture", "DevOps", "Security", "Networking", "Hybrid Cloud"]
     }
   ];
 
@@ -93,9 +151,30 @@ export default function Experience() {
                     {exp.company}
                   </h3>
                 </div>
-                <Badge variant="secondary">
-                  {exp.type}
-                </Badge>
+                <div className="flex items-center gap-3">
+                  {/* Company Logo */}
+                  {exp.company === "Salesforce" && (
+                    <img 
+                      src="/salesforce-logo.png" 
+                      alt="Salesforce Logo" 
+                      className="w-25 h-16 object-contain"
+                    />
+                  )}
+                  {exp.company === "Georgia Institute of Technology" && (
+                    <img 
+                      src="/georgia-tech-logo.png" 
+                      alt="Georgia Tech Logo" 
+                      className="w-25 h-16 object-contain"
+                    />
+                  )}
+                  {exp.company === "Colorado School of Mines" && (
+                    <img 
+                      src="/colorado-mines-logo.png" 
+                      alt="Colorado School of Mines Logo" 
+                      className="w-25 h-16 object-contain"
+                    />
+                  )}
+                </div>
               </div>
               
               <div className="flex flex-wrap gap-4 text-sm text-academic-gray">
@@ -155,42 +234,53 @@ export default function Experience() {
         
         <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => (
-            <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 p-2 bg-primary/10 rounded-lg">
-                    <Award className="h-6 w-6 text-primary" />
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="font-academic text-xl text-primary">
+                      {cert.name}
+                    </CardTitle>
+                    <h3 className="text-lg text-warm-orange font-semibold">
+                      {cert.issuer}
+                    </h3>
                   </div>
-                  <div className="flex-1 space-y-3">
-                    <div>
-                      <h3 className="font-semibold text-primary text-lg">
-                        {cert.name}
-                      </h3>
-                      <p className="text-warm-orange font-medium">
-                        {cert.issuer}
-                      </p>
+                  {/* Verify Button */}
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="gap-1"
+                    onClick={() => window.open(cert.link, '_blank')}
+                  >
+                    <ExternalLink className="h-3 w-3" />
+                    Verify
+                  </Button>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-1">
+                    <Calendar className="h-4 w-4" />
+                    Obtained: {cert.issuedDate}
+                  </div>
+                  {cert.credentialId && (
+                    <div className="mt-1">
+                      ID: {cert.credentialId}
                     </div>
-                    
-                    <div className="flex items-center justify-between">
-                      <div className="text-sm text-academic-gray">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="h-4 w-4" />
-                          Obtained: {cert.date}
-                        </div>
-                        <div className="mt-1">
-                          ID: {cert.id}
-                        </div>
-                      </div>
-                      
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        className="gap-1"
-                        onClick={() => window.open(cert.link, '_blank')}
-                      >
-                        <ExternalLink className="h-3 w-3" />
-                        Verify
-                      </Button>
+                  )}
+                  {cert.expiresDate && (
+                    <div className="mt-1 text-muted-foreground">
+                      Expires: {cert.expiresDate}
+                    </div>
+                  )}
+                  {/* Skills Tags */}
+                  <div className="mt-3">
+                    <div className="flex flex-wrap gap-2">
+                      {cert.skills.map((skill, skillIndex) => (
+                        <Badge key={skillIndex} variant="secondary" className="text-xs">
+                          {skill}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
                 </div>

@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Github, Linkedin, Mail, Instagram, Twitter, FileText, GraduationCap } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Twitter, FileText, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-geometric.jpg";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 export default function Home() {
@@ -10,28 +9,18 @@ export default function Home() {
     <div className="space-y-12">
       {/* Hero Section */}
       <section className="relative text-center space-y-6 py-12">
-        {/* Hero Image */}
-        <div className="absolute inset-0 -z-20 rounded-lg overflow-hidden">
-          <img 
-            src={heroImage} 
-            alt="Abstract geometric patterns" 
-            className="w-full h-full object-cover opacity-10"
-          />
-        </div>
-        
         <div className="space-y-4">
-          <h1 className="font-academic text-5xl lg:text-6xl font-bold text-primary hero-text">
-            Hi, I'm Sarvesh
+          <h1 className="font-academic text-5xl lg:text-6xl font-bold text-gray-800 hero-text">
+            Hi, I'm Sarvesh!
           </h1>
-          <div className="text-xl text-warm-orange font-medium min-h-[2rem] hero-text">
+          <div className="text-xl text-blue-600 font-medium min-h-[2rem] hero-text">
             <TypewriterEffect 
               phrases={[
                 "AI Safety Researcher",
                 "Software Developer", 
-                "Tech Entrepreneur",
-                "Building the Future"
+                "Building a Better Future"
               ]}
-              className="font-academic text-2xl lg:text-3xl"
+              className="font-academic text-2xl lg:text-3xl text-blue-600"
             />
           </div>
           <p className="text-xl text-academic-gray max-w-2xl mx-auto leading-relaxed hero-text">
@@ -63,29 +52,26 @@ export default function Home() {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 pt-8 hero-text">
           <a href="https://github.com/sarveshtiku" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
-            <Github className="h-6 w-6" />
+            <Github className="h-8 w-10" />
           </a>
           <a href="https://www.linkedin.com/in/sarveshtiku/" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
-            <Linkedin className="h-6 w-6" />
+            <Linkedin className="h-8 w-10" />
           </a>
           <a href="https://scholar.google.com/citations?user=KB6pL-sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
-            <GraduationCap className="h-6 w-6" />
+            <GraduationCap className="h-8 w-10" />
           </a>
           <a href="/contact" className="text-academic-gray hover:text-warm-orange transition-colors">
-            <Mail className="h-6 w-6" />
-          </a>
-          <a href="https://www.instagram.com/sarvesh_tiku/" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
-            <Instagram className="h-6 w-6" />
+            <Mail className="h-8 w-10" />
           </a>
           <a href="https://x.com/sarveshtiku" target="_blank" rel="noopener noreferrer" className="text-academic-gray hover:text-warm-orange transition-colors">
-            <Twitter className="h-6 w-6" />
+            <Twitter className="h-8 w-10" />
           </a>
         </div>
       </section>
 
       {/* Featured Sections */}
-      <section className="grid md:grid-cols-3 gap-6">
-        <Card className="academic-shadow hover:warm-shadow transition-all duration-300">
+      <section className="grid md:grid-cols-3 gap-6 relative z-10">
+        <Card className="academic-shadow hover:warm-shadow transition-all duration-300 relative z-10">
           <CardContent className="p-6">
             <h3 className="font-academic text-xl font-semibold mb-3 text-primary">Recent Projects</h3>
             <p className="text-academic-gray mb-4">
@@ -97,7 +83,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="academic-shadow hover:warm-shadow transition-all duration-300">
+        <Card className="academic-shadow hover:warm-shadow transition-all duration-300 relative z-10">
           <CardContent className="p-6">
             <h3 className="font-academic text-xl font-semibold mb-3 text-primary">Research & Writing</h3>
             <p className="text-academic-gray mb-4">
@@ -109,7 +95,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="academic-shadow hover:warm-shadow transition-all duration-300">
+        <Card className="academic-shadow hover:warm-shadow transition-all duration-300 relative z-10">
           <CardContent className="p-6">
             <h3 className="font-academic text-xl font-semibold mb-3 text-primary">Latest Thoughts</h3>
             <p className="text-academic-gray mb-4">
@@ -123,12 +109,10 @@ export default function Home() {
       </section>
 
       {/* Quote Section */}
-      <section className="text-center py-12">
+      <section className="text-center py-12 relative z-10">
         <blockquote className="font-academic text-2xl italic text-primary-blue max-w-3xl mx-auto">
-          "The best way to predict the future is to invent it, but the wisest way is to 
-          understand the principles that guide its creation."
+          be gentle with everyone, it's their first time living too
         </blockquote>
-        <cite className="block mt-4 text-academic-gray">— Personal Philosophy</cite>
       </section>
     </div>
   );
