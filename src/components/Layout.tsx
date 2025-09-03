@@ -1,7 +1,6 @@
 import { Navbar } from "./Navbar";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { VantaFogBackground } from "./VantaFogBackground";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -45,9 +44,6 @@ export function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Vanta.js fog background for ALL pages - rendered at document level */}
-      <VantaFogBackground />
-      
       <Navbar />
       <main className="flex-1">
         <div className="max-w-6xl mx-auto px-6 py-8 lg:px-12 lg:py-12">

@@ -384,7 +384,7 @@ Hearing from C-suite leaders and industry veterans brought a new level of realis
             <div class="text-xs text-gray-600 truncate">Dean, Georgia Tech Scheller College of Business</div>
           </div>
           <a href="https://www.linkedin.com/in/anuj-mehrotra-13b5154" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 flex-shrink-0">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
         </div>
       </div>
@@ -431,7 +431,7 @@ Hearing from C-suite leaders and industry veterans brought a new level of realis
             <div class="text-xs text-gray-600 truncate">Professor, Georgia Tech (Moderator)</div>
           </div>
           <div class="w-4 h-4 text-gray-400 flex-shrink-0">
-            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/></svg>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </div>
         </div>
       </div>
@@ -847,6 +847,130 @@ The goal isn't just to learn more—it's to build things that matter and share k
         }
       ]
     }
+  },
+  "srini-salesforce-july": {
+    title: "Innovating with Trust, Fueling Growth: Srini Tallapragada's Vision at Salesforce",
+    date: "2025-07-16",
+    readTime: "12 min read",
+    category: "Newsletter",
+    author: "Srini Tallapragada",
+    company: "Salesforce",
+    type: "newsletter",
+    content: {
+      intro: "Leaders are hired for growth—not margins. Growth is fun. Cutting isn't. That's Srini Tallapragada, President & Chief Engineering and Customer Success Officer at Salesforce, delivered this truth with conviction—and it resonates.",
+      sections: [
+        {
+          id: "1.1",
+          title: "Growth First, Efficiency Second",
+          content: `Srini shared a vivid anecdote: a large Indian bank CEO prioritized speed and scale above cost. "Growth, not cost—my bottleneck is people," he said, ambitious to expand into 32 states and cross borders, but unable to hire and train fast enough. Srini framed this as a pivotal challenge: companies must think big, or risk falling into a myopic loop of endless cost-cutting.
+
+When leadership lacks vision, they "go into a native spiral of cutting, cutting, cutting"—and that's not fun. As Srini states, "No CEO is hired for margin. Almost every CEO is hired for growth."`
+        },
+        {
+          id: "1.2",
+          title: "Engineering with Future-proof Backward Compatibility",
+          content: `A junior engineer asked Srini: how do you leap forward without breaking the past? His answer was elegant: customers don't buy software; they hire it to get a job done—today and tomorrow.
+
+Salesforce maintains 60 supported API versions, enabling seamless upgrades and protecting customizations while delivering innovation. This isn't just engineering—it's a robust promise of progressive evolution.`
+        },
+        {
+          id: "1.3",
+          title: "Trust: The Foundation of AI Innovation",
+          content: `Trust sits at the pinnacle of Salesforce's values—first, above innovation. Srini insists: "Without trust, innovation is meaningless."
+
+When building AI systems like Agentforce, Salesforce invested heavily in a trust layer: ✅ rollback access, attribute-based permissions, policy guardrails, regional certifications. These aren't features. These are fundamental enablers of enterprise AI.`
+        },
+        {
+          id: "1.4",
+          title: "Durable Culture, Adaptive Innovation",
+          content: `Looking years ahead, Srini says the greatest challenge isn't predicting technology—it's building a culture that can adapt and endure.
+
+Durable investments: psychological safety, empowerment, nimble teams, values-driven clarity—those last. Technology shifts, problems evolve, but culture is the anchor.
+
+He emphasises rapid feedback loops: build → test → learn → iterate, layered across engineering stacks—from infrastructure to user-facing components. At every level: fast change, no breakage.`
+        },
+        {
+          id: "1.5",
+          title: "AI, Accountability, and Quality in the Developer Loop",
+          content: `On AI-assisted coding, Srini shared a sobering warning: "My nightmare is code I don't understand—that breaks in production." Productivity must never override accountability.
+
+Engineers must understand the AI-generated code they review and ship. Metrics track cycle time, end-to-end customer value, quality—not just speed. Tools are amplifiers, not shortcuts to responsibility.`
+        },
+        {
+          id: "1.6",
+          title: "Navigating Enterprise AI's Hype and Realism",
+          content: `Enterprises face three core challenges with AI adoption:
+
+1. Change management—embedding new workflows.
+2. Trust—can it be deployed safely?
+3. Cost—what's the ROI?
+
+Srini advises starting small: deploy agents for simple, high-impact use-cases like answering FAQs or resetting passwords. Let internal evangelism and ROI guide expansion.
+
+He believes we're still in AI's hype cycle. The real transformation—true GDP uplift—arrives when realistic, responsible solutions rise beyond flash.`
+        },
+        {
+          id: "1.7",
+          title: "Platform Power: Metadata Enables Adaptation",
+          content: `Salesforce isn't just software—it's a platform. Srini emphasized metadata's magic: each customer, department, company has unique workflows. Metadata creates a powerful level of indirection—abstracting differences while enabling deep customization.
+
+That's how Salesforce serves 10 million companies with one core codebase.`
+        },
+        {
+          id: "1.8",
+          title: "Location, Community, and Emerging Talent",
+          content: `Finally, Srini addressed engineers wondering if San Francisco still matters. His answer: yes—if you can choose, be in SF. The proximity to infrastructure, AI, and chip ecosystems is invaluable.
+
+Yet, he assures global teams are thriving across Bellevue, Hyderabad, Bangalore, Tel Aviv, Vancouver. With hubs and distributed engineering, Salesforce ensures inclusion without sacrificing innovation.`
+        },
+        {
+          id: "1.9",
+          title: "In Summary: Srini's Unique Perspective",
+          content: `<table class="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-3 text-left font-semibold">Insight</th>
+                <th class="border border-gray-300 p-3 text-left font-semibold">Core Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-3 font-medium">Growth > Efficiency</td>
+                <td class="border border-gray-300 p-3">Leaders live by growth. Don't fixate on cost.</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3 font-medium">Compatibility in Innovation</td>
+                <td class="border border-gray-300 p-3">Maintain stability while modernizing.</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3 font-medium">Trust as a Value</td>
+                <td class="border border-gray-300 p-3">AI must be built on ethical, secure foundations.</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3 font-medium">Culture Endures</td>
+                <td class="border border-gray-300 p-3">People-first culture trumps tech shifts.</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3 font-medium">AI with Accountability</td>
+                <td class="border border-gray-300 p-3">Speed isn't value—responsible delivery is.</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3 font-medium">Smart Adoption of AI</td>
+                <td class="border border-gray-300 p-3">Start small, build trust, scale with results.</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3 font-medium">Metadata as Magic</td>
+                <td class="border border-gray-300 p-3">Platform-level abstraction enables customization.</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 p-3 font-medium">SF Matters, But So Do Hubs</td>
+                <td class="border border-gray-300 p-3">Local ecosystem fuels innovation, global scale fuels reach.</td>
+              </tr>
+            </tbody>
+          </table>`
+        }
+      ]
+    }
   }
 };
 
@@ -855,13 +979,30 @@ export default function BlogPost() {
   const location = window.location.pathname;
   
   // Construct the full slug for newsletter articles
-  const fullSlug = location.includes('/newsletter/') ? `newsletter/${slug}` : slug;
+  let fullSlug = slug;
+  
+  // Check if this is a newsletter route
+  if (location.includes('/newsletter/')) {
+    fullSlug = `newsletter/${slug}`;
+  }
+  
+  // Special case for the Srini Salesforce newsletter
+  if (slug === 'srini-salesforce-july') {
+    fullSlug = 'srini-salesforce-july';
+  }
+  
+  console.log('Current location:', location);
+  console.log('Slug from params:', slug);
+  console.log('Full slug constructed:', fullSlug);
+  console.log('Available blog posts:', Object.keys(blogPosts));
   
   if (!fullSlug || !blogPosts[fullSlug as keyof typeof blogPosts]) {
+    console.log('Post not found, redirecting to /blog');
     return <Navigate to="/blog" replace />;
   }
   
   const post = blogPosts[fullSlug as keyof typeof blogPosts];
+  console.log('Found post:', post.title);
   
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {

@@ -10,6 +10,18 @@ export default function Research() {
   
   const papers = [
     {
+      title: "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)",
+      subtitle: "A Framework for Assessing Structured Retrieval and Reasoning Capabilities",
+      abstract: "The integration of large language models (LLMs) into scientific research workflows presents new opportunities for AI-assisted retrieval, summarization, and hypothesis generation. However, evaluating the reliability and domain alignment of these models in real-world scientific contexts remains an open challenge. In this work, we present BioMuse, a benchmarking framework designed to assess the structured retrieval and reasoning capabilities of LLMs using researcher-curated Zotero libraries. BioMuse transforms Zotero metadata—such as collections, tags, and notes—into semantic graphs and document clusters. We define a set of benchmarking tasks including citation-based retrieval, abstract-consistent summarization, and tag prediction. Our implementation includes an automated Zotero parser, an LLM testing interface, and a metrics module to measure hallucination frequency, citation accuracy, and semantic consistency. We evaluate state-of-the-art models such as GPT-4 and Claude across multiple computational biology subdomains (e.g., cancer genomics, gene regulation). Experimental results highlight model discrepancies not captured by traditional QA benchmarks and demonstrate the utility of BioMuse in stress-testing domain-specific alignment. This framework provides a reusable pipeline for evaluating LLMs in structured research settings and supports scalable adaptation across scientific domains.",
+      venue: "IEEE 8th International Conference on Multimedia Information Processing and Retrieval (IEEE MIPR 2025)",
+      date: "2025-08-06",
+      status: "Accepted",
+      type: "Conference Paper",
+      tags: ["LLMs", "semantic retrieval", "Zotero", "citation grounding", "scientific AI", "hallucination detection", "knowledge graphs"],
+      link: "https://sites.google.com/view/mipr-2025/ieee-mipr",
+      citation: "S. Tiku, \"Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR),\" 2025 IEEE 8th International Conference on Multimedia Information Processing and Retrieval (IEEE MIPR), San Jose, CA, USA, 2025, pp. 1-6."
+    },
+    {
       title: "Mitigation of User-Prompt Bias in Large Language Models",
       subtitle: "A Natural Language Processing and Deep Learning Based Framework",
       abstract: "The advent of large language models has opened new frontiers in the field of automated text generation, enabling more refined engagement with complex language-based tasks. Concurrently, this advancement has revealed a potential vulnerability: the inadvertent amplification of biases from user prompts, which may lead to the reinforcement of detrimental stereotypes and misinformation by these large language models. Addressing this multifaceted challenge, this paper delineates a framework that integrates natural language processing and deep learning, designed to detect, and neutralize bias in user prompts in real time. The core of this system is a carefully formulated algorithm, the result of rigorous training, validation, and testing on the CrowS-Pairs dataset, specifically aimed at measuring the degree to which U.S. stereotypical biases are present in language models. The framework achieved an accuracy of 93% and an F1Score of 0.92 in pinpointing and alleviating biases.",
@@ -74,7 +86,7 @@ export default function Research() {
           {papers.map((paper, index) => (
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
               <CardHeader className="relative">
-                {paper.title === "Mitigation of User-Prompt Bias in Large Language Models" && (
+                {(paper.title === "Mitigation of User-Prompt Bias in Large Language Models" || paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)") && (
                   <div className="flex items-start gap-4 mb-4">
                     <div className="flex-1">
                       <CardTitle className="font-academic text-xl text-primary">
@@ -98,14 +110,23 @@ export default function Research() {
                         </div>
                       )}
                     </div>
-                    <img 
-                      src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
-                      alt="ICMI 2024 Conference Logo"
-                      className="w-96 h-auto flex-shrink-0"
-                    />
+                    {paper.title === "Mitigation of User-Prompt Bias in Large Language Models" && (
+                      <img 
+                        src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
+                        alt="ICMI 2024 Conference Logo"
+                        className="w-96 h-auto flex-shrink-0"
+                      />
+                    )}
+                    {paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && (
+                      <img 
+                        src="/MIPRIEEE.png" 
+                        alt="IEEE MIPR 2025 Conference Banner"
+                        className="w-96 h-auto flex-shrink-0"
+                      />
+                    )}
                   </div>
                 )}
-                {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && (
+                {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && paper.title !== "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && (
                   <>
                     <CardTitle className="font-academic text-xl text-primary">
                       {paper.title}
@@ -136,7 +157,7 @@ export default function Research() {
                   <div className="flex items-center gap-1">
                     <FileText className="h-4 w-4" />
                     <a 
-                      href="https://ieeexplore.ieee.org/xpl/conhome/10585267/proceeding" 
+                      href={paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" ? "https://sites.google.com/view/mipr-2025/ieee-mipr" : "https://ieeexplore.ieee.org/xpl/conhome/10585267/proceeding"}
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="hover:text-primary hover:underline transition-colors"
@@ -168,6 +189,18 @@ export default function Research() {
                     >
                       <Copy className="h-4 w-4 mr-2" />
                       Cite This
+                    </Button>
+                  )}
+                  {paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && (
+                    <Button variant="outline" size="sm" asChild className="hover:bg-muted">
+                      <a 
+                        href="https://github.com/sarveshtiku/BioMuse-MIPR" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View GitHub Repository
+                      </a>
                     </Button>
                   )}
                 </div>

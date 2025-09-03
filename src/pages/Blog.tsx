@@ -57,12 +57,12 @@ export default function Blog() {
       slug: "newsletter/summer-reflections-june"
     },
     {
-      title: "Deep Dive: Distributed Systems & Conference Highlights", 
-      excerpt: "A technical deep dive into distributed systems, conference highlights from recent events, and summer coding challenges I've been tackling.",
-      date: "2024-07-15",
-      readTime: "7 min read",
+      title: "Innovating with Trust, Fueling Growth: Srini Tallapragada's Vision at Salesforce",
+      excerpt: "Leaders are hired for growth—not margins. Growth is fun. Cutting isn't. That's Srini Tallapragada, President & Chief Engineering and Customer Success Officer at Salesforce, delivered this truth with conviction—and it resonates.",
+      date: "2025-07-16",
+      readTime: "12 min read",
       issue: "Issue #2", 
-      slug: "newsletter/distributed-systems-july"
+      slug: "srini-salesforce-july"
     },
     {
       title: "Research Updates & AI Ethics in Practice",

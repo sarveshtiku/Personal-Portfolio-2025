@@ -7,7 +7,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: transparent;
 }
 
 body {
@@ -20,52 +19,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: transparent;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Vanta Fog Background - Just to Footer Coverage */
-.vanta-fog-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  min-width: 100vw;
-  min-height: 100vh;
-  z-index: 9999;
-  pointer-events: none;
-  /* Background now appears above text content */
-}
-
-/* Extended background coverage for content - just enough for footer */
-.vanta-fog-background::before,
-.vanta-fog-background::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 155vh; /* Increased coverage for desktop to 155vh for better footer visibility */
-  min-width: 100vw;
-  min-height: 155vh;
-  /* Background now appears above text content */
-  z-index: 9999;
-}
-
-/* Ensure body extends to cover content without excessive scrolling */
-body {
-  min-height: 155vh; /* Match the background extension */
-  background: transparent;
-}
-
-/* Root element styling */
-#root {
-  min-height: 100vh;
-  background: transparent !important;
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
