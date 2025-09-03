@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-interface VantaFogBackgroundProps {
+interface VantaTopologyBackgroundProps {
   className?: string;
 }
 
@@ -12,39 +12,39 @@ declare global {
   }
 }
 
-export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) {
+export function VantaTopologyBackground({ className = '' }: VantaTopologyBackgroundProps) {
   const vantaRef = useRef<HTMLDivElement>(null);
   const [vantaEffect, setVantaEffect] = useState<any>(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    console.log('VantaFogBackground: Starting script loading process');
+    console.log('VantaTopologyBackground: Starting script loading process');
     // Check if VANTA is available
     if (!window.VANTA) {
-      console.log('VantaFogBackground: VANTA not available, loading scripts...');
+      console.log('VantaTopologyBackground: VANTA not available, loading scripts...');
       // Load Three.js first
       const threeScript = document.createElement('script');
       threeScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js';
       threeScript.onload = () => {
-        console.log('VantaFogBackground: Three.js loaded successfully');
-        // Load Vanta.js after Three.js
+        console.log('VantaTopologyBackground: Three.js loaded successfully');
+        // Load Vanta.js FOG after Three.js
         const vantaScript = document.createElement('script');
         vantaScript.src = 'https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js';
         vantaScript.onload = () => {
-          console.log('VantaFogBackground: Vanta.js loaded successfully');
+          console.log('VantaTopologyBackground: Vanta.js FOG loaded successfully');
           setIsLoaded(true);
         };
         vantaScript.onerror = (error) => {
-          console.error('VantaFogBackground: Failed to load Vanta.js:', error);
+          console.error('VantaTopologyBackground: Failed to load Vanta.js FOG:', error);
         };
         document.head.appendChild(vantaScript);
       };
       threeScript.onerror = (error) => {
-        console.error('VantaFogBackground: Failed to load Three.js:', error);
+        console.error('VantaTopologyBackground: Failed to load Three.js:', error);
       };
       document.head.appendChild(threeScript);
     } else {
-      console.log('VantaFogBackground: VANTA already available');
+      console.log('VantaTopologyBackground: VANTA already available');
       setIsLoaded(true);
     }
 
@@ -63,17 +63,17 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
 
   useEffect(() => {
     if (!isLoaded || !vantaRef.current || !window.VANTA) {
-      console.log('VantaFogBackground: Missing requirements, cannot initialize');
-      console.log('VantaFogBackground: isLoaded =', isLoaded);
-      console.log('VantaFogBackground: vantaRef.current =', !!vantaRef.current);
-      console.log('VantaFogBackground: window.VANTA =', !!window.VANTA);
+      console.log('VantaTopologyBackground: Missing requirements, cannot initialize');
+      console.log('VantaTopologyBackground: isLoaded =', isLoaded);
+      console.log('VantaTopologyBackground: vantaRef.current =', !!vantaRef.current);
+      console.log('VantaTopologyBackground: window.VANTA =', !!window.VANTA);
       return;
     }
 
     // Check for reduced motion preference
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReduced) {
-      console.log('VantaFogBackground: Reduced motion preference detected, skipping');
+      console.log('VantaTopologyBackground: Reduced motion preference detected, skipping');
       return;
     }
 
@@ -93,7 +93,7 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
       zoomLevel = 1.8;
     }
 
-    console.log('VantaFogBackground: Screen size detected:', {
+    console.log('VantaTopologyBackground: Screen size detected:', {
       width: window.innerWidth,
       height: window.innerHeight,
       isMobile,
@@ -103,7 +103,7 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
     });
 
     try {
-      console.log('VantaFogBackground: Creating fog effect...');
+      console.log('VantaTopologyBackground: Creating fog effect...');
       
       // Create a dedicated div for the fog effect at document level
       const fogContainer = document.createElement('div');
@@ -114,15 +114,13 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 9999;
+        z-index: 10;
         pointer-events: none;
-        opacity: 0.15;
-        border: 3px solid red;
-        background-color: rgba(0, 255, 0, 0.3);
+        opacity: 0.8;
       `;
       document.body.appendChild(fogContainer);
       
-      console.log('VantaFogBackground: Created fog container:', {
+      console.log('VantaTopologyBackground: Created fog container:', {
         id: fogContainer.id,
         styles: fogContainer.style.cssText,
         parent: fogContainer.parentElement?.tagName,
@@ -134,23 +132,22 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: window.innerHeight * coverage, // Responsive coverage
-        minWidth: window.innerWidth,
-        // Blue palette for your academic theme
-        highlightColor: 0xe0e0eb,
-        midtoneColor: 0xe0e0eb,
-        lowlightColor: 0xe0e0eb,
-        baseColor: 0x80C0FF,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0x6caeff,
+        midtoneColor: 0x5abaff,
+        lowlightColor: 0x97e0f7,
+        baseColor: 0xffebeb,
         blurFactor: 0.6,
-        zoom: zoomLevel, // Responsive zoom
-        speed: 18 // Balanced fast animation
+        zoom: 1,
+        speed: 2.30
       });
 
-      console.log('VantaFogBackground: Fog effect created successfully:', effect);
+      console.log('VantaTopologyBackground: Fog effect created successfully:', effect);
       
       // Debug: Check CSS rules being applied
       const computedStyles = window.getComputedStyle(fogContainer);
-      console.log('VantaFogBackground: CSS Rules Check:', {
+      console.log('VantaTopologyBackground: CSS Rules Check:', {
         'z-index': computedStyles.zIndex,
         'position': computedStyles.position,
         'top': computedStyles.top,
@@ -162,7 +159,7 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
       
       // Debug: Check if container is visible
       const rect = fogContainer.getBoundingClientRect();
-      console.log('VantaFogBackground: Container visibility:', {
+      console.log('VantaTopologyBackground: Container visibility:', {
         boundingRect: {
           top: rect.top,
           left: rect.left,
@@ -179,7 +176,7 @@ export function VantaFogBackground({ className = '' }: VantaFogBackgroundProps) 
       });
       
       // Debug: Check z-index stacking context
-      console.log('VantaFogBackground: Z-index analysis:', {
+      console.log('VantaTopologyBackground: Z-index analysis:', {
         containerZIndex: fogContainer.style.zIndex,
         computedZIndex: computedStyles.zIndex,
         parentZIndex: fogContainer.parentElement ? window.getComputedStyle(fogContainer.parentElement).zIndex : 'N/A',

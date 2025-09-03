@@ -3,12 +3,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Github, Linkedin, Mail, Twitter, FileText, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
+import { VantaTopologyBackground } from "@/components/VantaFogBackground";
 
 export default function Home() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 relative">
+      {/* Vanta.js Topology Background */}
+      <VantaTopologyBackground />
       {/* Hero Section */}
-      <section className="relative text-center space-y-6 py-12">
+      <section className="relative text-center space-y-6 py-12 z-20">
         <div className="space-y-4">
           <h1 className="font-academic text-5xl lg:text-6xl font-bold text-gray-800 hero-text">
             Hi, I'm Sarvesh!
@@ -70,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* Featured Sections */}
-      <section className="grid md:grid-cols-3 gap-6 relative z-10">
+      <section className="grid md:grid-cols-3 gap-6 relative z-20">
         <Card className="academic-shadow hover:warm-shadow transition-all duration-300 relative z-10">
           <CardContent className="p-6">
             <h3 className="font-academic text-xl font-semibold mb-3 text-primary">Recent Projects</h3>
@@ -109,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Quote Section */}
-      <section className="text-center py-12 relative z-10">
+      <section className="text-center py-12 relative z-20">
         <blockquote className="font-academic text-2xl italic text-primary-blue max-w-3xl mx-auto">
           be gentle with everyone, it's their first time living too
         </blockquote>
