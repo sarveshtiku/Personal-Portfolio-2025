@@ -125,7 +125,9 @@ export default function Experience() {
   ];
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 relative z-20">
+      {/* Soft Blue Gradient Background */}
+      <div className="fixed inset-0 bg-gradient-to-br from-white via-blue-50 to-blue-100 opacity-60" style={{zIndex: -1}}></div>
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
@@ -246,15 +248,15 @@ export default function Experience() {
                     </h3>
                   </div>
                   {/* Verify Button */}
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="gap-1"
-                    onClick={() => window.open(cert.link, '_blank')}
-                  >
-                    <ExternalLink className="h-3 w-3" />
-                    Verify
-                  </Button>
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        className="gap-1"
+                        onClick={() => window.open(cert.link, '_blank')}
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        Verify
+                      </Button>
                 </div>
               </CardHeader>
               <CardContent>

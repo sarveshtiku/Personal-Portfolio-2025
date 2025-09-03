@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X, Camera, Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useTheme } from "next-themes";
+import { Home, User, FolderOpen, BookOpen, FileText, Briefcase, Mail, Menu, X, Camera } from "lucide-react";
+
+
 
 const navigation = [
   
@@ -18,20 +18,7 @@ const navigation = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
-
-  // Force light mode on home page
-  useEffect(() => {
-    if (isHomePage && theme === "dark") {
-      setTheme("light");
-    }
-  }, [isHomePage, theme, setTheme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="max-w-6xl mx-auto px-6">
@@ -65,28 +52,8 @@ export function Navbar() {
             </div>
           </div>
 
-          {/* Right side - Theme toggle and Mobile menu */}
+          {/* Right side - Mobile menu */}
           <div className="flex items-center gap-2">
-            {/* Theme Toggle */}
-            {isHomePage ? (
-              /* On home page: show only sun icon (light mode) */
-              <div className="h-9 w-9 p-0 flex items-center justify-center">
-                <Sun className="h-4 w-4 text-foreground" />
-              </div>
-            ) : (
-              /* On other pages: show functional theme toggle */
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={toggleTheme}
-                className="h-9 w-9 p-0"
-              >
-                <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                <span className="sr-only">Toggle theme</span>
-              </Button>
-            )}
-
             {/* Mobile menu button */}
             <div className="md:hidden">
               <button 

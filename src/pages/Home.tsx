@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
 import { VantaTopologyBackground } from "@/components/VantaFogBackground";
 
+
 export default function Home() {
   return (
     <div className="space-y-12 relative">
-      {/* Vanta.js Topology Background */}
+      {/* Vanta.js Fog Background */}
       <VantaTopologyBackground />
       {/* Hero Section */}
       <section className="relative text-center space-y-6 py-12 z-20">

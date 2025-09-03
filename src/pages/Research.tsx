@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FileText, ExternalLink, Calendar, GraduationCap, Copy } from "lucide-react";
-import { TypewriterEffect } from "@/components/TypewriterEffect";
+import { FileText, ExternalLink, Calendar, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Research() {
@@ -61,20 +60,17 @@ export default function Research() {
   };
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 relative z-20">
+      {/* Soft Blue Gradient Background */}
+      <div className="fixed inset-0 bg-gradient-to-br from-white via-blue-50 to-blue-100 opacity-60" style={{zIndex: -10}}></div>
       {/* Header */}
-      <section className="text-center space-y-6">
-        <div className="flex items-center justify-center gap-8 animate-fade-in">
-          <h1 className="font-academic text-3xl lg:text-5xl font-bold text-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary-foreground hover:bg-clip-text hover:text-transparent transition-all duration-500">
-            <TypewriterEffect phrases={["Research"]} typingSpeed={150} loop={false} className="inline-block" />
-          </h1>
-          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white hover-scale transition-all duration-300 shadow-lg hover:shadow-xl">
-            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4xxpk46Nnyc6_R33u0nGUbSJXUY7rgCHhjK5seT4-urV0y3qz48kkfj8FfSsDLaEC3_x4U51pkPORGnbw&user=KB6pL-sAAAAJ" target="_blank" rel="noopener noreferrer">
-              <GraduationCap className="mr-2 h-5 w-5" />
-              Google Scholar Profile
-            </a>
-          </Button>
-        </div>
+      <section className="text-center space-y-4">
+        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
+          Research
+        </h1>
+        <p className="text-xl text-academic-gray max-w-2xl mx-auto">
+          Exploring the intersection of AI, machine learning, and computational biology through rigorous research and publication.
+        </p>
       </section>
 
       {/* Publications */}
