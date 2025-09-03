@@ -3,14 +3,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Github, Linkedin, Mail, Twitter, FileText, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
-import { VantaTopologyBackground } from "@/components/VantaFogBackground";
+import VantaGlobeBackground from "@/components/VantaGlobeBackground";
 
 
 export default function Home() {
   return (
     <div className="space-y-12 relative">
-      {/* Vanta.js Fog Background */}
-      <VantaTopologyBackground />
+      {/* Vanta.js Globe Background */}
+      <VantaGlobeBackground />
       {/* Hero Section */}
       <section className="relative text-center space-y-6 py-12 z-20">
         <div className="space-y-4">

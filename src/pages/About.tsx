@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import VantaGlobeBackground from "@/components/VantaGlobeBackground";
+import { VantaTopologyBackground } from "@/components/VantaFogBackground";
 
 export default function About() {
   const skills = [
@@ -13,7 +13,7 @@ export default function About() {
 
   return (
     <div className="relative min-h-screen">
-      <VantaGlobeBackground />
+      <VantaTopologyBackground />
       <div className="space-y-12 relative z-20">
         {/* Header */}
         <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">

@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Filter, X } from "lucide-react";
+import { VantaTopologyBackground } from "@/components/VantaFogBackground";
 
 export default function Projects() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
@@ -115,8 +116,7 @@ export default function Projects() {
 
   return (
     <div className="space-y-12 relative z-20">
-      {/* Soft Blue Gradient Background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-white via-blue-50 to-blue-100 opacity-60" style={{zIndex: -1}}></div>
+      <VantaTopologyBackground />
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
