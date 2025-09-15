@@ -99,13 +99,13 @@ export default function Experience() {
       skills: ["Git", "Version Control", "GitHub", "Collaboration", "Repository Management", "Open Source"]
     },
     {
-      name: "Bloomberg Market Concepts",
-      issuer: "Bloomberg",
-      issuedDate: "Oct 2024",
-      credentialId: "BMC-2024-456",
-      link: "#",
-      logo: "/bloomberg-logo.png",
-      skills: ["Financial Markets", "Trading", "Investment", "Market Analysis", "Bloomberg Terminal", "Economics"]
+      name: "AI Safety and Governance",
+      issuer: "BlueDot Impact",
+      issuedDate: "Apr 2025",
+      credentialId: "recIhGUkgymBECS8q",
+      link: "https://bluedot.org/certification?id=reclhGUkgymBECS8q",
+      logo: "/bluedot-logo.png",
+      skills: ["AI Governance & Regulation", "Responsible AI Practices", "Policy & Risk Analysis", "AI Safety & Ethics", "Applied Governance Frameworks", "Societal Impact of AI"]
     },
   ];
 
