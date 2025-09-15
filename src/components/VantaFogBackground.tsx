@@ -134,13 +134,13 @@ export function VantaTopologyBackground({ className = '' }: VantaTopologyBackgro
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        highlightColor: 0x6caeff,
-        midtoneColor: 0x5abaff,
-        lowlightColor: 0x97e0f7,
-        baseColor: 0xffebeb,
+        highlightColor: 0x66ccff, // #66ccff
+        midtoneColor: 0x0066cc,  // #0066cc
+        lowlightColor: 0x000066, // #000066
+        baseColor: 0xe6f7ff,     // #e6f7ff
         blurFactor: 0.6,
         zoom: 1,
-        speed: 2.30
+        speed: 1.5
       });
 
       console.log('VantaTopologyBackground: Fog effect created successfully:', effect);

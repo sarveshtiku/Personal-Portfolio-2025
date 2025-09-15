@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { VantaTopologyBackground } from "@/components/VantaFogBackground";
+import VantaTrunkBackground from "@/components/VantaTrunkBackground";
 
 export default function About() {
   const skills = [
@@ -9,12 +9,10 @@ export default function About() {
     "Docker", "GraphQL", "Next.js", "TailwindCSS", "Machine Learning", "Research"
   ];
 
-  console.log('About component rendering, VantaFogBackground should be visible');
 
   return (
-    <div className="relative min-h-screen">
-      <VantaTopologyBackground />
-      <div className="space-y-12 relative z-20">
+    <VantaTrunkBackground>
+      <div className="space-y-12">
         {/* Header */}
         <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="flex-shrink-0">
@@ -150,7 +148,7 @@ export default function About() {
 
         </div>
       </section>
-    </div>
-  </div>
-);
+      </div>
+    </VantaTrunkBackground>
+  );
 }

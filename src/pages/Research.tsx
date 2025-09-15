@@ -33,13 +33,16 @@ export default function Research() {
       citation: "S. Tiku, \"Mitigation of User-Prompt Bias in Large Language Models: A Natural Langauge Processing and Deep Learning Based Framework,\" 2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI), Mt Pleasant, MI, USA, 2024, pp. 1-5, doi: 10.1109/ICMI60790.2024.10585628. keywords: {Deep learning;Training;Large language models;Computational modeling;Prevention and mitigation;Transformers;Real-time systems;Artificial Intelligence;Deep Learning;Natural Language Processing;Bias Detection Mitigation;Computational Linguistics;Predictive Modeling;Bidirectional Encoder Representations from Transformers (BERT);Robustly Optimized BERT Approach},"
     },
     {
-      title: "Ethical Considerations in Automated Code Review Systems",
-      abstract: "As automated code review systems become prevalent, questions of bias, fairness, and transparency emerge. This paper analyzes 10 popular code review tools for potential biases and proposes an ethical framework for their development and deployment.",
-      venue: "Software Engineering Ethics Workshop",
-      date: "2023-11-20",
+      title: "AI-Induced Labor Market Shifts and Aging Workforce Dynamics",
+      subtitle: "A Cross-National Study of Corporate Strategic Responses in Japan, USA, and India",
+      abstract: "Advanced Artificial Intelligence (AI) technologies are inducing significant labor market transformations by automating an array of job roles and, in turn, disrupting traditional career advancement pathways. The rapid AI-driven automation limits entry-level job opportunities, thus curbing the upward mobility of the 'no-experience category' workforce. This phenomenon triggers a cascading effect on the aging, 'higher positioned' employees, as their accrued responsibilities and experience compel them to advocate for increased retirement ages, in a bid to sustain company dynamism in the face of AI transformations. By comparing the strategic responses of corporations across countries at different stages of implementing artificial intelligence in the workforce, such as Japan, the USA, and India, the study seeks to unravel the corporate responses to this intricate interplay, aiming to offer insights for equitable and sustainable integration strategies for AI and for addressing workforce aging and retirement policy challenges.",
+      venue: "Foundation Document - United Nations HL Advisory Board on AI",
+      date: "2023-08-09",
       status: "Published",
-      type: "Workshop Paper",
-      link: "#"
+      type: "Journal Article",
+      tags: ["Artificial Intelligence", "Job Automation", "Labor Market Transformations", "Aging Workforce Dynamics", "Corporate Strategic Responses", "Retirement Policy", "Cross-national Comparison", "Sustainable Integration Strategies"],
+      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4535534",
+      citation: "Tiku, Sarvesh, AI-Induced Labor Market Shifts and Aging Workforce Dynamics: A Cross-National Study of Corporate Strategic Responses in Japan, USA, and India (August 9, 2023). Available at SSRN: https://ssrn.com/abstract=4535534 or http://dx.doi.org/10.2139/ssrn.4535534"
     }
   ];
 
@@ -82,7 +85,7 @@ export default function Research() {
           {papers.map((paper, index) => (
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
               <CardHeader className="relative">
-                {(paper.title === "Mitigation of User-Prompt Bias in Large Language Models" || paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)") && (
+                {(paper.title === "Mitigation of User-Prompt Bias in Large Language Models" || paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" || paper.title === "AI-Induced Labor Market Shifts and Aging Workforce Dynamics") && (
                   <div className="flex items-start gap-4 mb-4">
                     <div className="flex-1">
                       <CardTitle className="font-academic text-xl text-primary">
@@ -94,10 +97,12 @@ export default function Research() {
                         </p>
                       )}
                       
-                      {/* IEEE Keywords below title */}
+                      {/* Keywords below title */}
                       {paper.tags && (
                         <div className="flex flex-wrap items-center gap-2 pt-3">
-                          <span className="text-sm font-medium text-muted-foreground">IEEE Keywords:</span>
+                          <span className="text-sm font-medium text-muted-foreground">
+                            {paper.title === "AI-Induced Labor Market Shifts and Aging Workforce Dynamics" ? "SSRN Keywords:" : "IEEE Keywords:"}
+                          </span>
                           {paper.tags.map((tag, tagIndex) => (
                             <Badge key={tagIndex} variant="secondary" className="text-xs">
                               {tag}
@@ -120,9 +125,16 @@ export default function Research() {
                         className="w-96 h-auto flex-shrink-0"
                       />
                     )}
+                    {paper.title === "AI-Induced Labor Market Shifts and Aging Workforce Dynamics" && (
+                      <img 
+                        src="/un-ai-advisory-body-logo.png" 
+                        alt="United Nations AI Advisory Body Logo"
+                        className="w-96 h-auto flex-shrink-0"
+                      />
+                    )}
                   </div>
                 )}
-                {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && paper.title !== "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && (
+                {paper.title !== "Mitigation of User-Prompt Bias in Large Language Models" && paper.title !== "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && paper.title !== "AI-Induced Labor Market Shifts and Aging Workforce Dynamics" && (
                   <>
                     <CardTitle className="font-academic text-xl text-primary">
                       {paper.title}
@@ -153,7 +165,7 @@ export default function Research() {
                   <div className="flex items-center gap-1">
                     <FileText className="h-4 w-4" />
                     <a 
-                      href={paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" ? "https://sites.google.com/view/mipr-2025/ieee-mipr" : "https://ieeexplore.ieee.org/xpl/conhome/10585267/proceeding"}
+                      href={paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" ? "https://sites.google.com/view/mipr-2025/ieee-mipr" : paper.title === "AI-Induced Labor Market Shifts and Aging Workforce Dynamics" ? "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4535534" : "https://ieeexplore.ieee.org/xpl/conhome/10585267/proceeding"}
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="hover:text-primary hover:underline transition-colors"

@@ -109,4 +109,31 @@ All colors MUST be HSL.
   .warm-shadow {
     box-shadow: var(--shadow-warm);
   }
+
+  /* Animated background styles */
+  .fog-transition {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* Ensure proper z-index layering */
+  .vanta-fog-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* Vanta TRUNK background styling */
+  .vanta-trunk-background {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -5 !important;
+    pointer-events: none !important;
+  }
 }
