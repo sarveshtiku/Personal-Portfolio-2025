@@ -64,7 +64,7 @@ export default function Research() {
   };
 
   return (
-    <div className="space-y-12 relative z-20">
+    <div className="space-y-12 relative z-20 px-4 sm:px-6 lg:px-8">
       <VantaNetBackground />
       {/* Header */}
       <section className="text-center space-y-4">
@@ -86,7 +86,7 @@ export default function Research() {
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300">
               <CardHeader className="relative">
                 {(paper.title === "Mitigation of User-Prompt Bias in Large Language Models" || paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" || paper.title === "AI-Induced Labor Market Shifts and Aging Workforce Dynamics") && (
-                  <div className="flex items-start gap-4 mb-4">
+                  <div className="flex flex-col lg:flex-row items-start gap-4 mb-4">
                     <div className="flex-1">
                       <CardTitle className="font-academic text-xl text-primary">
                         {paper.title}
@@ -115,21 +115,21 @@ export default function Research() {
                       <img 
                         src="/lovable-uploads/f3241671-570e-4759-a018-899ba468d89a.png" 
                         alt="ICMI 2024 Conference Logo"
-                        className="w-96 h-auto flex-shrink-0"
+                        className="w-full max-w-sm lg:w-96 h-auto flex-shrink-0"
                       />
                     )}
                     {paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && (
                       <img 
                         src="/MIPRIEEE.png" 
                         alt="IEEE MIPR 2025 Conference Banner"
-                        className="w-96 h-auto flex-shrink-0"
+                        className="w-full max-w-sm lg:w-96 h-auto flex-shrink-0"
                       />
                     )}
                     {paper.title === "AI-Induced Labor Market Shifts and Aging Workforce Dynamics" && (
                       <img 
                         src="/un-ai-advisory-body-logo.png" 
                         alt="United Nations AI Advisory Body Logo"
-                        className="w-96 h-auto flex-shrink-0"
+                        className="w-full max-w-sm lg:w-96 h-auto flex-shrink-0"
                       />
                     )}
                   </div>
@@ -181,10 +181,10 @@ export default function Research() {
                     })}
                   </div>
                 </div>
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" asChild>
+                <div className="flex flex-wrap gap-2">
+                  <Button variant="outline" size="sm" asChild className="text-xs sm:text-sm">
                     <a href={paper.link}>
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                      <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                       Read Paper
                     </a>
                   </Button>
@@ -193,20 +193,20 @@ export default function Research() {
                       variant="outline" 
                       size="sm" 
                       onClick={() => handleCiteCopy(paper.citation!)}
-                      className="hover:bg-muted"
+                      className="hover:bg-muted text-xs sm:text-sm"
                     >
-                      <Copy className="h-4 w-4 mr-2" />
+                      <Copy className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                       Cite This
                     </Button>
                   )}
                   {paper.title === "Benchmarking LLMs for Trustworthy Multimedia Retrieval in Computational Biology (BioMuse‑MIPR)" && (
-                    <Button variant="outline" size="sm" asChild className="hover:bg-muted">
+                    <Button variant="outline" size="sm" asChild className="hover:bg-muted text-xs sm:text-sm">
                       <a 
                         href="https://github.com/sarveshtiku/BioMuse-MIPR" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
-                        <ExternalLink className="h-4 w-4 mr-2" />
+                        <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                         View GitHub Repository
                       </a>
                     </Button>
