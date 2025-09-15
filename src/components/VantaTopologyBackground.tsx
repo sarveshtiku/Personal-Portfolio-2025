@@ -4,21 +4,21 @@ import { useEffect, useRef } from 'react';
 declare global {
   interface Window {
     VANTA: {
-      FOG: (config: any) => any;
+      TOPOLOGY: (config: any) => any;
     };
   }
 }
 
-interface VantaFogBackgroundProps {
+interface VantaTopologyBackgroundProps {
   className?: string;
 }
 
-export default function VantaFogBackground({ className = "" }: VantaFogBackgroundProps) {
+export default function VantaTopologyBackground({ className = "" }: VantaTopologyBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const vantaRef = useRef<any>(null);
 
   useEffect(() => {
-    // Load Three.js and Vanta.js scripts if not already loaded
+    // Load p5.js and Vanta.js scripts if not already loaded
     const loadScript = (src: string): Promise<void> => {
       return new Promise((resolve, reject) => {
         if (document.querySelector(`script[src="${src}"]`)) {
@@ -35,35 +35,32 @@ export default function VantaFogBackground({ className = "" }: VantaFogBackgroun
 
     const initializeVanta = async () => {
       try {
-        // Load Three.js first
-        await loadScript('https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js');
+        // Load p5.js first
+        await loadScript('https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js');
         
-        // Load Vanta.js FOG
-        await loadScript('https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js');
+        // Load Vanta.js topology
+        await loadScript('https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js');
 
         // Wait a bit for scripts to initialize
         await new Promise(resolve => setTimeout(resolve, 100));
 
-        if (containerRef.current && window.VANTA && window.VANTA.FOG) {
-          // Initialize Vanta FOG with your specified settings
-          vantaRef.current = window.VANTA.FOG({
+        if (containerRef.current && window.VANTA && window.VANTA.TOPOLOGY) {
+          // Initialize Vanta TOPOLOGY with your specified settings
+          vantaRef.current = window.VANTA.TOPOLOGY({
             el: containerRef.current,
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
-            highlightColor: 0x66ccff, // #66ccff
-            midtoneColor: 0x0066cc,  // #0066cc
-            lowlightColor: 0x000066, // #000066
-            baseColor: 0xe6f7ff,     // #e6f7ff
-            blurFactor: 0.6,
-            zoom: 1,
-            speed: 1.5
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x80c0ff,      // #80c0ff
+            backgroundColor: 0xe5f2ff  // #e5f2ff
           });
         }
       } catch (error) {
-        console.error('Failed to initialize Vanta FOG background:', error);
+        console.error('Failed to initialize Vanta TOPOLOGY background:', error);
       }
     };
 

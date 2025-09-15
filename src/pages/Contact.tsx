@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Github, Linkedin, Twitter, MapPin, Calendar } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import VantaGlobeBackground from "@/components/VantaGlobeBackground";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -40,8 +41,8 @@ export default function Contact() {
 
   return (
     <div className="space-y-12 relative z-20">
-      {/* Soft Blue Gradient Background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-white via-blue-50 to-blue-100 opacity-60" style={{zIndex: -1}}></div>
+      {/* Vanta.js Globe Background */}
+      <VantaGlobeBackground />
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
