@@ -70,6 +70,26 @@ export default function Experience() {
       skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Responsive Design", "Web Development"]
     },
     {
+      name: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services Training and Certification",
+      issuedDate: "Aug 2025",
+      expiresDate: "Sep 2028",
+      credentialId: "3f64e981-7f1f-4fd2-a633-e7cd55824d2d",
+      link: "https://drive.google.com/file/d/1Ok92OAeDoXNEp5l0_dOcwl8lKFGO8enc/view?usp=sharing",
+      logo: "/aws-logo.png",
+      skills: ["Cloud Computing", "Cloud Services", "Amazon Web Services", "AWS", "AWS Certification", "AWS Cloud", "Cloud Certification", "Cloud Platform"]
+    },
+    {
+      name: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services Training and Certification",
+      issuedDate: "Sep 2025",
+      expiresDate: "Sep 2028",
+      credentialId: "2e3d096d-8aa5-4335-9e13-92129868cf3b",
+      link: "https://drive.google.com/file/d/1ZSXkmLhZ61LG6SIqVUZCeiPltFU8o6ns/view?usp=sharing",
+      logo: "/aws-logo.png",
+      skills: ["Cloud Architecture", "Cloud Infrastructure", "Cloud Services", "Amazon Web Services", "AWS", "AWS Certification", "AWS Cloud", "Cloud Certification", "Cloud Data"]
+    },
+    {
       name: "GitHub Foundations",
       issuer: "GitHub",
       issuedDate: "Dec 2024",
@@ -77,15 +97,6 @@ export default function Experience() {
       link: "https://www.credly.com/badges/631e6ea7-4e7c-40f6-b969-19d0805df2b0/linked_in_profile",
       logo: "/github-logo.png",
       skills: ["Git", "Version Control", "GitHub", "Collaboration", "Repository Management", "Open Source"]
-    },
-    {
-      name: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      issuedDate: "Nov 2024",
-      credentialId: "AWS-CP-2024-789",
-      link: "#",
-      logo: "/aws-logo.png",
-      skills: ["AWS", "Cloud Computing", "Cloud Architecture", "Security", "Networking", "Cost Management"]
     },
     {
       name: "Bloomberg Market Concepts",
@@ -96,33 +107,6 @@ export default function Experience() {
       logo: "/bloomberg-logo.png",
       skills: ["Financial Markets", "Trading", "Investment", "Market Analysis", "Bloomberg Terminal", "Economics"]
     },
-    {
-      name: "Google Cloud Professional Cloud Architect",
-      issuer: "Google Cloud",
-      issuedDate: "Sep 2024",
-      credentialId: "GCP-PCA-2024-123",
-      link: "#",
-      logo: "/google-cloud-logo.png",
-      skills: ["Google Cloud", "Cloud Architecture", "DevOps", "Microservices", "Security", "Scalability"]
-    },
-    {
-      name: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      issuedDate: "Aug 2024",
-      credentialId: "CKA-2024-567",
-      link: "#",
-      logo: "/kubernetes-logo.png",
-      skills: ["Kubernetes", "Container Orchestration", "DevOps", "Microservices", "Cloud Native", "Docker"]
-    },
-    {
-      name: "Microsoft Azure Solutions Architect Expert",
-      issuer: "Microsoft",
-      issuedDate: "Jul 2024",
-      credentialId: "AZ-305-2024-890",
-      link: "#",
-      logo: "/azure-logo.png",
-      skills: ["Azure", "Cloud Architecture", "DevOps", "Security", "Networking", "Hybrid Cloud"]
-    }
   ];
 
   return (

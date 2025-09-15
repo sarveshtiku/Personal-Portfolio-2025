@@ -31,7 +31,7 @@ export default function Research() {
       type: "Conference Paper",
       tags: ["Deep learning", "Training", "Large language models", "Computational modeling", "Prevention and mitigation", "Transformers", "Real-time systems"],
       link: "https://ieeexplore.ieee.org/abstract/document/10585628",
-      citation: "S. Tiku, \"Mitigation of User-Prompt Bias in Large Language Models: A Natural Langauge Processing and Deep Learning Based Framework,\" 2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI), Mt Pleasant, MI, USA, 2024, pp. 1-5, doi: 10.1109/ICMI60790.2024.10585628. keywords: {Deep learning;Training;Large language models;Computational modeling;Prevention and mitigation;Transformers;Real-time systems;Artificial Intelligence;Deep Learning;Natural Language Processing;Bias Detection Mitigation;Computational Linguistics;Predictive Modeling;Bidirectional Encoder Representations from Transformers (BERT);Robustly Optimized BERT Approach},"
+      citation: "S. Tiku, \"Mitigation of User-Prompt Bias in Large Language Models: A Natural Langauge Processing and Deep Learning Based Framework,\" 2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI), Mt Pleasant, MI, USA, 2024, pp. 1-5, doi: 10.1109/ICMI60790.2024.10585628"
     },
     {
       title: "AI-Induced Labor Market Shifts and Aging Workforce Dynamics",
