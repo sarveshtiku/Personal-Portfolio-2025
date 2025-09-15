@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, ExternalLink, Calendar, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import VantaNetBackground from "@/components/VantaNetBackground";
 
 export default function Research() {
   const { toast } = useToast();
@@ -64,8 +65,7 @@ export default function Research() {
 
   return (
     <div className="space-y-12 relative z-20">
-      {/* Soft Blue Gradient Background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-white via-blue-50 to-blue-100 opacity-60" style={{zIndex: -10}}></div>
+      <VantaNetBackground />
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
