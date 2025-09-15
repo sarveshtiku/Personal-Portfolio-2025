@@ -119,7 +119,7 @@ export default function Projects() {
       <VantaFogBackground />
       {/* Header */}
       <section className="text-center space-y-4">
-        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
+        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-white">
           Projects
         </h1>
         <p className="text-xl text-academic-gray max-w-2xl mx-auto">

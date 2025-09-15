@@ -11,6 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import VantaCloudsBackground from "@/components/VantaCloudsBackground";
 
 export default function Blog() {
   const [email, setEmail] = useState("");
@@ -32,7 +33,7 @@ export default function Blog() {
       readTime: "15 min read",
       category: "Conference",
       slug: "distributed-systems-lessons",
-      image: "/lovable-uploads/f824f7f5-b38a-4fc8-b26c-829c3a25fffb.png"
+      image: "/lovable-uploads/StripeSessions.png"
     },
     {
       title: "AI and the Future of Finance Conference",
@@ -143,9 +144,9 @@ export default function Blog() {
   };
 
   return (
-    <div className="space-y-12 relative z-20">
-      {/* Soft Blue Gradient Background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-white via-blue-50 to-blue-100 opacity-60" style={{zIndex: -1}}></div>
+    <div className="space-y-12 relative z-20 px-4 sm:px-6 lg:px-8">
+      {/* Vanta.js CLOUDS Background */}
+      <VantaCloudsBackground />
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
