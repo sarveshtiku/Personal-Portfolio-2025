@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import VantaCloudsBackground from "@/components/VantaCloudsBackground";
+import VantaFogBackground from "@/components/VantaFogBackground";
 
 export default function Blog() {
   const [email, setEmail] = useState("");
@@ -145,8 +145,8 @@ export default function Blog() {
 
   return (
     <div className="space-y-12 relative z-20 px-4 sm:px-6 lg:px-8">
-      {/* Vanta.js CLOUDS Background */}
-      <VantaCloudsBackground />
+      {/* Vanta.js FOG Background */}
+      <VantaFogBackground />
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">
@@ -207,7 +207,7 @@ export default function Blog() {
         <h2 className="font-academic text-2xl font-semibold mb-8 text-primary">
           Recent Posts
         </h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {posts.slice(1).map((post, index) => (
             <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 p-3">
               <div className="space-y-3">
@@ -292,7 +292,7 @@ export default function Blog() {
         <div className="overflow-hidden">
           <div className="flex gap-4 animate-scroll-right">
             {[...newsletters, ...newsletters].map((newsletter, index) => (
-              <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 flex-shrink-0 w-80">
+              <Card key={index} className="academic-shadow hover:warm-shadow transition-all duration-300 flex-shrink-0 w-72 sm:w-80">
                 <CardHeader>
                   <div className="flex items-center gap-3 text-sm text-academic-gray mb-2">
                     <Badge className="bg-warm-orange-light text-warm-orange">

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BlogComments } from "@/components/BlogComments";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import VantaTopologyBackground from "@/components/VantaTopologyBackground";
 
 
 const blogPosts = {
@@ -1349,7 +1350,8 @@ export default function BlogPost() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto relative z-20 px-4 sm:px-6 lg:px-8">
+      <VantaTopologyBackground />
       <div className="grid lg:grid-cols-[1fr_300px] gap-8">
         {/* Main Content */}
         <article className="space-y-8">
