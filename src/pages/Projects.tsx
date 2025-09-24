@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Filter, X } from "lucide-react";
-import VantaFogBackground from "@/components/VantaFogBackground";
+import VantaDotsBackground from "@/components/VantaDotsBackground";
 
 export default function Projects() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
@@ -116,10 +116,10 @@ export default function Projects() {
 
   return (
     <div className="space-y-12 relative z-20 px-4 sm:px-6 lg:px-8">
-      <VantaFogBackground />
+      <VantaDotsBackground />
       {/* Header */}
       <section className="text-center space-y-4">
-        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-blue-100">
+        <h1 className="font-academic text-4xl lg:text-5xl font-bold text-black">
           Projects
         </h1>
         <p className="text-xl text-academic-gray max-w-2xl mx-auto">

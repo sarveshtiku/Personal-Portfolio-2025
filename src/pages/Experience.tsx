@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, ExternalLink, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import VantaDotsBackground from "@/components/VantaDotsBackground";
+import VantaFogBackground from "@/components/VantaFogBackground";
 
 export default function Experience() {
   const experiences = [
@@ -107,12 +107,31 @@ export default function Experience() {
       logo: "/bluedot-logo.png",
       skills: ["AI Governance & Regulation", "Responsible AI Practices", "Policy & Risk Analysis", "AI Safety & Ethics", "Applied Governance Frameworks", "Societal Impact of AI"]
     },
+    {
+      name: "Introduction to Back-End Development",
+      issuer: "Meta",
+      issuedDate: "Sep 2025",
+      credentialId: "6Q9K1VYC2XFC",
+      link: "https://www.coursera.org/account/accomplishments/verify/6Q9K1VYC2XFC",
+      logo: "/meta-logo.png",
+      skills: ["Back-End Development", "Web Servers", "General Networking", "Full-Stack Web Development", "JavaScript Frameworks", "Responsive Web Design", "User Interface (UI)", "Hypertext Markup Language (HTML)", "Cascading Style Sheets (CSS)", "Bootstrap (Front-End Framework)"]
+    },
+    {
+      name: "Docker Certified Associate",
+      issuer: "Mirantis Training",
+      issuedDate: "Sep 2025",
+      expiresDate: "Sep 2027",
+      credentialId: "161343641",
+      link: "https://certification.mirantis.com/f61b2c12-1903-4734-a7d7-1fb61d3f7da5#acc.sMntNldy",
+      logo: "/docker-logo.png",
+      skills: ["Docker", "Containerization", "DevOps", "Container Orchestration", "Microservices", "Cloud Computing", "Infrastructure as Code", "CI/CD", "Application Deployment", "System Administration"]
+    },
   ];
 
   return (
     <div className="space-y-12 relative z-20 px-4 sm:px-6 lg:px-8">
-      {/* Vanta.js DOTS Background */}
-      <VantaDotsBackground />
+      {/* Vanta.js FOG Background */}
+      <VantaFogBackground />
       {/* Header */}
       <section className="text-center space-y-4">
         <h1 className="font-academic text-4xl lg:text-5xl font-bold text-primary">

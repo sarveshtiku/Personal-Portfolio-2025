@@ -19,7 +19,7 @@ export default function Contact() {
     const message = (form.elements.namedItem('message') as HTMLInputElement).value;
 
     try {
-      const response = await fetch('http://localhost:3001/contact', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message }),

@@ -45,6 +45,16 @@ export default function Blog() {
       image: "/lovable-uploads/115f906d-35e9-456b-9154-cc254bbf56d3.png",
       tags: ["FinTech"],
       location: "Atlanta, Georgia"
+    },
+    {
+      title: "Inside the Black Box: Stress-Testing AI Worldviews for Governance Resilience",
+      excerpt: "As frontier AI systems cross new capability thresholds, a fundamental question grows unavoidable: Can we trust what an AI system believes — when no one is watching? This article explores Worldview Resilience Auditing (WRA) as a critical framework for stress-testing AI systems under adversarial conditions.",
+      date: "2025-04-27",
+      readTime: "25 min read",
+      category: "AI Ethics",
+      slug: "inside-black-box-stress-testing",
+      image: "/lovable-uploads/4a070806-d22a-403d-a36a-b439363a3064.png",
+      tags: ["AI", "Ethics", "Research", "Governance"]
     }
   ];
 
@@ -105,7 +115,11 @@ export default function Blog() {
       "Architecture": "bg-warm-orange-light text-warm-orange",
       "AI Ethics": "bg-success/10 text-success",
       "Conference": "bg-primary/10 text-primary",
-      "FinTech": "bg-success/10 text-success"
+      "FinTech": "bg-success/10 text-success",
+      "AI": "bg-success/10 text-success",
+      "Ethics": "bg-success/10 text-success",
+      "Research": "bg-primary/10 text-primary",
+      "Governance": "bg-warm-orange-light text-warm-orange"
     };
     return colors[category] || "bg-muted text-muted-foreground";
   };

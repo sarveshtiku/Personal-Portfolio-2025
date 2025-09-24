@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Chatbot from "@/components/Chatbot";
 
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
@@ -11,10 +12,12 @@ import Projects from "./pages/Projects";
 
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import InsideBlackBox from "./pages/InsideBlackBox";
 
 import Experience from "./pages/Experience";
 import Research from "./pages/Research";
 import Contact from "./pages/Contact";
+import ChatbotPage from "./pages/ChatbotPage";
 
 import NotFound from "./pages/NotFound";
 
@@ -24,6 +27,7 @@ const queryClient = new QueryClient();
 const AppContent = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isChatPage = location.pathname === '/chat';
   
   return (
     <div className={isHomePage ? 'relative min-h-screen' : ''}>
@@ -36,13 +40,16 @@ const AppContent = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/research" element={<Research />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/blog/inside-black-box-stress-testing" element={<InsideBlackBox />} />
           
           <Route path="/blog/newsletter/:slug" element={<BlogPost />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/chat" element={<ChatbotPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {!isChatPage && <Chatbot />}
       </Layout>
     </div>
   );

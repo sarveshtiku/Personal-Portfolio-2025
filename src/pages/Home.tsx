@@ -34,16 +34,23 @@ export default function Home() {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 hero-text">
-          <Button asChild variant="outline" size="lg" className="border-warm-orange text-warm-orange hover:bg-warm-orange hover:text-white">
-            <Link to="/blog">Read My Blog</Link>
-          </Button>
-          <Button asChild size="lg" className="bg-warm-orange hover:bg-warm-orange/90">
-            <Link to="/projects">
-              View My Work <ArrowRight className="ml-2 h-4 w-4" />
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+            <Link to="/blog">
+              <FileText className="mr-2 h-4 w-4" />
+              Read My Blog
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg">
-            <Link to="/about">Learn About Me</Link>
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+            <Link to="/projects">
+              <ArrowRight className="mr-2 h-4 w-4" />
+              View My Work
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+            <Link to="/about">
+              <GraduationCap className="mr-2 h-4 w-4" />
+              Learn About Me
+            </Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
